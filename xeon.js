@@ -183,6 +183,13 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
    │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
    │✑ ${xtime} ${xdate}
    │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+                 
+   ├  හායි
+   ├   ඔයාව සාදරෙයෙන්
+   ├          ආදරයෙන් ❤️
+   ├           පිලිගන්නව
+   ├🤗
+   ├  ❤️🧡💛💚💙💜🤎🖤🤍
    └───────────────┈ ⳹`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
@@ -228,12 +235,17 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │✑  𝗧𝗶𝗺𝗲 : 
    │✑  ${xeontime} ${xeondate}
    │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+   ├              ❤️⃝😒ꦿ࿔
+   ├「 @${xeonName.split("@")[0]}  」
+   ├මූ ඉතින් හිටියත් වැඩක් නෑනෙ.
+   ├      ගියපු එකමයි හොද      
+   ├             😏😈
    └───────────────┈ ⳹`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'බායි😇'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
