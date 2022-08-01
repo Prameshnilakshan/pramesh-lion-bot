@@ -151,14 +151,14 @@ let docs = pickRandom(documents)
                 try {
                     ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
                 } catch {
-                    ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                    ppuser = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
                 }
 
                 //Get Profile Picture Group\\
                 try {
                     ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                    ppgroup = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
                 }
 
 //welcome\\
