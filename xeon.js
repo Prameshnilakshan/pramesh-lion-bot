@@ -217,29 +217,6 @@ sourceUrl: `${websitex}`,
 mediaUrl: `${websitex}`
 }}
 }
-let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: '.alive'}, type: 1}
-]
-let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonWlcm,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Don't forget to read group description`,
-mediaType:2,
-thumbnail: XeonWlcm,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
-}
 XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
@@ -262,7 +239,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    ├「 @${xeonName.split("@")[0]}  」
    ├මූ ඉතින් හිටියත් වැඩක් නෑනෙ.
    ├      ගියපු එකමයි හොද      
-   ├             😏😈
+   ├             😏😈👋
    └───────────────┈ ⳹`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
