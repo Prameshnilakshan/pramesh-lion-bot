@@ -2,7 +2,7 @@
 
 <h1 align="center">☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒<br></h1>
 <p align="center">
-<img src="https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg" alt="animated" width="540" height="280" />
+<img src="https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg" alt="animated" width="510" height="280" />
 </p>
 
 <p align="center">
