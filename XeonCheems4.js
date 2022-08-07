@@ -1307,46 +1307,6 @@ if (q.includes('--help')) return reply(examkosong)
   addEmerald(m.sender, emeraldnya)	     
   }
   break
-case 'Pramesh': case 'pramesh':{
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (q.includes('--help')) return reply(examkosong) 
-  if (!isInventory){ addInventori(m.sender) }
-  if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
-  let besi = [1,2,5,0,3,0,1,1,4,1,5,0,0]
-  let emas = [0,1,2,3,0,0,0,1,1,0,0,2]
-  let emerald = [0,0,1,0,0,1,0,2,1,0,0,1]
-  var besinya = besi[Math.floor(Math.random() * besi.length)]  
-  var emasnya = emas[Math.floor(Math.random() * emas.length)]  
-  var emeraldnya = emerald[Math.floor(Math.random() * emerald.length)]  
-  setTimeout( () => {
-  let caption = `[ MINING RESULT ]\n*Iron* : ${besinya}\n*Gold* : ${emasnya}\n*Emerald* : ${emeraldnya}`
-  let buttons = [
-      {
-       buttonId: `${prefix + command}`, 
-       buttonText: {
-        displayText: '❤️𝙥𝙧𝙖𝙢𝙚𝙨𝙝❤️'
-      }, type: 1},
-    ]
-    let buttonMessage = {
-      image: { url: './XeonMedia/theme/cheemspic.jpg' },
-      caption: caption,
-      footer: pushname,
-      buttons: buttons,
-      headerType: 4
-     }
-     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
-   
-   }, 7000)  
-  setTimeout( () => {
-  reply(`@${m.sender.split("@")[0]} Started Mining🎣`)     
-  }, 1500)
-  kurangDarah(m.sender, 10)
-  addBesi(m.sender, besinya)
-  addEmas(m.sended, emasnya)
-  addEmerald(m.sender, emeraldnya)	     
-  } 
- break
   //transaction\\
  case 'beli': case 'buy':{
  	if (isBan) return reply(mess.ban)	 			
