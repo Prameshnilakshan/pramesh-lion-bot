@@ -1453,8 +1453,18 @@ if (isBanChat) return reply(mess.banChat)
 
  }
  break
-
- case 'heal':{
+ 
+ case 'Gm'
+     if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+if (q.includes('--help')) return reply(examkosong) 
+  if (!isInventory){ addInventori(m.sender) }
+  if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
+  ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+  }
+  break 
+// වෙනස් කරපු තැන මතක තියා ගන්න//
+  case 'heal':{
  	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (q.includes('--help')) return reply(examkosong) 
