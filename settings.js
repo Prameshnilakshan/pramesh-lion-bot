@@ -1,25 +1,9 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒//
+//code by pramesh nilakshan//
+//මෙමෙ bot ඔබට ගොඩක් ප්‍රයෝජනවත් bot කෙනෙකි//
+//i am pramesh //
+//╳╳╳╳╳╳╳╳╳╳╳╳//
+//◈━━━━━━━━━━━━━◈//
 
 const fs = require('fs')
 const chalk = require('chalk')
@@ -54,23 +38,27 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.vcardowner = ['94704472592'] //ur owner number
-global.ownername = "𝙥𝙧𝙖𝙢𝙚𝙨𝙝 𝙣𝙞𝙡𝙖𝙠𝙨𝙝𝙖𝙣" //ur owner name
-global.ytname = "pramesh lion bot tech" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
-
-//bot bomdy 
+global.vcardowner = ['94704472592'] //⚙️⚙️
+global.ownername = "𝙥𝙧𝙖𝙢𝙚𝙨𝙝 𝙣𝙞𝙡𝙖𝙠𝙨𝙝𝙖𝙣" //එම අයිතිකරුගේ නම මෙතන්ට දාන්න
+//මේව වෙනස් කරන්න පුලුවන්😊
 global.owner = ['94704472592']
-global.ownertag = '94704472592' //ur tag number
-global.botname = '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒' //ur bot name
+global.ownertag = '94704472592' //මේ නම්බර් එකට ඔයාගෙ නම්බර එක දාගන්න කව්රුහරි මේකෙ masege  එකක් tag කරාම sticker එනව
+global.botscript = 'https://chat.whatsapp.com/E3enguWGKzLJT0PES2AhrY' //group link
+
+global.socialm = "GitHub: lion" //ur github or insta name
+global.location = "srilanka,colombo" //ur location
+// මෙතනින් යට මොනවත් වෙනස් කරන්න එපා 🚫⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
+//වැඩ කරන්නෙ නැතුව යනව
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒//
+
 global.linkz = "https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew" //ur website to be displayed
-global.botscript = 'https://chat.whatsapp.com/E3enguWGKzLJT0PES2AhrY' //script link
-global.reactmoji = "🦁" //ur menu react emoji
-global.themeemoji = "🦄" //ur theme emoji
-global.packname = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" //ur sticker watermark packname
-global.author = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" //ur sticker watermark author
+global.reactmoji = "🦁" //ur menu react emoji code lock🔒
+global.themeemoji = "🦁" //ur theme emoji code lock 🔒
+global.packname = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" //ur sticker watermark packname code lock 🔒
+global.author = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" //ur sticker watermark author code lock 🔒
+global.botname = '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒' //code lock 🔒
+global.ytname = "pramesh lion bot tech" // code lock 🔒
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -102,19 +90,19 @@ global.ntilink = []
 //omther
 global.sessionName = 'session'
 global.antitags = true
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['','!','.','🦁','⚙️','✅']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
+    success: 'හරි ✅',
+    admin: 'මෙය කල හැක්කෙ grop  admin ට පමනයි💻',
+    botAdmin: 'මෙය කිරීමට මට admin අවශ්‍ය වේ ⚙️',
+    owner: 'මෙය කල හැක්කෙ මාගෙ අයිති කරුට පමනයි 🌚',
+    group: 'මෙම විදානයා පාවිච්චි කල හැක්කෙ grop වලදී පමනයි 👥👥',
+    private: 'මෙය කිරීම සදහා මාගෙ inbox පැමිනෙන්න',
     bot: 'This Feature Is Only For Bot',
-    wait: 'In process...',
+    wait: ' මෙය සාදමින් පවතී  🛠️🛠️',
     linkm: 'Where is the link?',
-    error: 'Error!!',
+    error: 'එහි දෝෂ පවතී 💥',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
     ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
     nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
