@@ -1116,9 +1116,6 @@ const latensie = speed() - timestampe
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
-   let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
-          listMessage :{
-         title: ``,
    
    //randoming function
 function pickRandom(list) {
