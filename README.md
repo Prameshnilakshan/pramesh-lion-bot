@@ -23,7 +23,7 @@
 
 ## 𝐌𝐑: ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
 <n/>
-[my youtube](https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew)
+[![my youtube](https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew)
 
 
 
