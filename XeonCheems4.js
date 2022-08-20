@@ -1,26 +1,8 @@
-//════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
-//════════════════════════════//
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒//
+//✿✿✿✿✿✿✿✿✿✿✿✿✿//
 //create by pramesh🦁//
+//◈━━━━━━━━━━━━━◈//
+
 
 require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
@@ -1101,19 +1083,25 @@ const latensie = speed() - timestampe
 🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
 ▕▕▕▕▕▕▕▕▕▕▕▕▕▕
 
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
+
 ├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+│𝐇𝐈 𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄⇝
+│ ╔═════════════╗
+│ ║☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒║
+│ ╚═════════════╝
+│𝐌𝐘 𝐎𝐖𝐍𝐄𝐑 : ${global.ownername}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
-└┬────────────┈ ⳹
+│
+│
+│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│
+│𝐑𝐀𝐓𝐄 𝐔𝐒 ;☆☆☆☆☆☆=5200
+│         ;☆☆☆☆=300
+│         ;☆☆☆=105
+│         ;☆☆=10
+│         :☆=0
+└┬──────────────►▻
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
    
@@ -8026,23 +8014,24 @@ let search = await yts(text)
 let anu = search.videos[0] // Length selector [0] \\RDmd
 let ytvc = await hx.youtube(anu.url)
 let buttons = [
-{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: '📽️ Video 📽️'}, type: 1},
-{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: '🎶 Audio 🎶'}, type: 1}
+{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: '༺📽️Video📽️༻'}, type: 1},
+{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: '༺🎶Audio🎶༻'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
-caption: `*| YOUTUBE PLAY |*
-
-${global.themeemoji} Title : ${anu.title}
-${global.themeemoji} Ext : Search
-${global.themeemoji} ID : ${anu.videoId}
-${global.themeemoji} Duration : ${anu.timestamp}
-${global.themeemoji} Viewers : ${anu.views}
-${global.themeemoji} Uploaded : ${anu.ago}
-${global.themeemoji} Author : ${anu.author.name}
-${global.themeemoji} Channel : ${anu.author.url}
-${global.themeemoji} Description : ${anu.description}
-${global.themeemoji} Url : ${anu.url}`,
+caption: `*| ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ |*
+◈━━━━━━━━━━━━━━━◈            
+╒════════════════
+┝ 📝 Title : ${anu.title}
+┝ 🔍 Ext : Search
+┝ 🔗 ID : ${anu.videoId}
+┝ ⏰ Duration : ${anu.timestamp}
+┝ 🌝 Viewers : ${anu.views}
+┝ ⏳ Uploaded : ${anu.ago}
+┝ 🔮 Author : ${anu.author.name}
+┝ 🌐 Channel : ${anu.author.url}
+┝ ⛓️ Description : ${anu.description}
+┝ ✏️ Url : ${anu.url}`,
 footer: `${global.botname}`,
 buttons: buttons,
 headerType: 4,
@@ -8058,7 +8047,7 @@ sourceUrl: anu.url
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'getmusic': case 'getvideo': case 'yt': case 'youtube': case 'ytvideo': case 'ytmp3': case 'ytmp4': case 'ytmusic': {
+case 'video': case 'getvideo': case 'yt': case 'youtube': case 'ytvideo': case 'ytmp3': case 'ytmp4': case 'ytmusic': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply(mess.linkm)
@@ -8072,8 +8061,8 @@ ${global.themeemoji} Quality : ${res.quality}
 
 _Select video or audio and wait a while_`
 let buttons = [
-{buttonId: `ytvd ${res.link}`, buttonText: {displayText: '📽️ Video 📽️'}, type: 1},
-{buttonId: `ytad ${res.mp3}`, buttonText: {displayText: '🎶 Audio 🎶'}, type: 1}
+{buttonId: `ytvd ${res.link}`, buttonText: {displayText: '༺📽️Video📽️༻'}, type: 1},
+{buttonId: `ytad ${res.mp3}`, buttonText: {displayText: '༺🎶Audio🎶༻'}, type: 1}
 ]
 let buttonMessage = {
 image: {url:res.thumb},
@@ -8212,8 +8201,8 @@ break
 		let anu = await umma(isUrl(text)[0])
 		if (anu.type == 'video') {
 		    let buttons = [
-                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '🎵Audio🎵'}, type: 1},
-                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '📽️Video📽️'}, type: 1}
+                        {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '༺🎵Audio🎵༻'}, type: 1},
+                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '༺📽️Video📽️༻'}, type: 1}
                     ]
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
