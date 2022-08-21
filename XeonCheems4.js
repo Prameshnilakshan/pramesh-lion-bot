@@ -8789,6 +8789,17 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                     id: 'owner'
                                 }
                             }]
+
+  let buttonMessage = {
+      image: { url: 'https://i.ibb.co/cyyCjN7/20220803-081426.png' },
+      caption: `🙂hi, I am alive`,
+      footer: `[☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒]`,
+      redDragon,
+      headerType: 4
+     }
+     XeonBotInc.sendMessage(from, buttonMessage)
+   
+ }
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         XeonBotInc.send5ButImg(m.chat, menulist, global.botname, global.thumb, btn, global.thumb)
@@ -8806,26 +8817,9 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `📚All Menu📚`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `📃List Menu📃`, id: 'command'} },
-            { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'} }
-        	]
-        	 let buttonMessage = {
-      image: { url: './XeonMedia/theme/cheemspic.jpg' },
-      caption: caption,
-      footer: pushname,
-      buttons: buttons,
-      headerType: 4
-     }
-     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
-   
-   }, 7000)  
-  setTimeout( () => {
-  reply(`@${m.sender.split("@")[0]} Started Mining🎣`)     
-  }, 1500)
-  kurangDarah(m.sender, 10)
-  addBesi(m.sender, besinya)
-  addEmas(m.sended, emasnya)
-  addEmerald(m.sender, emeraldnya)	     
-  }
+            { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'}
+                        }
+                     }
             break
                 case 'command': {
                 	   if (isBan) return reply(mess.ban)
