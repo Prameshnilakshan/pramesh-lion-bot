@@ -1085,16 +1085,16 @@ const latensie = speed() - timestampe
 
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
 ├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│𝐇𝐈 𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄
+│
+│
+│
+│𝐏𝐑𝐀𝐌𝐄𝐒𝐇 𝐋𝐈𝐎𝐍 𝐁𝐎𝐓
+│
+│
+│𝐌𝐘 𝐒𝐏𝐄𝐄𝐃 ➢${latensie.toFixed(4)} miliseconds
+│𝐑𝐀𝐓𝐄 𝐔𝐒
+         ☆☆☆☆☆=9461
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
@@ -8791,7 +8791,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                             }]
 
   let buttonMessage = {
-      image: { url: 'https://i.ibb.co/cyyCjN7/20220803-081426.png' },
+      image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' },
       caption: `🙂hi, I am alive`,
       footer: `[☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒]`,
       redDragon,
