@@ -10595,8 +10595,10 @@ reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ �
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔!!!`)
 break
 case 'hi': 
-	   KUMURHU.sendMessage(m.chat, {text: `   Hi බොක්ක   `},{qouted
-:m})
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
+reply(`${pushname}හායි 𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒!!!`)
 break
 case 'gm': 
 	   if (isBan) return reply(mess.ban)
