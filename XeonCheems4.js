@@ -8810,37 +8810,8 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { quickReplyButton: { displayText: `📃List Menu📃`, id: 'command'} },
             { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'} }
         	]
-        	let buttonMessage = {
-      image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' },
-      caption: menulist,
-      footer: `[ ┌─❖
- 𝙃𝙄!「 ${pushname} 」
-
-
-🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-▕▕▕▕▕▕▕▕▕▕▕▕▕▕
-
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
-├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
-└┬────────────┈ ⳹
-🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
-  ◈━━━━━━━━━━━━━━━━━━━━━━━◈]`,
-      redDragon,
-      headerType: 4
-     }
-     XeonBotInc.sendMessage(from, buttonMessage)
-   
- }
+        	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
+                        }
                      }
             break
                 case 'command': {
