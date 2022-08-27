@@ -10594,17 +10594,17 @@ case 'tqtt':
 reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔!!!`)
 break
-case 'Hi': 
+case 'hi': 
 	   KUMURHU.sendMessage(m.chat, {text: `   Hi බොක්ක   `},{qouted
 :m})
 break
-case 'Gm': 
+case 'gm': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn!!!`)
 break
-case 'Gn': 
+case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
