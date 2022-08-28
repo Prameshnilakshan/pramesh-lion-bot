@@ -10674,7 +10674,19 @@ case 'voice':
 		if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🔊`, key: m.key }})
-reply(`good night bn 😂😂!!!`)
+reply(`🎙️bass
+🎙️blown
+🎙️deep
+🎙️earrape
+🎙️fast
+🎙️fat
+🎙️nightcore
+🎙️reverse
+🎙️robot
+🎙️slow
+🎙️smooth
+🎙️squirrel
+`)
 break 
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
