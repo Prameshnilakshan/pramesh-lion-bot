@@ -10600,26 +10600,7 @@ case 'hi':
 XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
 reply(`${pushname}හායි 𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒!!!`)
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
-]
-let buttonMessage = {
-image: thum,
-jpegThumbnail: log0,
-caption: teks,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title:"I deserve something for my hardwork",
-body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
-mediaType:1,
-mediaUrl: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg',
-sourceUrl: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
-}}
-}
-XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-}
+{buttonId: `alive`, buttonText: {displayText: '👋𝐋𝐈𝐎𝐍👋'}, type: 1}
 break
 case 'gm': 
 	   if (isBan) return reply(mess.ban)
@@ -10627,6 +10608,74 @@ case 'gm':
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn!!!`)
 break
+case 'logo':
+		if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🌇`, key: m.key }})
+reply(`🌄candy
+🌄christmas
+🌄3dchristmas
+🌄sparklechristmas
+🌄deepsea
+🌄scifi
+🌄rainbow
+🌄waterpipe
+🌄spooky
+🌄pencil
+🌄circuit
+🌄discovery
+🌄metalic
+🌄fiction
+🌄demon
+🌄transformer
+🌄berry
+🌄thunder
+🌄magma
+🌄3dstone
+🌄neonlight
+🌄glitch
+🌄harrypotter
+🌄brokenglass
+🌄papercut
+🌄watercolor
+🌄multicolor
+🌄neondevil
+🌄underwater
+🌄graffitibike
+🌄snow
+🌄cloud
+🌄honey
+🌄ice
+🌄fruitjuice
+🌄biscuit
+🌄wood
+🌄chocolate
+🌄strawberry
+🌄matrix
+🌄blood
+🌄dropwater
+🌄toxic
+🌄lava
+🌄rock
+🌄bloodglas
+🌄hallowen
+🌄darkgold
+🌄joker
+🌄firework
+🌄skeleton
+🌄blackpink
+🌄sand
+🌄glue
+🌄1917
+🌄leaves
+🌄neon`)
+break 
+case 'voice':
+		if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🔊`, key: m.key }})
+reply(`good night bn 😂😂!!!`)
+break 
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
