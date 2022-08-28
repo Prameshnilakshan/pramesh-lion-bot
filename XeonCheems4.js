@@ -1095,6 +1095,7 @@ const latensie = speed() - timestampe
 │𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
 │𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+┋𝐖𝐎𝐋𝐃 𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
@@ -8822,14 +8823,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `
-                   ╒══════════════════╕        
+                   ╒══════════════      
                    ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
                    ├         🦁🦁🦁🦁
                    ├      
                    ├ ${pushname}       
                    ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න  
-                   ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
-                   ╘══════════════════╝\n\n`,
+                   ├      ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
+                   ╘═════════════\n\n`,
                     buttonText: "Menu",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -10608,11 +10609,12 @@ case 'gm':
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn!!!`)
 break
-case 'logo':
-		if (isBan) return reply(mess.ban)
+case 'logop':
+           if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌇`, key: m.key }})
-reply(`🌄candy
+reply(`𝐋𝐎𝐆𝐎 𝐂𝐑𝐄𝐀𝐓𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒
+🌄candy
 🌄christmas
 🌄3dchristmas
 🌄sparklechristmas
@@ -10670,7 +10672,7 @@ reply(`🌄candy
 🌄leaves
 🌄neon`)
 break 
-case 'voice':
+case 'voicep':
 		if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🔊`, key: m.key }})
@@ -10685,8 +10687,7 @@ reply(`🎙️bass
 🎙️robot
 🎙️slow
 🎙️smooth
-🎙️squirrel
-`)
+🎙️squirrel`)
 break 
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
