@@ -10594,11 +10594,32 @@ case 'tqtt':
 reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔!!!`)
 break
-case 'hi': 
+case 'hi':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
 reply(`${pushname}හායි 𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒!!!`)
+let buttons = [
+{buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
+]
+let buttonMessage = {
+image: thum,
+jpegThumbnail: log0,
+caption: teks,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title:"I deserve something for my hardwork",
+body: "Click to donate", 
+thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
+mediaType:1,
+mediaUrl: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg',
+sourceUrl: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
+}}
+}
+XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+}
 break
 case 'gm': 
 	   if (isBan) return reply(mess.ban)
