@@ -8766,7 +8766,7 @@ XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 break
 case 'alive':  case 'panel': case 'list': case 'menu': case 'help': case '?':{
 
-let btn = [
+let redDragon = [
       {
        buttonId: `${prefix}allmenu`, 
        buttonText: {
