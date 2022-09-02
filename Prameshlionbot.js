@@ -1525,6 +1525,83 @@ if (q.includes('--help')) return reply(examkosong)
   addGajah(m.sender, gajah)
  kurangDarah(m.sender, 10)
  }
+ // ඇලිව් මැසේජ් එක බන්//
+ //❤️
+// ❤️
+// ❤️
+// ❤❤❤️
+//
+//
+//❤️
+//❤️
+//
+ break
+case 'alive': case 'bokka':{
+	if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }})
+if (q.includes('--help')) return reply(examkosong) 
+  if (!isInventory){ addInventori(m.sender) }
+  if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
+  let besi = [1,2,5,0,3,0,1,1,4,1,5,0,0]
+  let emas = [0,1,2,3,0,0,0,1,1,0,0,2]
+  let emerald = [0,0,1,0,0,1,0,2,1,0,0,1]
+  var besinya = besi[Math.floor(Math.random() * besi.length)]  
+  var emasnya = emas[Math.floor(Math.random() * emas.length)]  
+  var emeraldnya = emerald[Math.floor(Math.random() * emerald.length)]  
+  setTimeout( () => {
+  let caption = `[┌─❖
+ 𝙃𝙄!「 ${pushname} 」
+
+
+🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+▕▕▕▕▕▕▕▕▕▕▕▕▕▕
+
+└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
+├ 
+│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
+│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
+│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+└┬────────────┈ ⳹
+🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
+  ◈━━━━━━━━━━━━━━━━━━━━━━━◈ }`
+  let buttons = [
+      {
+       buttonId: `${prefix}allmenu`, 
+       buttonText: {
+        displayText: '💠All Menu💠'
+      },{ type: 1},
+ 
+       buttonId: `${prefix}owner`, 
+       buttonText: {
+        displayText: '💠Owner💠'
+      },{ type: 1}
+    ]
+    let buttonMessage = {
+      image: { url: './XeonMedia/theme/cheemspic.jpg' },
+      caption: caption,
+      footer: pushname,
+      buttons: buttons,
+      headerType: 4
+     }
+     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
+   
+   }, 7000)  
+  setTimeout( () => {
+  reply(`@0704472592("@")[0]} සුබ දවසක් `)     
+  }, 1500)
+  kurangDarah(m.sender, 10)
+  addBesi(m.sender, besinya)
+  addEmas(m.sended, emasnya)
+  addEmerald(m.sender, emeraldnya)	     
+  }   
  break
 case 'resetlinkgc':
 case 'resetlinkgroup':
@@ -8764,7 +8841,7 @@ sourceUrl: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'pramesh': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -10613,6 +10690,21 @@ case 'Gm':
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn !!!`)
 break
+ case 'mn':
+{      
+   let txt = `「 *LEADERBOARD* 」\n\n`
+     for (let i of _buruan){
+     txt += `➸ *ID :* ${i.id}\n`
+     txt += `*🐟Fish* : ${i.ikan}\n`
+     txt += `*🐔Chicken* : ${i.ayam}\n`
+     txt += `*🐇Rabbit* : ${i.kelinci}\n`
+     txt += `*🐑Sheep* : ${i.domba}\n`
+     txt += `*🐄Cow* : ${i.sapi}\n`
+     txt += `*🐘Elephant* : ${i.gajah}\n\n`
+     }
+    reply(txt)       
+  }
+ break
 case 'Gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
