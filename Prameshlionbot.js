@@ -1091,10 +1091,9 @@ const latensie = speed() - timestampe
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
 │𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│
+│
+│       ☆☆☆☆☆☆
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
@@ -1249,6 +1248,65 @@ if (isBanChat) return reply(mess.banChat)
     reply(txt)       
   }
  break
+case'hi':
+if(isBan)returnreply(mess.ban)				
+if(isBanChat)returnreply(mess.banChat)
+XeonBotInc.sendMessage(from,{react:{text:`👋`,key:m.key}})
+{
+lettxt=`「*හායි*${pushname}~\n\n`
+for(letiof_buruan){
+txt+=`ඉතින්කොහොමදඔයාට❤️\n`
+}
+reply(txt)
+}
+break
+case'gn':
+if(isBan)returnreply(mess.ban)				
+if(isBanChat)returnreply(mess.banChat)
+XeonBotInc.sendMessage(from,{react:{text:`🌌`,key:m.key}})
+{
+lettxt=`「*𝐆𝐎𝐎𝐃𝐍𝐈𝐆𝐇𝐓*${pushname}~\n\n`
+for(letiof_buruan){
+txt+=`🎃🎃🎃\n`
+}
+reply(txt)
+}
+break
+case'gm':
+if(isBan)returnreply(mess.ban)				
+if(isBanChat)returnreply(mess.banChat)
+XeonBotInc.sendMessage(from,{react:{text:`🌄`,key:m.key}})
+{
+lettxt=`「*𝐆𝐎𝐎𝐃𝐌𝐎𝐑𝐍𝐈𝐍𝐆*${pushname}~\n\n`
+for(letiof_buruan){
+txt+=`🌹🌹🌹🌹🌹🌹️\n`
+}
+reply(txt)
+}
+break
+case'mn':
+if(isBan)returnreply(mess.ban)				
+if(isBanChat)returnreply(mess.banChat)
+XeonBotInc.sendMessage(from,{react:{text:`🌸`,key:m.key}})
+{
+lettxt=`「*𝐇𝐌𝐌*~\n\n`
+for(letiof_buruan){
+txt+=`මොනවත්මනැද්ද❤😛\n`
+}
+reply(txt)
+}
+break
+case'mk':
+if(isBan)returnreply(mess.ban)				
+if(isBanChat)returnreply(mess.banChat)
+XeonBotInc.sendMessage(from,{react:{text:`🤔`,key:m.key}})
+{
+lettxt=`「*මමත්ඔයාලදිහාබලන්ඉන්නව*~\n\n`
+for(letiof_buruan){
+txt+=`ඔයාලටමාවඅමතකවෙලානෙ🥲\n`
+}
+reply(txt)
+break
 case 'mining': case 'mine':{
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -1525,83 +1583,6 @@ if (q.includes('--help')) return reply(examkosong)
   addGajah(m.sender, gajah)
  kurangDarah(m.sender, 10)
  }
- // ඇලිව් මැසේජ් එක බන්//
- //❤️
-// ❤️
-// ❤️
-// ❤❤❤️
-//
-//
-//❤️
-//❤️
-//
- break
-case 'alive': case 'bokka':{
-	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }})
-if (q.includes('--help')) return reply(examkosong) 
-  if (!isInventory){ addInventori(m.sender) }
-  if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
-  let besi = [1,2,5,0,3,0,1,1,4,1,5,0,0]
-  let emas = [0,1,2,3,0,0,0,1,1,0,0,2]
-  let emerald = [0,0,1,0,0,1,0,2,1,0,0,1]
-  var besinya = besi[Math.floor(Math.random() * besi.length)]  
-  var emasnya = emas[Math.floor(Math.random() * emas.length)]  
-  var emeraldnya = emerald[Math.floor(Math.random() * emerald.length)]  
-  setTimeout( () => {
-  let caption = `[┌─❖
- 𝙃𝙄!「 ${pushname} 」
-
-
-🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-▕▕▕▕▕▕▕▕▕▕▕▕▕▕
-
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
-├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
-└┬────────────┈ ⳹
-🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
-  ◈━━━━━━━━━━━━━━━━━━━━━━━◈ }`
-  let buttons = [
-      {
-       buttonId: `${prefix}allmenu`, 
-       buttonText: {
-        displayText: '💠All Menu💠'
-      },{ type: 1},
- 
-       buttonId: `${prefix}owner`, 
-       buttonText: {
-        displayText: '💠Owner💠'
-      },{ type: 1}
-    ]
-    let buttonMessage = {
-      image: { url: './XeonMedia/theme/cheemspic.jpg' },
-      caption: caption,
-      footer: pushname,
-      buttons: buttons,
-      headerType: 4
-     }
-     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
-   
-   }, 7000)  
-  setTimeout( () => {
-  reply(`@0704472592("@")[0]} සුබ දවසක් `)     
-  }, 1500)
-  kurangDarah(m.sender, 10)
-  addBesi(m.sender, besinya)
-  addEmas(m.sended, emasnya)
-  addEmerald(m.sender, emeraldnya)	     
-  }   
  break
 case 'resetlinkgc':
 case 'resetlinkgroup':
@@ -8841,7 +8822,7 @@ sourceUrl: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'pramesh': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8902,16 +8883,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `
-                   ╒═══════════     
+                   ╒══════════════════╕        
                    ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ /n
                    ├         🦁🦁🦁🦁 /n
                    ├      
                    ├ ${pushname}  /n     
-                   ├ ඔබට 
-                   අවශ්‍යලන්චනය
-                   තොරන්න  /n
-                   ├  ⇩⇩⇩⇩⇩⇩⇩ /n
-                   ╘═══════\n\n`,
+                   ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න  /n
+                   ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩ /n
+                   ╘══════════════════╝\n\n`,
                     buttonText: "Menu",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -8929,7 +8908,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Bot Features 🦁",
 								"rows": [
 									{
-										"title": "All Menu📝",
+										"title": "All Menu 🥀",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
@@ -10673,9 +10652,7 @@ break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`☞ ${pushname} ☜
-
-𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔 !!!`)
 break
 case 'Hi': 
