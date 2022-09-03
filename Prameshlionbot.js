@@ -1247,71 +1247,11 @@ if (isBanChat) return reply(mess.banChat)
      }
     reply(txt)       
   }
- break
- case 'hi':
- if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
-{      
-   let txt = `「 *හායි* ${pushname} ~\n\n`
-     for (let i of _buruan){
-     txt += ` ඉතින් කොහොමද ඔයාට❤️\n`
-     }
-    reply(txt)       
-  }
-  break
- case 'gn':
- if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌌`, key: m.key }})
-{      
-   let txt = `「 *𝐆𝐎𝐎𝐃 𝐍𝐈𝐆𝐇𝐓* ${pushname} ~\n\n`
-     for (let i of _buruan){
-     txt += ` 🎃🎃🎃\n`
-     }
-    reply(txt)       
-  }
-  break
- case 'gm':
- if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌄`, key: m.key }})
-{      
-   let txt = `「 *𝐆𝐎𝐎𝐃 𝐌𝐎𝐑𝐍𝐈𝐍𝐆* ${pushname} ~\n\n`
-     for (let i of _buruan){
-     txt += ` 🌹🌹🌹🌹🌹🌹 ️\n`
-     }
-    reply(txt)       
-  }
-  break
- case 'mn':
- if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌸`, key: m.key }})
-{      
-   let txt = `「 *𝐇𝐌𝐌* ~\n\n`
-     for (let i of _buruan){
-     txt += ` මොනවත්ම නැද්ද❤😛\n`
-     }
-    reply(txt)       
-  }
-  break
- case 'mk':
- if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🤔`, key: m.key }})
-{      
-   let txt = `「 *මමත් ඔයාල දිහා බලන් ඉන්නව* ~\n\n`
-     for (let i of _buruan){
-     txt += ` ඔයාලට මාව අමතක වෙලානෙ 🥲\n`
-     }
-    reply(txt)       
-  }
+}
   break
 case 'bn': case 'ee':{
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌸`, key: m.key }})
 if (q.includes('--help')) return reply(examkosong) 
   if (!isInventory){ addInventori(m.sender) }
   if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
