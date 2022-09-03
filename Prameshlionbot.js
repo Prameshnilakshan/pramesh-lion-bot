@@ -1085,16 +1085,15 @@ const latensie = speed() - timestampe
 
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
 ├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+         ☆☆☆☆☆
+
 │𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
 │𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+│
+│
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
@@ -1249,9 +1248,70 @@ if (isBanChat) return reply(mess.banChat)
     reply(txt)       
   }
  break
-case 'mining': case 'mine':{
+ case 'hi':
+ if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
+{      
+   let txt = `「 *හායි* ${pushname} ~\n\n`
+     for (let i of _buruan){
+     txt += ` ඉතින් කොහොමද ඔයාට❤️\n`
+     }
+    reply(txt)       
+  }
+  break
+ case 'gn':
+ if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🌌`, key: m.key }})
+{      
+   let txt = `「 *𝐆𝐎𝐎𝐃 𝐍𝐈𝐆𝐇𝐓* ${pushname} ~\n\n`
+     for (let i of _buruan){
+     txt += ` 🎃🎃🎃\n`
+     }
+    reply(txt)       
+  }
+  break
+ case 'gm':
+ if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🌄`, key: m.key }})
+{      
+   let txt = `「 *𝐆𝐎𝐎𝐃 𝐌𝐎𝐑𝐍𝐈𝐍𝐆* ${pushname} ~\n\n`
+     for (let i of _buruan){
+     txt += ` 🌹🌹🌹🌹🌹🌹 ️\n`
+     }
+    reply(txt)       
+  }
+  break
+ case 'mn':
+ if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🌸`, key: m.key }})
+{      
+   let txt = `「 *𝐇𝐌𝐌* ~\n\n`
+     for (let i of _buruan){
+     txt += ` මොනවත්ම නැද්ද❤😛\n`
+     }
+    reply(txt)       
+  }
+  break
+ case 'mk':
+ if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🤔`, key: m.key }})
+{      
+   let txt = `「 *මමත් ඔයාල දිහා බලන් ඉන්නව* ~\n\n`
+     for (let i of _buruan){
+     txt += ` ඔයාලට මාව අමතක වෙලානෙ 🥲\n`
+     }
+    reply(txt)       
+  }
+  break
+case 'bn': case 'ee':{
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🌸`, key: m.key }})
 if (q.includes('--help')) return reply(examkosong) 
   if (!isInventory){ addInventori(m.sender) }
   if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
@@ -1265,13 +1325,13 @@ if (q.includes('--help')) return reply(examkosong)
   let caption = `[ MINING RESULT ]\n*Iron* : ${besinya}\n*Gold* : ${emasnya}\n*Emerald* : ${emeraldnya}`
   let buttons = [
       {
-       buttonId: `${prefix + command}`, 
+       buttonId: `${prefix + rate us}`, 
        buttonText: {
-        displayText: 'Mine Again⛏️'
+        displayText: '𝐑𝐀𝐓𝐄 𝐔𝐒🌸️'
       }, type: 1},
     ]
     let buttonMessage = {
-      image: { url: './storage/image/tambang.jpg' },
+      image: { url: './XeonMedia/theme/cheemspic.jpg' },
       caption: caption,
       footer: pushname,
       buttons: buttons,
@@ -1525,83 +1585,6 @@ if (q.includes('--help')) return reply(examkosong)
   addGajah(m.sender, gajah)
  kurangDarah(m.sender, 10)
  }
- // ඇලිව් මැසේජ් එක බන්//
- //❤️
-// ❤️
-// ❤️
-// ❤❤❤️
-//
-//
-//❤️
-//❤️
-//
- break
-case 'alive': case 'bokka':{
-	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }})
-if (q.includes('--help')) return reply(examkosong) 
-  if (!isInventory){ addInventori(m.sender) }
-  if (isCekDarah < 1) return reply(`You're Tired!, Try To Heal Using Potions`) 
-  let besi = [1,2,5,0,3,0,1,1,4,1,5,0,0]
-  let emas = [0,1,2,3,0,0,0,1,1,0,0,2]
-  let emerald = [0,0,1,0,0,1,0,2,1,0,0,1]
-  var besinya = besi[Math.floor(Math.random() * besi.length)]  
-  var emasnya = emas[Math.floor(Math.random() * emas.length)]  
-  var emeraldnya = emerald[Math.floor(Math.random() * emerald.length)]  
-  setTimeout( () => {
-  let caption = `[┌─❖
- 𝙃𝙄!「 ${pushname} 」
-
-
-🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-▕▕▕▕▕▕▕▕▕▕▕▕▕▕
-
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
-├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
-└┬────────────┈ ⳹
-🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
-  ◈━━━━━━━━━━━━━━━━━━━━━━━◈ }`
-  let buttons = [
-      {
-       buttonId: `${prefix}allmenu`, 
-       buttonText: {
-        displayText: '💠All Menu💠'
-      },{ type: 1},
- 
-       buttonId: `${prefix}owner`, 
-       buttonText: {
-        displayText: '💠Owner💠'
-      },{ type: 1}
-    ]
-    let buttonMessage = {
-      image: { url: './XeonMedia/theme/cheemspic.jpg' },
-      caption: caption,
-      footer: pushname,
-      buttons: buttons,
-      headerType: 4
-     }
-     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
-   
-   }, 7000)  
-  setTimeout( () => {
-  reply(`@0704472592("@")[0]} සුබ දවසක් `)     
-  }, 1500)
-  kurangDarah(m.sender, 10)
-  addBesi(m.sender, besinya)
-  addEmas(m.sended, emasnya)
-  addEmerald(m.sender, emeraldnya)	     
-  }   
  break
 case 'resetlinkgc':
 case 'resetlinkgroup':
@@ -5409,7 +5392,7 @@ case 'watercolor': case 'multicolor': case 'neondevil': case 'underwater': case 
  case 'snow': case 'cloud': case 'honey': case 'ice': case 'fruitjuice': case 'biscuit': case 'wood': 
 case 'chocolate': case 'strawberry': case 'matrix': case 'blood': case 'dropwater': case 'toxic': 
 case 'lava': case 'rock': case 'bloodglas': case 'halloween': case 'darkgold': case 'joker': case 'wicker':
- case 'firework': case 'skeleton': case 'blackpink': case 'sand': case 'glue': case '1917': case 'leaves': case 'demon': case 'neon': {
+ case 'firework': case 'skeleton': case 'blackpink': case 'sand': case 'glue': case '1917': case 'leaves': case 'demon': {
              if (!q) return reply(`Example : ${prefix + command} ${global.ownername}`) 
                 if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -5469,7 +5452,6 @@ if (isBanChat) return reply(mess.banChat)
              if (/skeleton/.test(command)) link = 'https://textpro.me/skeleton-text-effect-online-929.html'
              if (/blackpink/.test(command)) link = 'https://textpro.me/create-blackpink-logo-style-online-1001.html'
              if (/sand/.test(command)) link = 'https://textpro.me/write-in-sand-summer-beach-free-online-991.html'
-             if (/neon/.test(command)) link = 'https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html'
              if (/glue/.test(command)) link = 'https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html'
              if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
                 if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'           
@@ -6747,7 +6729,7 @@ case 'watercolor': case 'multicolor': case 'neondevil': case 'underwater': case 
  case 'snow': case 'cloud': case 'honey': case 'ice': case 'fruitjuice': case 'biscuit': case 'wood': 
 case 'chocolate': case 'strawberry': case 'matrix': case 'blood': case 'dropwater': case 'toxic': 
 case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': case 'joker': case 'wicker':
- case 'firework': case 'skeleton': case 'blackpink': case 'sand': case 'glue': case '1917': case 'leaves': case 'neon': {
+ case 'firework': case 'skeleton': case 'blackpink': case 'sand': case 'glue': case '1917': case 'leaves': {
  	   if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🏞️`, key: m.key }})
@@ -6810,8 +6792,7 @@ XeonBotInc.sendMessage(from, { react: { text: `🏞️`, key: m.key }})
              if (/sand/.test(command)) link = 'https://textpro.me/write-in-sand-summer-beach-free-online-991.html'
              if (/glue/.test(command)) link = 'https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html'
              if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
-             if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
-                 if (/neon/.test(command)) link = 'https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html'
+                if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
              let anu = await maker.textpro(link, q)
                 XeonBotInc.sendMessage(m.chat, { image: { url: anu }, caption: `Made by ${global.botname},For my Darling ` }, { quoted: m })
              }
@@ -8019,7 +8000,6 @@ break
 	    case 'tiktok':{
   	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})
   if (!q) return reply('Where is the link?')
   reply(mess.wait)
   if (!q.includes('tiktok')) return reply(`That's not a tiktok link!`)
@@ -8091,8 +8071,8 @@ let search = await yts(text)
 let anu = search.videos[0] // Length selector [0] \\RDmd
 let ytvc = await hx.youtube(anu.url)
 let buttons = [
-{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: '⇜📽️Video📽⇝️'}, type: 1},
-{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: '⇜🎶Audio🎶⇝'}, type: 1}
+{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: '༒📽️Video📽༒'}, type: 1},
+{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: '༒🎶Audio🎶༒'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: anu.thumbnail },
@@ -8124,9 +8104,10 @@ sourceUrl: anu.url
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'getmusic': case 'getvideo': case 'yt': case 'youtube': case 'ytvideo': case 'ytmp3': case 'ytmp4': case 'ytmusic': {
+case 'video': case 'getvideo': case 'yt': case 'youtube': case 'ytvideo': case 'ytmp3': case 'ytmp4': case 'ytmusic': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🎞️`, key: m.key }})
 if (!args[0]) return reply(mess.linkm)
 try {
 hx.youtube(args[0]).then(async(res) => {
@@ -8306,6 +8287,7 @@ To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp
         case 'ringtone': {
         	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🔊`, key: m.key }})
 		if (!text) return reply(`Where is the ringtone name noob?, Example : ${prefix + command} charlie puth`)
         let { ringtone } = require('./lib/scraper')
 		let anu = await ringtone(text)
@@ -8841,7 +8823,7 @@ sourceUrl: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'pramesh': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8852,7 +8834,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'Script 🍜',
+                                    displayText: '𝐌𝐘 𝐆𝐑𝐎𝐔𝐏🌸',
                                     url: `${botscript}`
                                 }
                             }, {
@@ -8869,6 +8851,11 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 quickReplyButton: {
                                     displayText: '🙋‍♂️Owner🙋‍♂️',
                                     id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '𝐑𝐀𝐓𝐄 𝐔𝐒☆',
+                                    id: 'rate us'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -8888,7 +8875,8 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `📚All Menu📚`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `📃List Menu📃`, id: 'command'} },
-            { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'} }
+            { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'} },
+            { quickReplyButton: { displayText: `𝐑𝐀𝐓𝐄 𝐔𝐒️`, id: 'rate us'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
                         }
@@ -8902,16 +8890,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `
-                   ╒═══════════     
-                   ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ /n
-                   ├         🦁🦁🦁🦁 /n
+                   ╒═════════════☆
+                   ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+                   ├         🦁🦁🦁🦁
                    ├      
-                   ├ ${pushname}  /n     
-                   ├ ඔබට 
-                   අවශ්‍යලන්චනය
-                   තොරන්න  /n
-                   ├  ⇩⇩⇩⇩⇩⇩⇩ /n
-                   ╘═══════\n\n`,
+                   ├ ${pushname}       
+                   ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න  
+                   ├     ⇩⇩⇩⇩⇩⇩⇩⇩
+                   ╘═════════════☆\n\n`,
                     buttonText: "Menu",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -8929,7 +8915,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Bot Features 🦁",
 								"rows": [
 									{
-										"title": "All Menu📝",
+										"title": "All Menu 🥀",
 										"description": "Displays The List Of All The Features!",
 										"rowId": `${prefix}allmenu`
 									},
@@ -9887,6 +9873,7 @@ break
 case 'makermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🛠️`, key: m.key }})
 var unicorn = await getBuffer(picak+'Maker Menu')
 await XeonBotInc.send5ButImg(from, `╔═══════✪「 MAKER 」	
 ╠${prefix}candy
@@ -10673,43 +10660,17 @@ break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-reply(`☞ ${pushname} ☜
+XeonBotInc.sendMessage(from, { react: { text: `❤️`, key: m.key }})
+reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
 
-𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-   𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔 !!!`)
+            🌹🌹🌹🌹🌹
+𝐖𝐎𝐋𝐃 𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓!!!`)
 break
-case 'Hi': 
+case 'rate us': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🖐️`, key: m.key }})
-reply(`හායි  ඉතින් කොහොමද ඔයාට 👋👋!!`)
-break
-case 'Gm': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
-reply(`Good morning bn !!!`)
-break
- case 'mn':
-{      
-   let txt = `「 *LEADERBOARD* 」\n\n`
-     for (let i of _buruan){
-     txt += `➸ *ID :* ${i.id}\n`
-     txt += `*🐟Fish* : ${i.ikan}\n`
-     txt += `*🐔Chicken* : ${i.ayam}\n`
-     txt += `*🐇Rabbit* : ${i.kelinci}\n`
-     txt += `*🐑Sheep* : ${i.domba}\n`
-     txt += `*🐄Cow* : ${i.sapi}\n`
-     txt += `*🐘Elephant* : ${i.gajah}\n\n`
-     }
-    reply(txt)       
-  }
- break
-case 'Gn': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
-reply(`good night bn 😂😂 !!!`)
+XeonBotInc.sendMessage(from, { react: { text: `☆️`, key: m.key }})
+reply(`𝐓𝐇𝐀𝐍𝐊𝐒 𝐑𝐀𝐓𝐄!!!`)
 break
             default:
                 if (budy.startsWith('=>')) {
