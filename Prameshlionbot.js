@@ -1093,9 +1093,11 @@ const latensie = speed() - timestampe
 │𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │
 │
-│
-│ *✧ᴄᴀʟᴇɴᴅᴀʀ:* *${thisDay}*, *${day}* 
-│ *✧ᴛɪᴍᴇ:* *${moment.tz('Africa/Harare').format('HH:mm:ss')}*
+│       subscribe please 
+│             👇👇
+│ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
+│    whatsapp group 
+│https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
