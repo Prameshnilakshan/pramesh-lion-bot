@@ -1,6 +1,8 @@
-//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-//◈━━━━━━━━━━━━━◈
-//🦁🦁🦁🦁🦁🦁🦁🦁🦁🦁🦁🦁//
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒//
+//✿✿✿✿✿✿✿✿✿✿✿✿✿//
+//create by pramesh🦁//
+//◈━━━━━━━━━━━━━◈//
+//🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹//
 
 require('./settings')
 const { default: NexusNwIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
@@ -133,37 +135,66 @@ async function startGojoMdNx() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
+
 //welcome\\
-        let nama = await GojoMdNx.getName(num)
+        let nama = await XeonBotInc.getName(num)
 memb = metadata.participants.length
-
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.ibb.co/Kbh1YYg/welcome-neon-sign-on-brick-wall-background-4k-footage-free-video.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
-
-Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.ibb.co/t8vRyGZ/neon-sign-good-bye-speech-bubble-frame-dark-background-neon-sign-good-bye-speech-bubble-frame-dark-b.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+XeonWlcm = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
-                    GojoMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-                 
-   ├  හායි
-   ├   ඔයාව සාදරෙයෙන්
-   ├          ආදරයෙන් ❤️
-   ├           පිලිගන්නව
-   ├🤗
-   ├  ❤️🧡💛💚💙💜🤎🖤🤍
-   └───────────────┈ ⳹`} )
-                } else if (anu.action == 'remove') {
-                    GojoMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
+                const xeonbuffer = await getBuffer(ppuser)
+                let xeonName = num
+                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+	            const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
+	            const xmembers = metadata.participants.length
+                let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                 xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
 
-⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+🤭🌹 Welcome To  ${metadata.subject}
+🤭🌹 ${xmembers} Members
+
+Date  =  ${xdate}
+Time  =  ${xtime} `
+      //if you copy the code value,
+   //dont forget to put my name(Xeon) as credit
+   //you fail to put, i sue you for sure!
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '🙏WELCOME🙏'}, type: 1}
+    ]
+let buttonMessage = {
+    image: { url: 'https://i.ibb.co/q5W2THG/welcome-neon-sign-on-brick-wall-background-4k-footage-free-video.jpg},
+caption: xeonbody,
+footer: `${footer}`,
+buttons,
+headerType: 4
+}
+XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+                 } else if (anu.action == 'remove') {
+                	const xeonbuffer = await getBuffer(ppuser)
+                    const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+	                const xeondate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
+                	let xeonName = num
+                    const xeonmembers = metadata.participants.length
+                    let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                     xeonbody = `😒🌹 Bye👋 @${xeonName.split("@")[0]}
+
+😒🌹 Left From  ${metadata.subject}
+😒🌹 ${xeonmembers} Members
+                    
+Date =  ${xeondate}
+Time =  ${xeontime} `
+
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '👎BYE👎'}, type: 1}
+    ]
+    let buttonMessage = {
+        image: { url: 'https://i.ibb.co/YWDBVhJ/neon-sign-good-bye-speech-bubble-frame-dark-background-neon-sign-good-bye-speech-bubble-frame-dark-b.jpg'},
+    caption: xeonbody,
+    footer: `${footer}`,
+    buttons,
+    headerType: 4
+    }
+XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 }
             }
         } catch (err) {
