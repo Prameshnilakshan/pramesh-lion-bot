@@ -178,10 +178,10 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `owner`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
 ]
 let buttonMessage = {
-    image: { url: 'https://i.ibb.co/q5W2THG/welcome-neon-sign-on-brick-wall-background-4k-footage-free-video.jpg'},
+    image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'},
 caption: xeonbody,
 footer: `${footer}`,
 buttons,
@@ -215,10 +215,10 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'බායි😇'}, type: 1}
+{buttonId: `owner`, buttonText: {displayText: 'බායි😇'}, type: 1}
 ]
     let buttonMessage = {
-        image: { url: 'https://i.ibb.co/YWDBVhJ/neon-sign-good-bye-speech-bubble-frame-dark-background-neon-sign-good-bye-speech-bubble-frame-dark-b.jpg'},
+        image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'},
     caption: xeonbody,
     footer: `${footer}`,
     buttons,
