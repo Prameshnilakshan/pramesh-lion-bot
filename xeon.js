@@ -181,7 +181,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
 ]
 let buttonMessage = {
-    image: { url: 'https://i.ibb.co/q5W2THG/welcome-neon-sign-on-brick-wall-background-4k-footage-free-video.jpg},
+    image: { url: 'https://i.ibb.co/q5W2THG/welcome-neon-sign-on-brick-wall-background-4k-footage-free-video.jpg'},
 caption: xeonbody,
 footer: `${footer}`,
 buttons,
