@@ -8828,14 +8828,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `
-                   ╒══════════════════╕        
-                   ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ /n
-                   ├         🦁🦁🦁🦁 /n
-                   ├      
-                   ├ ${pushname}  /n     
-                   ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න  /n
-                   ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩ /n
-                   ╘══════════════════╝\n\n`,
+                     ╒════════════════╕        
+                     ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+                     ├         🦁🦁🦁🦁
+                     ├      
+                     ├ ${pushname} 
+                     ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න
+                     ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
+                     ╘════════════════╝\n\n`,
                     buttonText: "Menu",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -8866,6 +8866,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "Group Menu ✨",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
+										},
+										{
+										"title": "Logo Menu🌁",
+										"description": "Displays The List Of Main Features",
+										"rowId": `${prefix}logo1`
 										},
 										{
 										"title": "Maker Menu 🌈",
@@ -10674,6 +10679,26 @@ case 'gm':
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn !!!`)
+case 'lion': 
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `⚙️️`, key: m.key }})
+reply(` ⚙️⚙️⚙️⚙️⚙️setting `  
+ let buttons = [
+      {
+       buttonId: `${prefix + command}`, 
+       buttonText: {
+        displayText: 'Mine Again⛏️'
+      }, type: 1},
+    ]
+    let buttonMessage = {
+      image: { url: './storage/image/tambang.jpg' },
+      caption: caption,
+      footer: pushname,
+      buttons: buttons,
+      headerType: 4
+     }
+     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })  )
 break
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
