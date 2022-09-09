@@ -10683,22 +10683,7 @@ case 'lion':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `⚙️️`, key: m.key }})
-reply(` ⚙️⚙️⚙️⚙️⚙️setting `  
- let buttons = [
-      {
-       buttonId: `${prefix + command}`, 
-       buttonText: {
-        displayText: 'Mine Again⛏️'
-      }, type: 1},
-    ]
-    let buttonMessage = {
-      image: { url: './storage/image/tambang.jpg' },
-      caption: caption,
-      footer: pushname,
-      buttons: buttons,
-      headerType: 4
-     }
-     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })  )
+reply(` ⚙️⚙️⚙️⚙️⚙️settings`)
 break
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
