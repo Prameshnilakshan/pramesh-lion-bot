@@ -10594,25 +10594,88 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OTHER 」
 ╠ ${prefix}report [bug]
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
+case 'logo1':
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🌁`, key: m.key }})
+var unicorn = await getBuffer(picak+'Logo Menu')
+await XeonBotInc.send5ButImg(from, `🌄candy
+🌄christmas
+🌄3dchristmas
+🌄sparklechristmas
+🌄deepsea
+🌄scifi
+🌄rainbow
+🌄waterpipe
+🌄spooky
+🌄pencil
+🌄circuit
+🌄discovery
+🌄metalic
+🌄fiction
+🌄demon
+🌄transformer
+🌄berry
+🌄thunder
+🌄magma
+🌄3dstone
+🌄neonlight
+🌄glitch
+🌄harrypotter
+🌄brokenglass
+🌄papercut
+🌄watercolor
+🌄multicolor
+🌄neondevil
+🌄underwater
+🌄graffitibike
+🌄snow
+🌄cloud
+🌄honey
+🌄ice
+🌄fruitjuice
+🌄biscuit
+🌄wood
+🌄chocolate
+🌄strawberry
+🌄matrix
+🌄blood
+🌄dropwater
+🌄toxic
+🌄lava
+🌄rock
+🌄bloodglas
+🌄hallowen
+🌄darkgold
+🌄joker
+🌄firework
+🌄skeleton
+🌄blackpink
+🌄sand
+🌄glue
+🌄1917
+🌄leaves
+🌄neon` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔 !!!`)
 break
-case 'Hi': 
+case 'hi': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🖐️`, key: m.key }})
 reply(`හායි  ඉතින් කොහොමද ඔයාට 👋👋!!`)
 break
-case 'Gm': 
+case 'gm': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn !!!`)
 break
-case 'Gn': 
+case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
