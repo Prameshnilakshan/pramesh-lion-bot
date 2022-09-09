@@ -156,37 +156,26 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
 	            const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                 xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-                 
-   ├  හායි
-   ├   ඔයාව සාදරෙයෙන්
-   ├          ආදරයෙන් ❤️
-   ├           පිලිගන්නව
-   ├🤗
-   ├  ❤️🧡💛💚💙💜🤎🖤🤍
-   └───────────────┈ ⳹`
+                 xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
+
+🤭🌹 Welcome To  ${metadata.subject}
+🤭🌹 ${xmembers} Members
+
+Date  =  ${xdate}
+Time  =  ${xtime} `
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `Lion`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
-]
-    let buttonMessage = {
-      image: { url: './storage/image/tambang.jpg' },
-      caption: caption,
-      footer: pushname,
-      buttons: buttons,
-      headerType: 4
-     }
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '🙏WELCOME🙏'}, type: 1}
+    ]
+let buttonMessage = {
+    image: { url: 'https://i.ibb.co/q5W2THG/welcome-neon-sign-on-brick-wall-background-4k-footage-free-video.jpg},
+caption: xeonbody,
+footer: `${footer}`,
+buttons,
+headerType: 4
+}
      XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
@@ -195,28 +184,17 @@ let buttons = [
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                     xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
-   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-   ├              ❤️⃝😒ꦿ࿔
-   ├「 @${xeonName.split("@")[0]}  」
-   ├මූ ඉතින් හිටියත් වැඩක් නෑනෙ.
-   ├      ගියපු එකමයි හොද      
-   ├             😏😈👋
-   └───────────────┈ ⳹`
-      //if you copy the code value,
-   //dont forget to put my name(Xeon) as credit
-   //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'බායි😇'}, type: 1}
-]
+                     xeonbody = `😒🌹 Bye👋 @${xeonName.split("@")[0]}
+
+😒🌹 Left From  ${metadata.subject}
+😒🌹 ${xeonmembers} Members
+                    
+Date =  ${xeondate}
+Time =  ${xeontime} `
+
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '👎BYE👎'}, type: 1}
+    ]
     let buttonMessage = {
         image: { url: 'https://i.ibb.co/YWDBVhJ/neon-sign-good-bye-speech-bubble-frame-dark-background-neon-sign-good-bye-speech-bubble-frame-dark-b.jpg'},
     caption: xeonbody,
