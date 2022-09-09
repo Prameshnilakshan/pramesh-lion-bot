@@ -10679,11 +10679,14 @@ case 'gm':
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn !!!`)
-case 'lion': 
+case 'bay': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `⚙️️`, key: m.key }})
-reply(` ⚙️⚙️⚙️⚙️⚙️settings`)
+XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
+reply(` ඌ හිටියත් වැඩක් නෑනෙ
+මේ group එකේ link එක මේක shier කරල තව අය add කරගමු
+  https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
+  ❤️🧡💛💚💙💜🤎🖤🤍  ️` )
 break
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
