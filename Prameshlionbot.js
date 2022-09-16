@@ -6142,6 +6142,7 @@ break
 case 'gimage': case 'img': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🏙️`, key: m.key }})
 if (!args[0]) return reply("What picture are you looking for??")
 let gis = require('g-i-s')
 gis(args.join(" "), async (error, result) => {
