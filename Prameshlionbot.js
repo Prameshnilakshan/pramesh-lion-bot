@@ -6139,7 +6139,7 @@ reply(teks)
 })
 }
 break
-case 'gimage': case 'googleimage': {
+case 'gimage': case 'img': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!args[0]) return reply("What picture are you looking for??")
@@ -6148,15 +6148,16 @@ gis(args.join(" "), async (error, result) => {
 n = result
 images = n[Math.floor(Math.random() * n.length)].url
 let buttons = [
-{buttonId: `gimage ${args.join(" ")}`, buttonText: {displayText: 'Next Image 👀'}, type: 1}
+{buttonId: `gimage ${args.join(" ")}`, buttonText: {displayText: '🌁𝐍𝐄𝐗𝐓 𝐈𝐌𝐀𝐆𝐄🌁'}, type: 1}
 ]
 let buttonMessage = {
 image: { url: images },
-caption: `*| GOOGLE IMAGE |*
-
-${global.themeemoji} Query : ${text}
-${global.themeemoji} Media Url : ${images}`,
-footer: `${global.botname}`,
+caption: `*|☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ |*
+       
+     ෴𝐈𝐌𝐀𝐆𝐄෴
+💫 Query : ${text}
+📝Media Url : ${images}`,
+footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
@@ -7001,7 +7002,7 @@ xeonkey.Film(q)
                XeonBotInc.sendMessage(from, { image: { url: data[0].thumb}, caption: krl }, { quoted: fdocs })
 });
 break
-case 'img':
+case 'photo img':
 case 'image': {
 	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
