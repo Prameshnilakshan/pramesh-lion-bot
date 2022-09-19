@@ -1292,7 +1292,6 @@ if (q.includes('--help')) return reply(examkosong)
   addEmerald(m.sender, emeraldnya)	     
   }   
     break
-break  
    case 'pp': case 'pn':{
  	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
