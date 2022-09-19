@@ -1292,6 +1292,27 @@ if (q.includes('--help')) return reply(examkosong)
   addEmerald(m.sender, emeraldnya)	     
   }   
     break
+break  
+   case 'pp': case 'pn':{
+ 	if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
+  let buttons = [
+      {
+       buttonId: `${prefix}lion`, 
+       buttonText: {
+        displayText: '🪀𝚂𝙲𝚁𝙸𝙿𝚃🪀'
+      }, type: 1},
+    ]
+    let buttonMessage = {
+      image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' },
+      caption: caption,
+      footer: "I AM ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+      buttons: buttons,
+      headerType: 4
+     }
+     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
+  break
   //transaction\\
  case 'beli': case 'buy':{
  	if (isBan) return reply(mess.ban)	 			
@@ -8790,11 +8811,6 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
-                                    id: 'bbb'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: '📃List Menu📃',
                                     id: 'command'
                                 }  
@@ -8821,7 +8837,6 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `📚All Menu📚`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `📃List Menu📃`, id: 'command'} },
-             { quickReplyButton: { displayText: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`, id: 'bbb'} },
             { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
