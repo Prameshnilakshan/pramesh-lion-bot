@@ -1265,12 +1265,12 @@ if (q.includes('--help')) return reply(examkosong)
   var emasnya = emas[Math.floor(Math.random() * emas.length)]  
   var emeraldnya = emerald[Math.floor(Math.random() * emerald.length)]  
   setTimeout( () => {
-  let caption = `[ MINING RESULT ]\n*Iron* : ${besinya}\n*Gold* : ${emasnya}\n*Emerald* : ${emeraldnya}`
+  let caption = `*▏☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▏* /n 𝐜𝐥𝐢𝐜𝐤 𝐬𝐜𝐫𝐢𝐩𝐭 /n ⚙️⚙️⚙️⚙️⚙️⚙️⚙️`
   let buttons = [
       {
-       buttonId: `${prefix + command}`, 
+       buttonId: `${prefix}bbb`, 
        buttonText: {
-        displayText: 'Mine Again⛏️'
+        displayText: '🪀𝐒𝐂𝐑𝐈𝐏𝐓🪀️'
       }, type: 1},
     ]
     let buttonMessage = {
@@ -1284,7 +1284,7 @@ if (q.includes('--help')) return reply(examkosong)
    
    }, 7000)  
   setTimeout( () => {
-  reply(`@${m.sender.split("@")[0]} Started Mining🎣`)     
+  reply(`@${m.sender.split("@")[0]} ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`)     
   }, 1500)
   kurangDarah(m.sender, 10)
   addBesi(m.sender, besinya)
@@ -8790,6 +8790,11 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
                                 }
                             }, {
                                 quickReplyButton: {
+                                    displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
+                                    id: 'bbb'
+                                }
+                            }, {
+                                quickReplyButton: {
                                     displayText: '📃List Menu📃',
                                     id: 'command'
                                 }  
@@ -8816,6 +8821,7 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
             { urlButton: { displayText: `Script 🍜`, url: `${botscript}` } },
             { quickReplyButton: { displayText: `📚All Menu📚`, id: 'allmenu'} },
             { quickReplyButton: { displayText: `📃List Menu📃`, id: 'command'} },
+             { quickReplyButton: { displayText: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`, id: 'bbb'} },
             { quickReplyButton: { displayText: `🙋‍♂️Owner🙋‍♂️`, id: 'owner'} }
         	]
         	XeonBotInc.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'), mimetype: `${docs}`, fileName: `${ownername}`, templateButtons: buttonmenu, footer: `${botname}`, mentionedJid: [m.sender] })
@@ -8879,7 +8885,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}logo1`
 										},
 										{
-										"title": "Maker Menu 🌈",
+										"title": "Logo 2🌈",
 										"description": "Displays The List Of Logo Making Features",
 										"rowId": `${prefix}logo2`
 									},
@@ -10606,7 +10612,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OTHER 」
 ╠ ${prefix}report [bug]
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
-case 'lion':
+case 'bbb':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
@@ -10620,7 +10626,7 @@ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
 https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_current=1
 
 💠💠💠💠💠💠💠💠💠💠💠
-*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*` + '' + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*` + '' + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐠𝐫𝐨𝐮𝐩","url": `${botscript}`}},{"quickReplyButton": {"displayText": "🪀𝐒𝐂𝐑𝐈𝐏𝐓🪀","id": 'bbb'}},{"quickReplyButton": {"displayText": "༒𝐀𝐋𝐈𝐕𝐄༒","id": 'alive'}},{"quickReplyButton": {"displayText": "📝𝐌𝐄𝐍𝐔📝","id": 'command'}}] )
 break
 case 'logo1':
 	   if (isBan) return reply(mess.ban)
