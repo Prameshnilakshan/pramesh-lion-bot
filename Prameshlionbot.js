@@ -1292,6 +1292,27 @@ if (q.includes('--help')) return reply(examkosong)
   addEmerald(m.sender, emeraldnya)	     
   }   
   break  
+   case 'anuhas': case 'pasidu':{
+ 	if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
+let caption = ` *▏☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ ▏* `
+  let buttons = [
+      {
+       buttonId: `${prefix}lion`, 
+       buttonText: {
+        displayText: '🪀𝚂𝙲𝚁𝙸𝙿𝚃🪀'
+      }, type: 1},
+    ]
+    let buttonMessage = {
+      image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' },
+      caption: caption,
+      footer: pushname,
+      buttons: buttons,
+      headerType: 4
+     }
+     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
+    break
   //transaction\\
  case 'beli': case 'buy':{
  	if (isBan) return reply(mess.ban)	 			
@@ -8836,6 +8857,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                      ├      
                      ├ ${pushname} 
                      ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න
+                     
+                     
+                     
+                     
                      ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
                      ╘════════════════╝\n\n`,
                     buttonText: "Menu",
@@ -8877,7 +8902,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										{
 										"title": "Maker Menu 🌈",
 										"description": "Displays The List Of Logo Making Features",
-										"rowId": `${prefix}indomenu`
+										"rowId": `${prefix}logo2`
 									},
 									{
 										"title": "Sound Menu 🎵",
@@ -9815,9 +9840,10 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 RPG 」
 ╠${prefix}leaderboard
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
-case 'makermenu':
+case 'logo2':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🖼️`, key: m.key }})
 var unicorn = await getBuffer(picak+'Maker Menu')
 await XeonBotInc.send5ButImg(from, `╔═══════✪「 MAKER 」	
 ╠${prefix}candy
@@ -10600,6 +10626,22 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OTHER 」
 ╠ ${prefix}request
 ╠ ${prefix}report [bug]
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+break
+case 'lion':
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
+var unicorn = await getBuffer(picak+'How to create')
+await XeonBotInc.send5ButImg(from, `*▕☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▕*
+
+*🪀𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐄𝐋 𝐋𝐈𝐍𝐊🪀*
+https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
+
+*🪀𝐁𝐎𝐓 𝐒𝐂𝐑𝐈𝐏𝐓 𝐋𝐈𝐍𝐊🪀*
+https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_current=1
+
+💠💠💠💠💠💠💠💠💠💠💠
+*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "𝐘𝐎𝐔𝐓𝐔𝐁𝐄","url": `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`}},{"urlButton": {"displayText": "𝐖𝐇𝐀𝐓'𝐬 𝐚𝐩𝐩 𝐠𝐫𝐨𝐮𝐩","url": `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M`}},{"quickReplyButton": {"displayText": "🪀𝐏𝐑𝐀𝐌𝐄𝐒𝐇 𝐋𝐈𝐎𝐍 𝐁𝐎𝐓🪀","id": 'lion'}},{"quickReplyButton": {"displayText": "𝐎𝐖𝐍𝐄𝐑","id": 'owner'}},{"quickReplyButton": {"displayText": "🔗𝐌𝐄𝐍𝐔🔗","id": 'command'}}] )
 break
 case 'logo1':
 	   if (isBan) return reply(mess.ban)
