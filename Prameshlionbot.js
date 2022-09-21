@@ -563,8 +563,8 @@ XeonBotInc.sendReadReceipt(from, m.sender, [m.key.id])}
 	// AntiLinkgc
 if (AntiLink) {
 linkgce = await XeonBotInc.groupInviteCode(from)
-if (budy.includes(`https://chat.whatsapp.com/${linkgce}`)) {
-reply(`\`\`\`「 Group Link Detected 」\`\`\`\n\nYou won't be kicked by a bot because what you send is a link to this group`)
+if (budy.includes(`https://chat.whatsapp.com/`)) {
+reply(`\`\`\`「 Group Link Detected 」\`\`\`\n\nYou won't be kicked by a bot because what you send is a link to this group 👎`)
 } else if (isUrl(m.text)) {
 bvl = `\`\`\`「 Group Link Detected 」\`\`\`\n\nAdmin has sent a link, admin is free to post any link`
 if (isAdmins) return reply(bvl)
@@ -627,15 +627,15 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${
 }
 //antilink youtube video by xeon
 if (AntiLinkYoutubeVid)
-if (budy.includes("https://youtu.be/")){
+if (budy.includes("https://chat.whatsapp.com/")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 YoutTube Video Link Detected 」\`\`\`\n\nAdmin has sent a youtube video link, admin is free to send any link😇`
+bvl = `\`\`\`「 * ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ Group link Detected* 」\`\`\`\n\nAdmin has sent a youtube video link, admin is free to send any link😇`
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 YouTube Video Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending youtube video link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+XeonBotInc.sendMessage(from, {text:`\`\`\`「  *☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ Group link Detected* 」\`\`\`\n\n@${kice.split("@")[0]} Has kicked he is grop link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink youtube channel by xeon
@@ -1091,8 +1091,7 @@ const latensie = speed() - timestampe
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
 │𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│        
-│        ${global.group}
+│
 │
 │       subscribe please 
 │             👇👇
@@ -9782,7 +9781,7 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 GROUP 」
 ╠${prefix}antilinktg [on/off]
 ╠${prefix}antilinktt [on/off]
 ╠${prefix}antilinkytch [on/off]
-╠${prefix}antilinkytvid [on/off]
+╠${prefix}antilinkGROUP [on/off]
 ╠${prefix}antilinkig [on/off]
 ╠${prefix}antilinkfb [on/off]
 ╠${prefix}antilinktwit [on/off]
@@ -10703,11 +10702,11 @@ case 'gm':
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
 reply(`Good morning bn !!!`)
-case 'bay': 
+case 'wkwwk': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
-reply(` ඌ හිටියත් වැඩක් නෑනෙ
+reply(` *||𝐖𝐄𝐋𝐂𝐎𝐌𝐄||*
 මේ group එකේ link එක මේක shier කරල තව අය add කරගමු
   https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
   ❤️🧡💛💚💙💜🤎🖤🤍  ️` )
