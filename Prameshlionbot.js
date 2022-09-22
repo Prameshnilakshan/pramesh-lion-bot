@@ -346,6 +346,132 @@ sellerJid: '0@s.whatsapp.net'
 }
 }
 }
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ time sestam
+
+const timuu = moment.tz('Africa/Harare').format('HH:mm:ss')
+const hariRaya = new Date('Apr 02, 2022 01:45:00')
+const sekarang = new Date().getTime();
+const Selisih = hariRaya - sekarang;
+const jhari = Math.floor( Selisih / (1000 * 60 * 60 * 24));
+const jjam = Math.floor( Selisih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+const mmmenit = Math.floor( Selisih % (1000 * 60 * 60) / (1000 * 60));
+const ddetik = Math.floor( Selisih % (1000 * 60) / 1000);
+const ultah = `${jhari}Hari ${jjam}Jam ${mmmenit}Menit ${ddetik}Detik`
+var date = new Date();
+var tahun = date.getFullYear();
+var bulan1 = date.getMonth();
+var ikiya = date.getMonth()
+var gakroh = date.getDate();
+var tanggal = date.getDate();
+var hari = date.getDay();
+var jam = date.getHours();
+var menit = date.getMinutes();
+var detik = date.getSeconds();
+var waktoo = date.getHours();
+switch(hari) {
+    case 0: hari = "MONDAY"; //limitAdd(sender, limit)
+    break;
+    case 1: hari = "TUESDAY"; //limitAdd(sender, limit)
+    break;
+    case 2: hari = "WEDNESDAY"; //limitAdd(sender, limit)
+    break;
+    case 3: hari = "THURSDAY"; //limitAdd(sender, limit)
+    break;
+    case 4: hari = "THURSDAY"; //limitAdd(sender, limit)
+    break;
+    case 5: hari = "SATURDAY"; //limitAdd(sender, limit)
+    break;
+    case 6: hari = "SUNDAY"; //limitAdd(sender, limit)
+    break;
+    }
+    switch(bulan1) {
+    case 0: bulan1 = "January"; //limitAdd(sender, limit)
+    break;
+    case 1: bulan1 = "February"; //limitAdd(sender, limit)
+    break;
+    case 2: bulan1 = "March"; //limitAdd(sender, limit)
+    break;
+    case 3: bulan1 = "Aprill"; //limitAdd(sender, limit)
+    break;
+    case 4: bulan1 = "May"; //limitAdd(sender, limit)
+    break;
+    case 5: bulan1 = "June"; //limitAdd(sender, limit)
+    break;
+    case 6: bulan1 = "July"; //limitAdd(sender, limit)
+    break;
+    case 7: bulan1 = "August"; //limitAdd(sender, limit)
+    break;
+    case 8: bulan1 = "September"; //limitAdd(sender, limit)
+    break;
+    case 9: bulan1 = "October"; //limitAdd(sender, limit)
+    break;
+    case 10: bulan1 = "November"; //limitAdd(sender, limit)
+    break;
+    case 11: bulan1 = "December"; //limitAdd(sender, limit)
+    break;
+    }
+    switch(gakroh) {
+    case 0: gakroh = "sacred"; //limitAdd(sender, limit)
+    break;
+    case 1: gakroh = "safari"; //limitAdd(sender, limit)
+    break;
+    case 2: gakroh = "rabi'ul-awal"; //limitAdd(sender, limit)
+    break;
+    case 3: gakroh = "rabi'ul-akhir"; //limitAdd(sender, limit)
+    break;
+    case 4: gakroh = "syawal"; //limitAdd(sender, limit)
+    break;
+    case 5: gakroh = "jumadil-akhir"; //limitAdd(sender, limit)
+    break;
+    case 6: gakroh = "rejab"; //limitAdd(sender, limit)
+    break;
+    case 7: gakroh = "syaaban"; //limitAdd(sender, limit)
+    break;
+    case 8: gakroh = "ramadan"; //limitAdd(sender, limit)
+    break;
+    case 9: gakroh = "early friday"; //limitAdd(sender, limit)
+    break;
+    }
+    var tampilTanggal = "" + hari + ", " + tanggal + " " + bulan1 + " " + tahun;
+    var tampilWaktu = "" + jam + ":" + menit + ":" + detik ;   
+    myMonths = ["January","February","March","Aprill","May","June","July","August","September","October","November","December"];
+    myDays = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+    myDoms = ["sacred","safari","first ribal","last ribal","syawal","late Friday","rejab","syaaban","ramadan","early friday"];
+    var tgl = new Date();
+    detik = tgl.getSeconds();
+    menit = tgl.getMinutes();
+    jam = tgl.getHours();
+    var ampm = jam >= 12 ? 'PM' : 'AM';
+    var day = tgl.getDate()
+    bulan = tgl.getMonth()
+    var thisDay = tgl.getDay(),
+    thisDay = myDays[thisDay];
+    var yy = tgl.getYear()
+    var year = (yy < 1000) ? yy + 1900 : yy;
+    const ini_tanggal = `${day} - ${myMonths[bulan]} - ${year}`
+    //message filter
+    if (isCmd) msgFilter.addFilter(from)
+    
+// TIME 
+const time2 = moment().tz('Africa/Harare').format('HH:mm:ss')
+if(time2 < "23:59:00"){
+var ucapannya2 = `Good Night 🌒`
+}
+if(time2 < "19:00:00"){
+var ucapannya2 = `Good night🌙`
+}
+if(time2 < "18:00:00"){
+var ucapannya2 = `Good afternoon 🌅`
+}
+if(time2 < "15:00:00"){
+var ucapannya2 = `Good afternoon 🌞`
+}
+if(time2 < "10:00:00"){
+var ucapannya2 = `Good morning 🌄`
+}
+if(time2 < "05:00:00"){
+var ucapannya2 = `Good morning 🌅`
+}
 //FAKEREPLY LOCATION
 const flokasi = {
 key : {
@@ -1098,6 +1224,9 @@ const latensie = speed() - timestampe
 │ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
 │    whatsapp group 
 │https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
+
+🌎     *✧ᴄᴀʟᴇɴᴅᴀʀ:* *${thisDay}*, *${day}* 
+⏰ *✧ᴛɪᴍᴇ:* *${moment.tz('Africa/Harare').format('HH:mm:ss')}*
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`
