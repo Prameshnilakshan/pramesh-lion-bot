@@ -9131,728 +9131,728 @@ case 'allmenu':
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }})
 var unicorn = await getBuffer(picak+'All Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
- ◈━━━━━━━━━━━━━◈
+await XeonBotInc.send5ButImg(from, `◈━━━━━━━━━━━━━◈
  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
  ◈━━━━━━━━━━━━━◈
-╠ ${prefix}self
-╠ ${prefix}public
-╠ ${prefix}antitag
-╠ ${prefix}rentbot [add/del]
-╠ ${prefix}rentlist
-╠ ${prefix}ban [add/del]
-╠ ${prefix}banchat [on/off]
-╠ ${prefix}join [link]
-╠ ${prefix}leavegc
-╠ ${prefix}setbio
-╠ ${prefix}bcgroup [text]
-╠ ${prefix}bcall [text]
-╠ ${prefix}bcimage [image]
-╠ ${prefix}bcvideo [video]
-╠ ${prefix}bcaudio [audio]
-╠ ${prefix}bcloc [text]
-╠ ${prefix}setppbot [image]
-╠ ${prefix}setexif
-╠ ${prefix}block [tag/number]
-╠ ${prefix}unblock [tag/number]
-╠ ${prefix}coowner [add/del]
+ ╔═══════✪「 OWNER 」	
+╠ ${global.lion} ${prefix}self
+╠ ${global.lion} ${prefix}public
+╠ ${global.lion} ${prefix}antitag
+╠ ${global.lion} ${prefix}rentbot [add/del]
+╠ ${global.lion} ${prefix}rentlist
+╠ ${global.lion} ${prefix}ban [add/del]
+╠ ${global.lion} ${prefix}banchat [on/off]
+╠ ${global.lion} ${prefix}join [link]
+╠ ${global.lion} ${prefix}leavegc
+╠ ${global.lion} ${prefix}setbio
+╠ ${global.lion} ${prefix}bcgroup [text]
+╠ ${global.lion} ${prefix}bcall [text]
+╠ ${global.lion} ${prefix}bcimage [image]
+╠ ${global.lion} ${prefix}bcvideo [video]
+╠ ${global.lion} ${prefix}bcaudio [audio]
+╠ ${global.lion} ${prefix}bcloc [text]
+╠ ${global.lion} ${prefix}setppbot [image]
+╠ ${global.lion} ${prefix}setexif
+╠ ${global.lion} ${prefix}block [tag/number]
+╠ ${global.lion} ${prefix}unblock [tag/number]
+╠ ${global.lion} ${prefix}coowner [add/del]
 ╠═══════✪「 GROUP 」	        
-╠${prefix}grousetting
-╠${prefix}grouplink
-╠${prefix}ephemeral [option]
-╠${prefix}setgcpp [image]
-╠${prefix}setname [text]
-╠${prefix}setdesc [text]
-╠${prefix}group 
-╠${prefix}resetgrouplink
-╠${prefix}editinfo [option]
-╠${prefix}add [user]
-╠${prefix}kick [reply/tag]
-╠${prefix}hidetag [text]
-╠${prefix}tagall [text]
-╠${prefix}antilinkgc [on/off]
-╠${prefix}antilinktg [on/off]
-╠${prefix}antilinktt [on/off]
-╠${prefix}antilinkytch [on/off]
-╠${prefix}antilinkytvid [on/off]
-╠${prefix}antilinkig [on/off]
-╠${prefix}antilinkfb [on/off]
-╠${prefix}antilinktwit [on/off]
-╠${prefix}antilinkall [on/off]
-╠${prefix}antivirus [on/off]
-╠${prefix}antitoxic [on/off]
-╠${prefix}antiwame [on/off]
-╠${prefix}autoreply [on/off]
-╠${prefix}nsfw [on/off]
-╠${prefix}promote [reply/tag]
-╠${prefix}demote [reply/tag]
-╠${prefix}react [reply emoji]
-╠${prefix}vote
-╠${prefix}devote
-╠${prefix}upvote
-╠${prefix}checkvote
-╠${prefix}delvote
+╠ ${global.lion}${prefix}grousetting
+╠ ${global.lion}${prefix}grouplink
+╠ ${global.lion}${prefix}ephemeral [option]
+╠ ${global.lion}${prefix}setgcpp [image]
+╠ ${global.lion}${prefix}setname [text]
+╠ ${global.lion}${prefix}setdesc [text]
+╠ ${global.lion}${prefix}group 
+╠ ${global.lion}${prefix}resetgrouplink
+╠ ${global.lion}${prefix}editinfo [option]
+╠ ${global.lion}${prefix}add [user]
+╠ ${global.lion}${prefix}kick [reply/tag]
+╠ ${global.lion}${prefix}hidetag [text]
+╠ ${global.lion}${prefix}tagall [text]
+╠ ${global.lion}${prefix}antilinkgc [on/off]
+╠ ${global.lion}${prefix}antilinktg [on/off]
+╠ ${global.lion}${prefix}antilinktt [on/off]
+╠ ${global.lion}${prefix}antilinkytch [on/off]
+╠ ${global.lion}${prefix}antilinkytvid [on/off]
+╠ ${global.lion}${prefix}antilinkig [on/off]
+╠ ${global.lion}${prefix}antilinkfb [on/off]
+╠ ${global.lion}${prefix}antilinktwit [on/off]
+╠ ${global.lion}${prefix}antilinkall [on/off]
+╠ ${global.lion}${prefix}antivirus [on/off]
+╠ ${global.lion}${prefix}antitoxic [on/off]
+╠ ${global.lion}${prefix}antiwame [on/off]
+╠ ${global.lion}${prefix}autoreply [on/off]
+╠ ${global.lion}${prefix}nsfw [on/off]
+╠ ${global.lion}${prefix}promote [reply/tag]
+╠ ${global.lion}${prefix}demote [reply/tag]
+╠ ${global.lion}${prefix}react [reply emoji]
+╠ ${global.lion}${prefix}vote
+╠ ${global.lion}${prefix}devote
+╠ ${global.lion}${prefix}upvote
+╠ ${global.lion}${prefix}checkvote
+╠ ${global.lion}${prefix}delvote
 ╠═══════✪「 MAKER 」
-╠${prefix}candy
-╠${prefix}blackpinkneon
-╠${prefix}deepsea
-╠${prefix}scifi
-╠${prefix}fiction
-╠${prefix}berry
-╠${prefix}fruitjuice
-╠${prefix}biscuit
-╠${prefix}wood
-╠${prefix}chocolate
-╠${prefix}matrix
-╠${prefix}blood
-╠${prefix}halloween
-╠${prefix}wicker
-╠${prefix}darkgold
-╠${prefix}firework
-╠${prefix}skeleton
-╠${prefix}sand
-╠${prefix}glue
-╠${prefix}leaves
-╠${prefix}magma
-╠${prefix}lava
-╠${prefix}rock
-╠${prefix}bloodglas
-╠${prefix}underwater
-╠${prefix}textmaker
-╠${prefix}honey
-╠${prefix}ice
-╠${prefix}watercolor
-╠${prefix}multicolor
-╠${prefix}snow
-╠${prefix}harrypot
-╠${prefix}harrypotter
-╠${prefix}brokenglass
-╠${prefix}waterpipe
-╠${prefix}spooky
-╠${prefix}circuit
-╠${prefix}metallic
-╠${prefix}demon
-╠${prefix}sparklechristmas
-╠${prefix}christmas
-╠${prefix}3dchristmas
-╠${prefix}3dbox
-╠${prefix}waterdrop
-╠${prefix}lion2
-╠${prefix}papercut
-╠${prefix}transformer
-╠${prefix}neondevil
-╠${prefix}3davengers
-╠${prefix}3dstone
-╠${prefix}3dstone2
-╠${prefix}summertime
-╠${prefix}thunder
-╠${prefix}window
-╠${prefix}graffiti
-╠${prefix}graffitibike
-╠${prefix}pornhub
-╠${prefix}glitch
-╠${prefix}blackpink
-╠${prefix}glitch2
-╠${prefix}glitch3
-╠${prefix}3dspace
-╠${prefix}lion
-╠${prefix}3dneon
-╠${prefix}greenneon
-╠${prefix}bokeh
-╠${prefix}holographic
-╠${prefix}bear
-╠${prefix}wolf
-╠${prefix}joker
-╠${prefix}dropwater
-╠${prefix}dropwater2
-╠${prefix}thewall
-╠${prefix}neonlight
-╠${prefix}natural
-╠${prefix}carbon
-╠${prefix}pencil
-╠${prefix}blackpink2
-╠${prefix}neon
-╠${prefix}neonlight2
-╠${prefix}toxic
-╠${prefix}strawberry
-╠${prefix}discovery
-╠${prefix}1917
-╠ ${prefix}sci_fi
-╠ ${prefix}ancient
-╠ ${prefix}fabric
-╠ ${prefix}hoorror
-╠ ${prefix}whitebear
-╠ ${prefix}juice
-╠ ${prefix}batman
-╠ ${prefix}multicolor
-╠ ${prefix}collwall
-╠ ${prefix}wonderful
-╠ ${prefix}cool
-╠ ${prefix}sketch
-╠ ${prefix}marvel
-╠ ${prefix}foggy
-╠ ${prefix}writing
-╠ ${prefix}halloweenfire
-╠ ${prefix}halloween
-╠ ${prefix}watercolor
-╠ ${prefix}classic
+╠ ${global.lion}${prefix}candy
+╠ ${global.lion}${prefix}blackpinkneon
+╠ ${global.lion}${prefix}deepsea
+╠ ${global.lion}${prefix}scifi
+╠ ${global.lion}${prefix}fiction
+╠ ${global.lion}${prefix}berry
+╠ ${global.lion} ${global.lion} ${global.lion}${prefix}fruitjuice
+╠ ${global.lion}${prefix}biscuit
+╠ ${global.lion}${prefix}wood
+╠ ${global.lion}${prefix}chocolate
+╠ ${global.lion}${prefix}matrix
+╠ ${global.lion}${prefix}blood
+╠ ${global.lion}${prefix}halloween
+╠ ${global.lion}${prefix}wicker
+╠ ${global.lion}${prefix}darkgold
+╠ ${global.lion}${prefix}firework
+╠ ${global.lion}${prefix}skeleton
+╠ ${global.lion}${prefix}sand
+╠ ${global.lion}${prefix}glue
+╠ ${global.lion}${prefix}leaves
+╠ ${global.lion}${prefix}magma
+╠ ${global.lion}${prefix}lava
+╠ ${global.lion}${prefix}rock
+╠ ${global.lion}${prefix}bloodglas
+╠ ${global.lion}${prefix}underwater
+╠ ${global.lion}${prefix}textmaker
+╠ ${global.lion}${prefix}honey
+╠ ${global.lion}${prefix}ice
+╠ ${global.lion}${prefix}watercolor
+╠ ${global.lion}${prefix}multicolor
+╠ ${global.lion}${prefix}snow
+╠ ${global.lion}${prefix}harrypot
+╠ ${global.lion}${prefix}harrypotter
+╠ ${global.lion}${prefix}brokenglass
+╠ ${global.lion}${prefix}waterpipe
+╠ ${global.lion}${prefix}spooky
+╠ ${global.lion}${prefix}circuit
+╠ ${global.lion}${prefix}metallic
+╠ ${global.lion}${prefix}demon
+╠ ${global.lion}${prefix}sparklechristmas
+╠ ${global.lion}${prefix}christmas
+╠ ${global.lion}${prefix}3dchristmas
+╠ ${global.lion}${prefix}3dbox
+╠ ${global.lion}${prefix}waterdrop
+╠ ${global.lion}${prefix}lion2
+╠ ${global.lion}${prefix}papercut
+╠ ${global.lion}${prefix}transformer
+╠ ${global.lion}${prefix}neondevil
+╠ ${global.lion}${prefix}3davengers
+╠ ${global.lion}${prefix}3dstone
+╠ ${global.lion}${prefix}3dstone2
+╠ ${global.lion}${prefix}summertime
+╠ ${global.lion}${prefix}thunder
+╠ ${global.lion}${prefix}window
+╠ ${global.lion}${prefix}graffiti
+╠ ${global.lion}${prefix}graffitibike
+╠ ${global.lion}${prefix}pornhub
+╠ ${global.lion}${prefix}glitch
+╠ ${global.lion}${prefix}blackpink
+╠ ${global.lion}${prefix}glitch2
+╠ ${global.lion}${prefix}glitch3
+╠ ${global.lion}${prefix}3dspace
+╠ ${global.lion}${prefix}lion
+╠ ${global.lion}${prefix}3dneon
+╠ ${global.lion}${prefix}greenneon
+╠ ${global.lion}${prefix}bokeh
+╠ ${global.lion}${prefix}holographic
+╠ ${global.lion}${prefix}bear
+╠ ${global.lion}${prefix}wolf
+╠ ${global.lion}${prefix}joker
+╠ ${global.lion}${prefix}dropwater
+╠ ${global.lion}${prefix}dropwater2
+╠ ${global.lion}${prefix}thewall
+╠ ${global.lion}${prefix}neonlight
+╠ ${global.lion}${prefix}natural
+╠ ${global.lion}${prefix}carbon
+╠ ${global.lion}${prefix}pencil
+╠ ${global.lion}${prefix}blackpink2
+╠ ${global.lion}${prefix}neon
+╠ ${global.lion}${prefix}neonlight2
+╠ ${global.lion}${prefix}toxic
+╠ ${global.lion}${prefix}strawberry
+╠ ${global.lion}${prefix}discovery
+╠ ${global.lion}${prefix}1917
+╠ ${global.lion} ${prefix}sci_fi
+╠ ${global.lion} ${prefix}ancient
+╠ ${global.lion} ${prefix}fabric
+╠ ${global.lion} ${prefix}hoorror
+╠ ${global.lion} ${prefix}whitebear
+╠ ${global.lion} ${prefix}juice
+╠ ${global.lion} ${prefix}batman
+╠ ${global.lion} ${prefix}multicolor
+╠ ${global.lion} ${prefix}collwall
+╠ ${global.lion} ${prefix}wonderful
+╠ ${global.lion} ${prefix}cool
+╠ ${global.lion} ${prefix}sketch
+╠ ${global.lion} ${prefix}marvel
+╠ ${global.lion} ${prefix}foggy
+╠ ${global.lion} ${prefix}writing
+╠ ${global.lion} ${prefix}halloweenfire
+╠ ${global.lion} ${prefix}halloween
+╠ ${global.lion} ${prefix}watercolor
+╠ ${global.lion} ${prefix}classic
 ╠═════✪「 DOWNLOAD 」	
-╠${prefix}instagram [url]
-╠${prefix}igtv [url]
-╠${prefix}igstory [username]
-╠${prefix}facebook [url]
-╠${prefix}fbmp3 [url]
-╠${prefix}twitter [url]
-╠${prefix}twittermp3 [url]
-╠${prefix}tiktok [url]
-╠${prefix}tiktokaudio[url]
-╠${prefix}tiktoknowm [url]
-╠${prefix}mediafire [url]
-╠${prefix}ytmp3 [url|quality]
-╠${prefix}ytmp4 [url|quality]
-╠${prefix}getmusic [yt link]
-╠${prefix}getvideo [yt link]
-╠${prefix}gitclone [repo link]
-╠${prefix}soundcloud [url]
-╠${prefix}zippyshare [url]
+╠ ${global.lion}${prefix}instagram [url]
+╠ ${global.lion}${prefix}igtv [url]
+╠ ${global.lion}${prefix}igstory [username]
+╠ ${global.lion}${prefix}facebook [url]
+╠ ${global.lion}${prefix}fbmp3 [url]
+╠ ${global.lion}${prefix}twitter [url]
+╠ ${global.lion}${prefix}twittermp3 [url]
+╠ ${global.lion}${prefix}tiktok [url]
+╠ ${global.lion}${prefix}tiktokaudio[url]
+╠ ${global.lion}${prefix}tiktoknowm [url]
+╠ ${global.lion}${prefix}mediafire [url]
+╠ ${global.lion}${prefix}ytmp3 [url|quality]
+╠ ${global.lion}${prefix}ytmp4 [url|quality]
+╠ ${global.lion}${prefix}getmusic [yt link]
+╠ ${global.lion}${prefix}getvideo [yt link]
+╠ ${global.lion}${prefix}gitclone [repo link]
+╠ ${global.lion}${prefix}soundcloud [url]
+╠ ${global.lion}${prefix}zippyshare [url]
 ╠═══════✪「 SEARCH 」	
-╠${prefix}play [query]
-╠${prefix}song [query]
-╠${prefix}yts [query]
-╠${prefix}lyrics [query]
-╠${prefix}google [query]
-╠${prefix}playstore [query]
-╠${prefix}gimage [query]
-╠${prefix}pinterest [query]
-╠${prefix}image [query]
-╠${prefix}film [query]
-╠${prefix}wallpaper [query]
-╠${prefix}searchgc [query]
-╠${prefix}happymod [query]
-╠${prefix}servermc
-╠${prefix}mcpedl [query]
-╠${prefix}tvsearch [query]
-╠${prefix}wikimedia [query]
-╠${prefix}ytsearch [query]
-╠${prefix}ringtone [query]
-╠${prefix}webtoon [query]
-╠${prefix}anime [query]
-╠${prefix}animestory [query]
-╠${prefix}manga [query]
-╠${prefix}wattpad [query]
-╠ ${prefix}mcserver [ip|port]
-╠ ${prefix}drakor [query]
+╠ ${global.lion}${prefix}play [query]
+╠ ${global.lion}${prefix}song [query]
+╠ ${global.lion}${prefix}yts [query]
+╠ ${global.lion}${prefix}lyrics [query]
+╠ ${global.lion}${prefix}google [query]
+╠ ${global.lion}${prefix}playstore [query]
+╠ ${global.lion}${prefix} img [query]
+╠ ${global.lion}${prefix}pinterest [query]
+╠ ${global.lion}${prefix}image [query]
+╠ ${global.lion}${prefix}film [query]
+╠ ${global.lion}${prefix}wallpaper [query]
+╠ ${global.lion}${prefix}searchgc [query]
+╠ ${global.lion}${prefix}happymod [query]
+╠ ${global.lion}${prefix}servermc
+╠ ${global.lion}${prefix}mcpedl [query]
+╠ ${global.lion}${prefix}tvsearch [query]
+╠ ${global.lion}${prefix}wikimedia [query]
+╠ ${global.lion}${prefix}ytsearch [query]
+╠ ${global.lion}${prefix}ringtone [query]
+╠ ${global.lion}${prefix}webtoon [query]
+╠ ${global.lion}${prefix}anime [query]
+╠ ${global.lion}${prefix}animestory [query]
+╠ ${global.lion}${prefix}manga [query]
+╠ ${global.lion}${prefix}wattpad [query]
+╠ ${global.lion} ${prefix}mcserver [ip|port]
+╠ ${global.lion} ${prefix}drakor [query]
 ╠═══════✪「 CONVERT 」
-╠ ${prefix}toimage [reply stick]
-╠ ${prefix}sticker [reply img|gif]
-╠ ${prefix}take [reply img|gif|stik]
-╠ ${prefix}smeme [reply img]
-╠ ${prefix}emoji [emoji]
-╠ ${prefix}tovideo [reply img]
-╠ ${prefix}togif [reply stick]
-╠ ${prefix}tourl [reply img]
-╠ ${prefix}tovn [reply aud]
-╠ ${prefix}tomp3 [reply vn]
-╠ ${prefix}toaudio [reply vid]
-╠ ${prefix}ebinary [reply txt]
-╠ ${prefix}dbinary [reply txt]
-╠ ${prefix}tinyurl [link]
-╠ ${prefix}styletext [text]
-╠${prefix}volume [reply aud]
-╠${prefix}tempo [reply aud]
-╠${prefix}bass [reply aud]
-╠${prefix}blown [reply aud]
-╠${prefix}deep [reply aud]
-╠${prefix}earrape [reply aud]
-╠${prefix}fast [reply aud]
-╠${prefix}fat [reply aud]
-╠${prefix}nightcore [reply aud]
-╠${prefix}reverse [reply aud]
-╠${prefix}robot [reply aud]
-╠${prefix}slow [reply aud]
-╠${prefix}squirrel [reply aud]
+╠ ${global.lion} ${prefix}toimage [reply stick]
+╠ ${global.lion} ${prefix}sticker [reply img|gif]
+╠ ${global.lion} ${prefix}take [reply img|gif|stik]
+╠ ${global.lion} ${prefix}smeme [reply img]
+╠ ${global.lion} ${prefix}emoji [emoji]
+╠ ${global.lion} ${prefix}tovideo [reply img]
+╠ ${global.lion} ${prefix}togif [reply stick]
+╠ ${global.lion} ${prefix}tourl [reply img]
+╠ ${global.lion} ${prefix}tovn [reply aud]
+╠ ${global.lion} ${prefix}tomp3 [reply vn]
+╠ ${global.lion} ${prefix}toaudio [reply vid]
+╠ ${global.lion} ${prefix}ebinary [reply txt]
+╠ ${global.lion} ${prefix}dbinary [reply txt]
+╠ ${global.lion} ${prefix}tinyurl [link]
+╠ ${global.lion} ${prefix}styletext [text]
+╠ ${global.lion}${prefix}volume [reply aud]
+╠ ${global.lion}${prefix}tempo [reply aud]
+╠ ${global.lion}${prefix}bass [reply aud]
+╠ ${global.lion}${prefix}blown [reply aud]
+╠ ${global.lion}${prefix}deep [reply aud]
+╠ ${global.lion}${prefix}earrape [reply aud]
+╠ ${global.lion}${prefix}fast [reply aud]
+╠ ${global.lion}${prefix}fat [reply aud]
+╠ ${global.lion}${prefix}nightcore [reply aud]
+╠ ${global.lion}${prefix}reverse [reply aud]
+╠ ${global.lion}${prefix}robot [reply aud]
+╠ ${global.lion}${prefix}slow [reply aud]
+╠ ${global.lion}${prefix}squirrel [reply aud]
 ╠═══════✪「 IMG EFFECT 」
-╠${prefix}wanted
-╠${prefix}blur
-╠${prefix}framed
-╠${prefix}gayeffect
-╠${prefix}imagesketch
-╠${prefix}invert
-╠${prefix}burn
-╠${prefix}triggeredwebp
-╠${prefix}shit
-╠${prefix}rip
-╠${prefix}jail
-╠${prefix}beautifuleffect
-╠${prefix}deleteeffect
-╠${prefix}pixelate
+╠ ${global.lion}${prefix}wanted
+╠ ${global.lion}${prefix}blur
+╠ ${global.lion}${prefix}framed
+╠ ${global.lion}${prefix}gayeffect
+╠ ${global.lion}${prefix}imagesketch
+╠ ${global.lion}${prefix}invert
+╠ ${global.lion}${prefix}burn
+╠ ${global.lion}${prefix}triggeredwebp
+╠ ${global.lion}${prefix}shit
+╠ ${global.lion}${prefix}rip
+╠ ${global.lion}${prefix}jail
+╠ ${global.lion}${prefix}beautifuleffect
+╠ ${global.lion}${prefix}deleteeffect
+╠ ${global.lion}${prefix}pixelate
 ╠═══════✪「 RANDOM IMG 」
-╠${prefix}coffee
-╠${prefix}bts
-╠${prefix}woof
-╠${prefix}meow
-╠${prefix}lizard
-╠${prefix}wallneon
-╠${prefix}wallpubg
-╠${prefix}wallml
-╠${prefix}wallrandom
-╠${prefix}wallcode
-╠${prefix}animewall [query]
-╠${prefix}animewall2 [query]
+╠ ${global.lion}${prefix}coffee
+╠ ${global.lion}${prefix}bts
+╠ ${global.lion}${prefix}woof
+╠ ${global.lion}${prefix}meow
+╠ ${global.lion}${prefix}lizard
+╠ ${global.lion}${prefix}wallneon
+╠ ${global.lion}${prefix}wallpubg
+╠ ${global.lion}${prefix}wallml
+╠ ${global.lion}${prefix}wallrandom
+╠ ${global.lion}${prefix}wallcode
+╠ ${global.lion}${prefix}animewall [query]
+╠ ${global.lion}${prefix}animewall2 [query]
 ╠═══════✪「 EMOTE 」
-╠${prefix}instagramemoji
-╠${prefix}facebookemoji
-╠${prefix}iphoneemoji
-╠${prefix}samsungemoji
-╠${prefix}joyemoji
-╠${prefix}skypeemoji
-╠${prefix}twitteremoji
-╠${prefix}whatsappemoji
-╠${prefix}microsoftemoji
-╠${prefix}googleemoji
-╠${prefix}pediaemoji
-╠${prefix}microsoftemoji
+╠ ${global.lion}${prefix}instagramemoji
+╠ ${global.lion}${prefix}facebookemoji
+╠ ${global.lion}${prefix}iphoneemoji
+╠ ${global.lion}${prefix}samsungemoji
+╠ ${global.lion}${prefix}joyemoji
+╠ ${global.lion}${prefix}skypeemoji
+╠ ${global.lion}${prefix}twitteremoji
+╠ ${global.lion}${prefix}whatsappemoji
+╠ ${global.lion}${prefix}microsoftemoji
+╠ ${global.lion}${prefix}googleemoji
+╠ ${global.lion}${prefix}pediaemoji
+╠ ${global.lion}${prefix}microsoftemoji
 ╠═══════✪「 ANIME 」
-╠${prefix}naruto
-╠${prefix}yaoi
-╠${prefix}neko2
-╠${prefix}waifu
-╠${prefix}waifu2
-╠${prefix}awoo2
-╠${prefix}shinobu
-╠${prefix}waifu3
-╠${prefix}foxgirl
-╠${prefix}megumin2
-╠${prefix}loli
-╠${prefix}8ball
-╠${prefix}animenom
-╠${prefix}goose
-╠${prefix}avatar
-╠${prefix}tickle
-╠${prefix}gecg
-╠${prefix}feed
-╠${prefix}animeslap
-╠${prefix}animespank
-╠${prefix}animepat
-╠${prefix}animeneko
-╠${prefix}animekiss
-╠${prefix}animewlp
-╠${prefix}animecuddle
-╠${prefix}animecry
-╠${prefix}animekill
-╠${prefix}animelick
-╠${prefix}animebite
-╠${prefix}animeyeet
-╠${prefix}animebully
-╠${prefix}animebonk
-╠${prefix}animewink
-╠${prefix}animepoke
-╠${prefix}animesmile
-╠${prefix}animewave
-╠${prefix}animeawoo
-╠${prefix}animeblush
-╠${prefix}animesmug
-╠${prefix}animeglomp
-╠${prefix}animehappy
-╠${prefix}animedance
-╠${prefix}animecringe
-╠${prefix}animehighfive
-╠${prefix}animehandhold
-╠${prefix}animemegumin
-╠${prefix}smug2
-╠${prefix}couplepp
+╠ ${global.lion}${prefix}naruto
+╠ ${global.lion}${prefix}yaoi
+╠ ${global.lion}${prefix}neko2
+╠ ${global.lion}${prefix}waifu
+╠ ${global.lion}${prefix}waifu2
+╠ ${global.lion}${prefix}awoo2
+╠ ${global.lion}${prefix}shinobu
+╠ ${global.lion}${prefix}waifu3
+╠ ${global.lion}${prefix}foxgirl
+╠ ${global.lion}${prefix}megumin2
+╠ ${global.lion}${prefix}loli
+╠ ${global.lion}${prefix}8ball
+╠ ${global.lion}${prefix}animenom
+╠ ${global.lion}${prefix}goose
+╠ ${global.lion}${prefix}avatar
+╠ ${global.lion}${prefix}tickle
+╠ ${global.lion}${prefix}gecg
+╠ ${global.lion}${prefix}feed
+╠ ${global.lion}${prefix}animeslap
+╠ ${global.lion}${prefix}animespank
+╠ ${global.lion}${prefix}animepat
+╠ ${global.lion}${prefix}animeneko
+╠ ${global.lion}${prefix}animekiss
+╠ ${global.lion}${prefix}animewlp
+╠ ${global.lion}${prefix}animecuddle
+╠ ${global.lion}${prefix}animecry
+╠ ${global.lion}${prefix}animekill
+╠ ${global.lion}${prefix}animelick
+╠ ${global.lion}${prefix}animebite
+╠ ${global.lion}${prefix}animeyeet
+╠ ${global.lion}${prefix}animebully
+╠ ${global.lion}${prefix}animebonk
+╠ ${global.lion}${prefix}animewink
+╠ ${global.lion}${prefix}animepoke
+╠ ${global.lion}${prefix}animesmile
+╠ ${global.lion}${prefix}animewave
+╠ ${global.lion}${prefix}animeawoo
+╠ ${global.lion}${prefix}animeblush
+╠ ${global.lion}${prefix}animesmug
+╠ ${global.lion}${prefix}animeglomp
+╠ ${global.lion}${prefix}animehappy
+╠ ${global.lion}${prefix}animedance
+╠ ${global.lion}${prefix}animecringe
+╠ ${global.lion}${prefix}animehighfive
+╠ ${global.lion}${prefix}animehandhold
+╠ ${global.lion}${prefix}animemegumin
+╠ ${global.lion}${prefix}smug2
+╠ ${global.lion}${prefix}couplepp
 ╠══════✪「 STICKER 」
-╠ ${prefix}patrick
-╠ ${prefix}emoji
-╠ ${prefix}emojimix
-╠ ${prefix}attp
-╠ ${prefix}ttp
-╠ ${prefix}doge
-╠ ${prefix}lovesticker
+╠ ${global.lion} ${prefix}patrick
+╠ ${global.lion} ${prefix}emoji
+╠ ${global.lion} ${prefix}emojimix
+╠ ${global.lion} ${prefix}attp
+╠ ${global.lion} ${prefix}ttp
+╠ ${global.lion} ${prefix}doge
+╠ ${global.lion} ${prefix}lovesticker
 ╠════✪「 ANIME STICKER 」
-╠${prefix}loli
-╠${prefix}bully
-╠${prefix}cuddle
-╠${prefix}cry
-╠${prefix}hug
-╠${prefix}awoo
-╠${prefix}kiss
-╠${prefix}lick
-╠${prefix}pat
-╠${prefix}smug
-╠${prefix}bonk
-╠${prefix}yeet
-╠${prefix}blush
-╠${prefix}smile
-╠${prefix}wave
-╠${prefix}highfive
-╠${prefix}handhold
-╠${prefix}nom
-╠${prefix}glomp
-╠${prefix}bite
-╠${prefix}slap
-╠${prefix}kill
-╠${prefix}happy
-╠${prefix}wink
-╠${prefix}poke
-╠${prefix}dance
-╠${prefix}cringe
-╠${prefix}neko
-╠${prefix}gura
+╠ ${global.lion}${prefix}loli
+╠ ${global.lion}${prefix}bully
+╠ ${global.lion}${prefix}cuddle
+╠ ${global.lion}${prefix}cry
+╠ ${global.lion}${prefix}hug
+╠ ${global.lion}${prefix}awoo
+╠ ${global.lion}${prefix}kiss
+╠ ${global.lion}${prefix}lick
+╠ ${global.lion}${prefix}pat
+╠ ${global.lion}${prefix}smug
+╠ ${global.lion}${prefix}bonk
+╠ ${global.lion}${prefix}yeet
+╠ ${global.lion}${prefix}blush
+╠ ${global.lion}${prefix}smile
+╠ ${global.lion}${prefix}wave
+╠ ${global.lion}${prefix}highfive
+╠ ${global.lion}${prefix}handhold
+╠ ${global.lion}${prefix}nom
+╠ ${global.lion}${prefix}glomp
+╠ ${global.lion}${prefix}bite
+╠ ${global.lion}${prefix}slap
+╠ ${global.lion}${prefix}kill
+╠ ${global.lion}${prefix}happy
+╠ ${global.lion}${prefix}wink
+╠ ${global.lion}${prefix}poke
+╠ ${global.lion}${prefix}dance
+╠ ${global.lion}${prefix}cringe
+╠ ${global.lion}${prefix}neko
+╠ ${global.lion}${prefix}gura
 ╠═══════✪「 NSFW 」
-╠${prefix}hentaivideo
-╠${prefix}yuri
-╠${prefix}masturbation
-╠${prefix}thighs
-╠${prefix}pussy
-╠${prefix}panties
-╠${prefix}orgy
-╠${prefix}ahegao
-╠${prefix}ass
-╠${prefix}bdsm
-╠${prefix}blowjob
-╠${prefix}cuckold
-╠${prefix}ero
-╠${prefix}gasm
-╠${prefix}cum
-╠${prefix}femdom
-╠${prefix}foot
-╠${prefix}gangbang
-╠${prefix}glasses
-╠${prefix}jahy
-╠${prefix}trap
-╠${prefix}blowjobgif
-╠${prefix}spank
-╠${prefix}hneko
-╠${prefix}nwaifu
+╠ ${global.lion}${prefix}hentaivideo
+╠ ${global.lion}${prefix}yuri
+╠ ${global.lion}${prefix}masturbation
+╠ ${global.lion}${prefix}thighs
+╠ ${global.lion}${prefix}pussy
+╠ ${global.lion}${prefix}panties
+╠ ${global.lion}${prefix}orgy
+╠ ${global.lion}${prefix}ahegao
+╠ ${global.lion}${prefix}ass
+╠ ${global.lion}${prefix}bdsm
+╠ ${global.lion}${prefix}blowjob
+╠ ${global.lion}${prefix}cuckold
+╠ ${global.lion}${prefix}ero
+╠ ${global.lion}${prefix}gasm
+╠ ${global.lion}${prefix}cum
+╠ ${global.lion}${prefix}femdom
+╠ ${global.lion}${prefix}foot
+╠ ${global.lion}${prefix}gangbang
+╠ ${global.lion}${prefix}glasses
+╠ ${global.lion}${prefix}jahy
+╠ ${global.lion}${prefix}trap
+╠ ${global.lion}${prefix}blowjobgif
+╠ ${global.lion}${prefix}spank
+╠ ${global.lion}${prefix}hneko
+╠ ${global.lion}${prefix}nwaifu
 ╠═══════✪「 FUN 」
-╠ ${prefix}how [text
-╠ ${prefix}when [text]
-╠ ${prefix}where [text]
+╠ ${global.lion} ${prefix}how [text
+╠ ${global.lion} ${prefix}when [text]
+╠ ${global.lion} ${prefix}where [text]
 ╠ ${prefix}is [text]
-╠ ${prefix}what [text]
-╠ ${prefix}can [text]
-╠ ${prefix}rate [text]
-╠ ${prefix}wangy [text]
-╠ ${prefix}beautifulcheck [tag]
-╠ ${prefix}awesomecheck [tag]
-╠ ${prefix}prettycheck [tag]
-╠ ${prefix}lesbiancheck [tag]
-╠ ${prefix}gaycheck [tag]
-╠ ${prefix}cutecheck [tag]
+╠ ${global.lion} ${prefix}what [text]
+╠ ${global.lion} ${prefix}can [text]
+╠ ${global.lion} ${prefix}rate [text]
+╠ ${global.lion} ${prefix}wangy [text]
+╠ ${global.lion} ${prefix}beautifulcheck [tag]
+╠ ${global.lion} ${prefix}awesomecheck [tag]
+╠ ${global.lion} ${prefix}prettycheck [tag]
+╠ ${global.lion} ${prefix}lesbiancheck [tag]
+╠ ${global.lion} ${prefix}gaycheck [tag]
+╠ ${global.lion} ${prefix}cutecheck [tag]
 ╠ ${prefix}uglycheck [tag]
-╠ ${prefix}hornycheck [tag]
-╠ ${prefix}charactercheck [tag]
-╠ ${prefix}lovelycheck [tag]
-╠ ${prefix}couple
-╠ ${prefix}mysoulmate
-╠ ${prefix}hot
-╠ ${prefix}sexy
-╠ ${prefix}kind
-╠ ${prefix}idiot
-╠ ${prefix}handsome
-╠ ${prefix}beautiful
-╠ ${prefix}cute
-╠ ${prefix}pretty
-╠ ${prefix}lesbian
-╠ ${prefix}noob
-╠ ${prefix}bastard
-╠ ${prefix}foolish
-╠ ${prefix}nerd
-╠ ${prefix}asshole
-╠ ${prefix}gay
-╠ ${prefix}smart
-╠ ${prefix}stubble
-╠ ${prefix}dog
-╠ ${prefix}horny
-╠ ${prefix}cunt
-╠ ${prefix}wibu
-╠ ${prefix}noobra
-╠ ${prefix}nibba
-╠ ${prefix}nibbi
-╠ ${prefix}comrade
-╠ ${prefix}mumu
-╠ ${prefix}rascal
-╠ ${prefix}scumbag
-╠ ${prefix}nuts
-╠ ${prefix}fagot
-╠ ${prefix}scoundrel
-╠ ${prefix}ditch
-╠ ${prefix}dope
-╠ ${prefix}gucci
-╠ ${prefix}lit
-╠ ${prefix}dumbass
-╠ ${prefix}crackhead
-╠ ${prefix}mf
-╠ ${prefix}motherfucker
-╠ ${prefix}sucker
-╠ ${prefix}fuckboy
-╠ ${prefix}playboy
-╠ ${prefix}fuckgirl
-╠ ${prefix}playgirl
+╠ ${global.lion} ${prefix}hornycheck [tag]
+╠ ${global.lion} ${prefix}charactercheck [tag]
+╠ ${global.lion} ${prefix}lovelycheck [tag]
+╠ ${global.lion} ${prefix}couple
+╠ ${global.lion} ${prefix}mysoulmate
+╠ ${global.lion} ${prefix}hot
+╠ ${global.lion} ${prefix}sexy
+╠ ${global.lion} ${prefix}kind
+╠ ${global.lion} ${prefix}idiot
+╠ ${global.lion} ${prefix}handsome
+╠ ${global.lion} ${prefix}beautiful
+╠ ${global.lion} ${prefix}cute
+╠ ${global.lion} ${prefix}pretty
+╠ ${global.lion} ${prefix}lesbian
+╠ ${global.lion} ${prefix}noob
+╠ ${global.lion} ${prefix}bastard
+╠ ${global.lion} ${prefix}foolish
+╠ ${global.lion} ${prefix}nerd
+╠ ${global.lion} ${prefix}asshole
+╠ ${global.lion} ${prefix}gay
+╠ ${global.lion} ${prefix}smart
+╠ ${global.lion} ${prefix}stubble
+╠ ${global.lion} ${prefix}dog
+╠ ${global.lion} ${prefix}horny
+╠ ${global.lion} ${prefix}cunt
+╠ ${global.lion} ${prefix}wibu
+╠ ${global.lion} ${prefix}noobra
+╠ ${global.lion} ${prefix}nibba
+╠ ${global.lion} ${prefix}nibbi
+╠ ${global.lion} ${prefix}comrade
+╠ ${global.lion} ${prefix}mumu
+╠ ${global.lion} ${prefix}rascal
+╠ ${global.lion} ${prefix}scumbag
+╠ ${global.lion} ${prefix}nuts
+╠ ${global.lion} ${prefix}fagot
+╠ ${global.lion} ${prefix}scoundrel
+╠ ${global.lion} ${prefix}ditch
+╠ ${global.lion} ${prefix}dope
+╠ ${global.lion} ${prefix}gucci
+╠ ${global.lion} ${prefix}lit
+╠ ${global.lion} ${prefix}dumbass
+╠ ${global.lion} ${prefix}crackhead
+╠ ${global.lion} ${prefix}mf
+╠ ${global.lion} ${prefix}motherfucker
+╠ ${global.lion} ${prefix}sucker
+╠ ${global.lion} ${prefix}fuckboy
+╠ ${global.lion} ${prefix}playboy
+╠ ${global.lion} ${prefix}fuckgirl
+╠ ${global.lion} ${prefix}playgirl
 ╠══════✪「 SOUND 」
-╠ ${prefix}sound1
-╠ ${prefix}sound2
-╠ ${prefix}sound3
-╠ ${prefix}sound4
-╠ ${prefix}sound5
-╠ ${prefix}sound6
-╠ ${prefix}sound7
-╠ ${prefix}sound8
-╠ ${prefix}sound9
-╠ ${prefix}sound10
-╠ ${prefix}sound11
-╠ ${prefix}sound12
-╠ ${prefix}sound13
-╠ ${prefix}sound14
-╠ ${prefix}sound15
-╠ ${prefix}sound16
-╠ ${prefix}sound17
-╠ ${prefix}sound18
-╠ ${prefix}sound19
-╠ ${prefix}sound20
-╠ ${prefix}sound21
-╠ ${prefix}sound22
-╠ ${prefix}sound23
-╠ ${prefix}sound24
-╠ ${prefix}sound25
-╠ ${prefix}sound26
-╠ ${prefix}sound27
-╠ ${prefix}sound28
-╠ ${prefix}sound29
-╠ ${prefix}sound30
-╠ ${prefix}sound31
-╠ ${prefix}sound32
-╠ ${prefix}sound33
-╠ ${prefix}sound34
-╠ ${prefix}sound35
-╠ ${prefix}sound36
-╠ ${prefix}sound37
-╠ ${prefix}sound38
-╠ ${prefix}sound39
-╠ ${prefix}sound40
-╠ ${prefix}sound41
-╠ ${prefix}sound42
-╠ ${prefix}sound43
-╠ ${prefix}sound44
-╠ ${prefix}sound45
-╠ ${prefix}sound46
-╠ ${prefix}sound47
-╠ ${prefix}sound48
-╠ ${prefix}sound49
-╠ ${prefix}sound50
-╠ ${prefix}sound51
-╠ ${prefix}sound52
-╠ ${prefix}sound53
-╠ ${prefix}sound54
-╠ ${prefix}sound55
-╠ ${prefix}sound56
-╠ ${prefix}sound57
-╠ ${prefix}sound58
-╠ ${prefix}sound59
-╠ ${prefix}sound60
-╠ ${prefix}sound61
-╠ ${prefix}sound62
-╠ ${prefix}sound63
-╠ ${prefix}sound64
-╠ ${prefix}sound65
-╠ ${prefix}sound66
-╠ ${prefix}sound67
-╠ ${prefix}sound68
-╠ ${prefix}sound69
-╠ ${prefix}sound70
-╠ ${prefix}sound71
-╠ ${prefix}sound72
-╠ ${prefix}sound73
-╠ ${prefix}sound74
-╠ ${prefix}sound75
-╠ ${prefix}sound76
-╠ ${prefix}sound77
-╠ ${prefix}sound78
-╠ ${prefix}sound79
-╠ ${prefix}sound80
-╠ ${prefix}sound81
-╠ ${prefix}sound82
-╠ ${prefix}sound83
-╠ ${prefix}sound84
-╠ ${prefix}sound85
-╠ ${prefix}sound86
-╠ ${prefix}sound87
-╠ ${prefix}sound88
-╠ ${prefix}sound89
-╠ ${prefix}sound90
-╠ ${prefix}sound91
-╠ ${prefix}sound92
-╠ ${prefix}sound93
-╠ ${prefix}sound94
-╠ ${prefix}sound95
-╠ ${prefix}sound96
-╠ ${prefix}sound97
-╠ ${prefix}sound98
-╠ ${prefix}sound99
-╠ ${prefix}sound100
-╠ ${prefix}sound101
-╠ ${prefix}sound102
-╠ ${prefix}sound103
-╠ ${prefix}sound104
-╠ ${prefix}sound105
-╠ ${prefix}sound106
-╠ ${prefix}sound107
-╠ ${prefix}sound108
-╠ ${prefix}sound109
-╠ ${prefix}sound110
-╠ ${prefix}sound111
-╠ ${prefix}sound112
-╠ ${prefix}sound113
-╠ ${prefix}sound114
-╠ ${prefix}sound115
-╠ ${prefix}sound116
-╠ ${prefix}sound117
-╠ ${prefix}sound118
-╠ ${prefix}sound119
-╠ ${prefix}sound120
-╠ ${prefix}sound121
-╠ ${prefix}sound122
-╠ ${prefix}sound123
-╠ ${prefix}sound124
-╠ ${prefix}sound125
-╠ ${prefix}sound126
-╠ ${prefix}sound127
-╠ ${prefix}sound128
-╠ ${prefix}sound129
-╠ ${prefix}sound130
-╠ ${prefix}sound131
-╠ ${prefix}sound132
-╠ ${prefix}sound133
-╠ ${prefix}sound134
-╠ ${prefix}sound135
-╠ ${prefix}sound136
-╠ ${prefix}sound137
-╠ ${prefix}sound138
-╠ ${prefix}sound139
-╠ ${prefix}sound140
-╠ ${prefix}sound141
-╠ ${prefix}sound142
-╠ ${prefix}sound143
-╠ ${prefix}sound144
-╠ ${prefix}sound145
-╠ ${prefix}sound146
-╠ ${prefix}sound147
-╠ ${prefix}sound148
-╠ ${prefix}sound149
-╠ ${prefix}sound150
-╠ ${prefix}sound151
-╠ ${prefix}sound152
-╠ ${prefix}sound153
-╠ ${prefix}sound154
-╠ ${prefix}sound155
-╠ ${prefix}sound156
-╠ ${prefix}sound157
-╠ ${prefix}sound158
-╠ ${prefix}sound159
-╠ ${prefix}sound160
-╠ ${prefix}sound161
+╠ ${global.lion} ${prefix}sound1
+╠ ${global.lion} ${prefix}sound2
+╠ ${global.lion} ${prefix}sound3
+╠ ${global.lion} ${prefix}sound4
+╠ ${global.lion} ${prefix}sound5
+╠ ${global.lion} ${prefix}sound6
+╠ ${global.lion} ${prefix}sound7
+╠ ${global.lion} ${prefix}sound8
+╠ ${global.lion} ${prefix}sound9
+╠ ${global.lion} ${prefix}sound10
+╠ ${global.lion} ${prefix}sound11
+╠ ${global.lion} ${prefix}sound12
+╠ ${global.lion} ${prefix}sound13
+╠ ${global.lion} ${prefix}sound14
+╠ ${global.lion} ${prefix}sound15
+╠ ${global.lion} ${prefix}sound16
+╠ ${global.lion} ${prefix}sound17
+╠ ${global.lion} ${prefix}sound18
+╠ ${global.lion} ${prefix}sound19
+╠ ${global.lion} ${prefix}sound20
+╠ ${global.lion} ${prefix}sound21
+╠ ${global.lion} ${prefix}sound22
+╠ ${global.lion} ${prefix}sound23
+╠ ${global.lion} ${prefix}sound24
+╠ ${global.lion} ${prefix}sound25
+╠ ${global.lion} ${prefix}sound26
+╠ ${global.lion} ${prefix}sound27
+╠ ${global.lion} ${prefix}sound28
+╠ ${global.lion} ${prefix}sound29
+╠ ${global.lion} ${prefix}sound30
+╠ ${global.lion} ${prefix}sound31
+╠ ${global.lion} ${prefix}sound32
+╠ ${global.lion} ${prefix}sound33
+╠ ${global.lion} ${prefix}sound34
+╠ ${global.lion} ${prefix}sound35
+╠ ${global.lion} ${prefix}sound36
+╠ ${global.lion} ${prefix}sound37
+╠ ${global.lion} ${prefix}sound38
+╠ ${global.lion} ${prefix}sound39
+╠ ${global.lion} ${prefix}sound40
+╠ ${global.lion} ${prefix}sound41
+╠ ${global.lion} ${prefix}sound42
+╠ ${global.lion} ${prefix}sound43
+╠ ${global.lion} ${prefix}sound44
+╠ ${global.lion} ${prefix}sound45
+╠ ${global.lion} ${prefix}sound46
+╠ ${global.lion} ${prefix}sound47
+╠ ${global.lion} ${prefix}sound48
+╠ ${global.lion} ${prefix}sound49
+╠ ${global.lion} ${prefix}sound50
+╠ ${global.lion} ${prefix}sound51
+╠ ${global.lion} ${prefix}sound52
+╠ ${global.lion} ${prefix}sound53
+╠ ${global.lion} ${prefix}sound54
+╠ ${global.lion} ${prefix}sound55
+╠ ${global.lion} ${prefix}sound56
+╠ ${global.lion} ${prefix}sound57
+╠ ${global.lion} ${prefix}sound58
+╠ ${global.lion} ${prefix}sound59
+╠ ${global.lion} ${prefix}sound60
+╠ ${global.lion} ${prefix}sound61
+╠ ${global.lion} ${prefix}sound62
+╠ ${global.lion} ${prefix}sound63
+╠ ${global.lion} ${prefix}sound64
+╠ ${global.lion} ${prefix}sound65
+╠ ${global.lion} ${prefix}sound66
+╠ ${global.lion} ${prefix}sound67
+╠ ${global.lion} ${prefix}sound68
+╠ ${global.lion} ${global.lion} ${prefix}sound69
+╠ ${global.lion} ${prefix}sound70
+╠ ${global.lion} ${prefix}sound71
+╠ ${global.lion} ${prefix}sound72
+╠ ${global.lion} ${prefix}sound73
+╠ ${global.lion} ${i ;      }sound74
+╠ ${global.lion} ${prefix}sound75
+╠ ${global.lion} ${prefix}sound76
+╠ ${global.lion} ${prefix}sound77
+╠ ${global.lion} ${prefix}sound78
+                       ccccv8                                                                                                 ${global.lion} ${prefix}sound79
+╠ ${global.lion} ${prefix}sound80
+╠ ${global.lion} ${prefix}sound81
+╠ ${global.lion} ${prefix}sound82
+╠ ${global.lion} ${prefix}sound83
+╠ ${global.lion} ${prefix}sound84
+╠ ${global.lion} ${prefix}sound85
+╠ ${global.lion} ${prefix}sound86
+╠ ${global.lion} ${prefix}sound87
+╠ ${global.lion} ${prefix}sound88
+╠ ${global.lion} ${prefix}sound89
+╠ ${global.lion} ${prefix}sound90
+╠ ${global.lion} ${prefix}sound91
+╠ ${global.lion} ${prefix}sound92
+╠ ${global.lion} ${prefix}sound93
+╠ ${global.lion} ${prefix}sound94
+╠ ${global.lion} ${prefix}sound95
+╠ ${global.lion} ${prefix}sound96
+╠ ${global.lion} ${prefix}sound97
+╠ ${global.lion} ${prefix}sound98
+╠ ${global.lion} ${prefix}sound99
+╠ ${global.lion} ${prefix}sound100
+╠ ${global.lion} ${prefix}sound101
+╠ ${global.lion} ${prefix}sound102
+╠ ${global.lion} ${prefix}sound103
+╠ ${global.lion} ${prefix}sound104
+╠ ${global.lion} ${prefix}sound105
+╠ ${global.lion} ${prefix}sound106
+╠ ${global.lion} ${prefix}sound107
+╠ ${global.lion} ${prefix}sound108
+╠ ${global.lion} ${prefix}sound109
+╠ ${global.lion} ${prefix}sound110
+╠ ${global.lion} ${prefix}sound111
+╠ ${global.lion} ${prefix}sound112
+╠ ${global.lion} ${prefix}sound113
+╠ ${global.lion} ${prefix}sound114
+╠ ${global.lion} ${prefix}sound115
+╠ ${global.lion} ${prefix}sound116
+╠ ${global.lion} ${prefix}sound117
+╠ ${global.lion} ${prefix}sound118
+╠ ${global.lion} ${prefix}sound119
+╠ ${global.lion} ${prefix}sound120
+╠ ${global.lion} ${prefix}sound121
+╠ ${global.lion} ${prefix}sound122
+╠ ${global.lion} ${prefix}sound123
+╠ ${global.lion} ${prefix}sound124
+╠ ${global.lion} ${prefix}sound125
+╠ ${global.lion} ${prefix}sound126
+╠ ${global.lion} ${prefix}sound127
+╠ ${global.lion} ${prefix}sound128
+╠ ${global.lion} ${prefix}sound129
+╠ ${global.lion} ${prefix}sound130
+╠ ${global.lion} ${prefix}sound131
+╠ ${global.lion} ${prefix}sound132
+╠ ${global.lion} ${prefix}sound133
+╠ ${global.lion} ${prefix}sound134
+╠ ${global.lion} ${prefix}sound135
+╠ ${global.lion} ${prefix}sound136
+╠ ${global.lion} ${prefix}sound137
+╠ ${global.lion} ${prefix}sound138
+╠ ${global.lion} ${prefix}sound139
+╠ ${global.lion} ${prefix}sound140
+╠ ${global.lion} ${prefix}sound141
+╠ ${global.lion} ${prefix}sound142
+╠ ${global.lion} ${prefix}sound143
+╠ ${global.lion} ${prefix}sound144
+╠ ${global.lion} ${prefix}sound145
+╠ ${global.lion} ${prefix}sound146
+╠ ${global.lion} ${prefix}sound147
+╠ ${global.lion} ${prefix}sound148
+╠ ${global.lion} ${prefix}sound149
+╠ ${global.lion} ${prefix}sound150
+╠ ${global.lion} ${prefix}sound151
+╠ ${global.lion} ${prefix}sound152
+╠ ${global.lion} ${prefix}sound153
+╠ ${global.lion} ${prefix}sound154
+╠ ${global.lion} ${prefix}sound155
+╠ ${global.lion} ${prefix}sound156
+╠ ${global.lion} ${prefix}sound157
+╠ ${global.lion} ${prefix}sound158
+╠ ${global.lion} ${prefix}sound159
+╠ ${global.lion} ${prefix}sound160
+╠ ${global.lion} ${prefix}sound161
 ╠══════✪「 GAME 」
-╠ ${prefix}truth
-╠ ${prefix}dare
-╠ ${prefix}tictactoe
-╠ ${prefix}delttt
-╠ ${prefix}guess [option]
-╠ ${prefix}math [mode]
-╠ ${prefix}suitpvp [tag]
+╠ ${global.lion} ${prefix}truth
+╠ ${global.lion} ${prefix}dare
+╠ ${global.lion} ${prefix}tictactoe
+╠ ${global.lion} ${prefix}delttt
+╠ ${global.lion} ${prefix}guess [option]
+╠ ${global.lion} ${prefix}math [mode]
+╠ ${global.lion} ${prefix}suitpvp [tag]
 ╠══✪「 ANONYMOUS CHAT 」
-╠${prefix}anonymous
-╠${prefix}start
-╠${prefix}next
-╠${prefix}leave
+╠ ${global.lion}${prefix}anonymous
+╠ ${global.lion}${prefix}start
+╠ ${global.lion}${prefix}next
+╠ ${global.lion}${prefix}leave
 ╠══════✪「 TOOL 」
-╠ ${prefix}translate [text]
-╠ ${prefix}fliptext [text]
-╠ ${prefix}toletter [number]
+╠ ${global.lion} ${prefix}translate [text]
+╠ ${global.lion} ${prefix}fliptext [text]
+╠ ${global.lion} ${prefix}toletter [number]
 ╠══════✪「 DATABASE 」
-╠ ${prefix}setcmd
-╠ ${prefix}listcmd
-╠ ${prefix}delcmd
-╠ ${prefix}lockcmd
-╠ ${prefix}addmsg
-╠ ${prefix}listmsg
-╠ ${prefix}getmsg
-╠ ${prefix}delmsg
+╠ ${global.lion} ${prefix}setcmd
+╠ ${global.lion} ${prefix}listcmd
+╠ ${global.lion} ${prefix}delcmd
+╠ ${global.lion} ${prefix}lockcmd
+╠ ${global.lion} ${prefix}addmsg
+╠ ${global.lion} ${prefix}listmsg
+╠ ${global.lion} ${prefix}getmsg
+╠ ${global.lion} ${prefix}delmsg
 ╠══════✪「 lNDO 」
-╠ ${prefix}darkjoke
-╠ ${prefix}quotes
-╠ ${prefix}animequotes
-╠${prefix}jalantikus-meme
-╠ ${prefix}merdeka-news 
-╠ ${prefix}kontan-news 
-╠ ${prefix}cnbc-news 
-╠ ${prefix}tribun-news 
-╠ ${prefix}indozone-news 
-╠ ${prefix}kompas-news 
-╠ ${prefix}detik-news 
-╠ ${prefix}daily-news 
-╠ ${prefix}inews-news 
-╠ ${prefix}okezone-news 
-╠ ${prefix}sindo-news 
-╠ ${prefix}tempo-news 
-╠ ${prefix}antara-news 
-╠ ${prefix}cnn-news 
-╠ ${prefix}fajar-news 
-╠${prefix}cinemaschedule
-╠${prefix}wiki
-╠${prefix}covidindo
-╠${prefix}earthquake
-╠${prefix}tvschedule
+╠ ${global.lion} ${prefix}darkjoke
+╠ ${global.lion} ${prefix}quotes
+╠ ${global.lion} ${prefix}animequotes
+╠ ${global.lion}${prefix}jalantikus-meme
+╠ ${global.lion} ${prefix}merdeka-news 
+╠ ${global.lion} ${prefix}kontan-news 
+╠ ${global.lion} ${prefix}cnbc-news 
+╠ ${global.lion} ${prefix}tribun-news 
+╠ ${global.lion} ${prefix}indozone-news 
+╠ ${global.lion} ${prefix}kompas-news 
+╠ ${global.lion} ${prefix}detik-news 
+╠ ${global.lion} ${prefix}daily-news 
+╠ ${global.lion} ${prefix}inews-news 
+╠ ${global.lion} ${prefix}okezone-news 
+╠ ${global.lion} ${prefix}sindo-news 
+╠ ${global.lion} ${prefix}tempo-news 
+╠ ${global.lion} ${prefix}antara-news 
+╠ ${global.lion} ${prefix}cnn-news 
+╠ ${global.lion} ${prefix}fajar-news 
+╠ ${global.lion}${prefix}cinemaschedule
+╠ ${global.lion}${prefix}wiki
+╠ ${global.lion}${prefix}covidindo
+╠ ${global.lion}${prefix}earthquake
+╠ ${global.lion}${prefix}tvschedule
 ╠══════✪「 INDO HSCOPE 」
-╠${prefix}nomorhoki
-╠${prefix}artimimpi 
-╠${prefix}artinama 
-╠${prefix}ramaljodoh 
-╠${prefix}ramaljodohbali 
-╠${prefix}suamiistri 
-╠${prefix}ramalcinta 
-╠${prefix}cocoknama 
-╠${prefix}pasangan 
-╠${prefix}jadiannikah 
-╠${prefix}sifatusaha 
-╠${prefix}rezeki 
-╠${prefix}pekerjaan 
-╠${prefix}nasib 
-╠${prefix}penyakit 
-╠${prefix}tarot 
-╠${prefix}fengshui 
-╠${prefix}haribaik 
-╠${prefix}harisangar 
-╠${prefix}harisial
-╠${prefix}nagahari
-╠${prefix}arahrezeki
-╠${prefix}peruntungan 
-╠${prefix}weton 
-╠${prefix}karakter
-╠${prefix}keberuntungan
-╠${prefix}memancing
-╠${prefix}masasubur
-╠${prefix}zodiak
-╠${prefix}shio
+╠ ${global.lion}${prefix}nomorhoki
+╠ ${global.lion}${prefix}artimimpi 
+╠ ${global.lion}${prefix}artinama 
+╠ ${global.lion}${prefix}ramaljodoh 
+╠ ${global.lion}${prefix}ramaljodohbali 
+╠ ${global.lion}${prefix}suamiistri 
+╠ ${global.lion}${prefix}ramalcinta 
+╠ ${global.lion}${prefix}cocoknama 
+╠ ${global.lion}${prefix}pasangan 
+╠ ${global.lion}${prefix}jadiannikah 
+╠ ${global.lion}${prefix}sifatusaha 
+╠ ${global.lion}${prefix}rezeki 
+╠ ${global.lion}${prefix}pekerjaan 
+╠ ${global.lion}${prefix}nasib 
+╠ ${global.lion}${prefix}penyakit 
+╠ ${global.lion}${prefix}tarot 
+╠ ${global.lion}${prefix}fengshui 
+╠ ${global.lion}${prefix}haribaik 
+╠ ${global.lion}${prefix}harisangar 
+╠ ${global.lion}${prefix}harisial
+╠ ${global.lion}${prefix}nagahari
+╠ ${global.lion}${prefix}arahrezeki
+╠ ${global.lion}${prefix}peruntungan 
+╠ ${global.lion}${prefix}weton 
+╠ ${global.lion}${prefix}karakter
+╠ ${global.lion}${prefix}keberuntungan
+╠ ${global.lion}${prefix}memancing
+╠ ${global.lion} ${global.lion}${prefix}masasubur
+╠ ${global.lion}${prefix}zodiak
+╠ ${global.lion}${prefix}shio
 ╠══════✪「 OTHER 」
-╠ ${prefix}afk
-╠ ${prefix}readmore [text]
-╠ ${prefix}toviewonce
-╠ ${prefix}chatinfo
-╠ ${prefix}alive
-╠ ${prefix}script
-╠ ${prefix}speedtest
-╠ ${prefix}ping
-╠ ${prefix}owner
-╠ ${prefix}menu
-╠ ${prefix}delete
-╠ ${prefix}chatinfo
-╠ ${prefix}quoted
-╠ ${prefix}listpc
-╠ ${prefix}listgc
-╠ ${prefix}donate
-╠ ${prefix}request
-╠ ${prefix}report [bug]
+╠ ${global.lion} ${prefix}afk
+╠ ${global.lion} ${prefix}readmore [text]
+╠ ${global.lion} ${prefix}toviewonce
+╠ ${global.lion} ${prefix}chatinfo
+╠ ${global.lion} ${prefix}alive
+╠ ${global.lion} ${prefix}script
+╠ ${global.lion} ${prefix}speedtest
+╠ ${global.lion} ${prefix}ping
+╠ ${global.lion} ${prefix}owner
+╠ ${global.lion} ${prefix}menu
+╠ ${global.lion} ${prefix}delete
+╠ ${global.lion} ${prefix}chatinfo
+╠ ${global.lion} ${prefix}quoted
+╠ ${global.lion} ${prefix}listpc
+╠ ${global.lion} ${prefix}listgc
+╠ ${global.lion} ${prefix}donate
+╠ ${global.lion} ${prefix}request
+╠ ${global.lion} ${prefix}report [bug]
 ▯
 ╋ ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
