@@ -10840,7 +10840,7 @@ reply(` *||𝐖𝐄𝐋𝐂𝐎𝐌𝐄||*
   https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
   ❤️🧡💛💚💙💜🤎🖤🤍  ️` )
 break
-case 'apk': case 'apkmod': case 'apkdl': {      
+case 'apkmod': case 'apkdl': {      
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
@@ -10881,6 +10881,13 @@ case 'gn':
 XeonBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
 reply(`good night bn 😂😂 !!!`)
 break
+    case 'hari': case 'waradi': {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
+            }
+            break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
