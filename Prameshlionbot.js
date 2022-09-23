@@ -10840,6 +10840,41 @@ reply(` *||𝐖𝐄𝐋𝐂𝐎𝐌𝐄||*
   https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
   ❤️🧡💛💚💙💜🤎🖤🤍  ️` )
 break
+case 'apk': case 'apkmod': case 'apkdl': {      
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
+      if (isBan) throw mess.ban
+  if (!text) return m.reply(`Use${prefix + command} vpn`) 
+  let noh = require('./lib/myfunc2')                
+  noh.rexdl(`${text}`).then(async (data) => {
+  let sections = []   
+  for (let i of data) {
+  const list = {title: `${i.judul}`,
+  rows: [
+	    {
+	     title: `${i.judul}`, 
+	     rowId: `${prefix}donlod ${i.link}`,
+	     description: `CATEGORY: ${i.kategori}\nPUBLISH: ${i.upload_date}\nINFORMATION: ${i.deskripsi}`
+	    }, 
+	    ]
+     }
+     sections.push(list)   
+     }
+  const sendm =  XeonBotInc.sendMessage(
+      m.chat, 
+      {
+       text: `${ucapannya2} ${pushname} *Search Results From ${text} Click the button below to choose*`,
+       footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+       title: "*▊▊▊APK DOWNLOAD▊▊▊*",
+       buttonText: "CLICK HERE",
+       sections
+      }, { quoted : m })                 
+                }).catch((err) => {
+                    m.reply(`*${text} Not found*`)
+                })
+            }
+            break
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
