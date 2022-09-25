@@ -2876,19 +2876,19 @@ if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
 if (Antikunuharapa) return replay('Already activated')
-ntilinkytvid.push(from)
-replay('☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n*මෙතැන් පටන් කුනුහරප කීම තහනම්*')
+ntikunuharapa.push(from)
+replay('*☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n*මෙතැන් පටන් කුනුහරප කීම තහනම්*')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf කුනු හරප කීම තහනම්`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you' කුනු හරප කීම තහනම්'`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkYoutubeVid) return replay('Already deactivated')
-let off = ntilinkytvid.indexOf(from)
-ntilinkytvid.splice(off, 1)
+if (!Antikunuharapa) return replay('Already deactivated')
+let off = ntikunuharapa.indexOf(from)
+ntikunuharapa.splice(off, 1)
 replay('☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n*දැන් කුනු හරපකීවට අව්ලක් නෑ ඒක off*')
 } else {
   let buttonsntilink = [
