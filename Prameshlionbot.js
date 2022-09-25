@@ -766,7 +766,7 @@ XeonBotInc.sendMessage(from, {text:`\`\`\`「  *☬༒𝙥𝙧𝙖𝙢𝙚𝙨�
 }
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒කුනුහරප තහනම්
 if (Antikunuharapa)
-if (budy.includes("hukapan","hutto","pakaya","hutta")){
+if (budy.includes("hutta")){
 if (!isBotAdmins) return
 bvl = `\`\`\`「 * ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ කුනු හරප කීම තහනම්* 」\`\`\`\n\nAdmin has any toxis😒`
 if (isAdmins) return reply(bvl)
