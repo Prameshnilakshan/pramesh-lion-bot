@@ -1,9 +1,28 @@
-//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-//◈━━━━━━━━━━━━━◈
-//🦁🦁🦁🦁🦁🦁🦁🦁🦁🦁🦁🦁//
+//════════════════════════════//
+//If you want to recode, reupload
+//or copy the codes/script,
+//pls give credit
+//no credit? i will take action immediately
+//© 2022 Xeon Bot Inc. Cheems Bot MD
+//Thank you to Lord Buddha, Family and Myself
+//════════════════════════════//
+//recode kar ke youtube pe upload kar rhe hai ya
+//codes copy kar ke apne script me dal rhe
+//hai to, description me xeon ka yt channel
+// ka link paste kr dena as a cradit or github 
+//repo me bhi tag kardena baki jo
+//bhi karna hai apki marzi, thank you!🦄
+//════════════════════════════//
+//If you recode and uploading on your channel
+//or copy pasting the codes in ur script, 
+//i give permission to do as long as you
+//put Xeons youtube channel link in the video
+//description and tag me on githuh repo, 
+//thank you🦄
+//════════════════════════════//
 
 require('./settings')
-const { default: NexusNwIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
+const { default: XeonBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
@@ -15,6 +34,7 @@ const path = require('path')
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
+const moment = require('moment-timezone')
 
 var low
 try {
@@ -53,88 +73,96 @@ if (global.db) setInterval(async () => {
     if (global.db.data) await global.db.write()
   }, 30 * 1000)
 
-async function startGojoMdNx() {
-    const GojoMdNx = NexusNwIncConnect({
+async function startXeonBotInc() {
+    const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Gojo Satoru\Nexus','Safari','1.0.0'],
+        browser: ['Subscribe Xeon','Safari','1.0.0'],
         auth: state
     })
 
-    store.bind(GojoMdNx.ev)
+    store.bind(XeonBotInc.ev)
     
     // anticall auto block
-    GojoMdNx.ws.on('CB:call', async (json) => {
+    XeonBotInc.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
-    let pa7rick = await GojoMdNx.sendContact(callerId, global.owner)
-    GojoMdNx.sendMessage(callerId, { text: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\nAutomatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
+    let xeonfek = await XeonBotInc.sendContact(callerId, global.owner)
+    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
     await sleep(8000)
-    await GojoMdNx.updateBlockStatus(callerId, "block")
+    await XeonBotInc.updateBlockStatus(callerId, "block")
     }
     })
 
-    GojoMdNx.ev.on('messages.upsert', async chatUpdate => {
+    XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
         try {
         mek = chatUpdate.messages[0]
         if (!mek.message) return
         mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
         if (mek.key && mek.key.remoteJid === 'status@broadcast') return
-        if (!GojoMdNx.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
+        if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
-        m = smsg(GojoMdNx, mek, store)
-        require("./Prameshlionbot")(GojoMdNx, m, chatUpdate, store)
+        m = smsg(XeonBotInc, mek, store)
+        require("./Prameshlionbot")(XeonBotInc, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
     })
     
     // Group Update
-    GojoMdNx.ev.on('groups.update', async pea => {
+    XeonBotInc.ev.on('groups.update', async pea => {
        //console.log(pea)
     // Get Profile Picture Group
        try {
-       ppgc = await GojoMdNx.profilePictureUrl(pea[0].id, 'image')
+       ppgc = await XeonBotInc.profilePictureUrl(pea[0].id, 'image')
        } catch {
-       ppgc = 'https://shortlink.GojoMdNxarridho.my.id/rg1oT'
+       ppgc = 'https://shortlink.XeonBotIncarridho.my.id/rg1oT'
        }
-       let wm_fatih = { url : ppgc }
+       let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
-       GojoMdNx.send5ButImg(pea[0].id, `「🪀 Group Settings Changed🪀 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if(pea[0].announce == false) {
-       GojoMdNx.send5ButImg(pea[0].id, `「🪀 Group Settings Changed 🪀」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == true) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 🪀Group Settings Changed 🪀」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == false) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 🪀Group Settings Changed 🪀」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else {
-       GojoMdNx.send5ButImg(pea[0].id, `「 🪀Group Settings Changed 🪀」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
      }
     })
+    
+    //randoming function
+function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]
+}
+//document randomizer
+let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
+let docs = pickRandom(documents)
 
-    GojoMdNx.ev.on('group-participants.update', async (anu) => {
+    XeonBotInc.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
         try {
-            let metadata = await GojoMdNx.groupMetadata(anu.id)
+            let metadata = await XeonBotInc.groupMetadata(anu.id)
             let participants = anu.participants
             for (let num of participants) {
                 // Get Profile Picture User
                 try {
-                    ppuser = await GojoMdNx.profilePictureUrl(num, 'image')
+                    ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
                 } catch {
-                    ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                    ppuser = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
                 }
 
                 //Get Profile Picture Group\\
                 try {
-                    ppgroup = await GojoMdNx.profilePictureUrl(anu.id, 'image')
+                    ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                    ppgroup = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
                 }
 
 //welcome\\
-        let nama = await GojoMdNx.getName((num)
+        let nama = await XeonBotInc.getName(num)
 memb = metadata.participants.length
 XeonWlcm = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
@@ -142,57 +170,104 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
+	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                 xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
-
-🤭🌹 Welcome To  ${metadata.subject}
-🤭🌹 ${xmembers} Members
-
-සාදරෙන් ආදරෙන් පිලිගන්නව 
-💚💚💚💚💚💚💚💚💚💚💚 `
+                xeonbody = `┌─❖
+│「 𝗛𝗶 👋 」
+└┬❖ 「 @${xeonName.split("@")[0]}  」
+   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+   │✑  ${metadata.subject}
+   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │✑ ${xmembers}th
+   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
+   │✑ ${xtime} ${xdate}
+   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+                 
+   ├  හායි
+   ├   ඔයාව සාදරෙයෙන්
+   ├          ආදරයෙන් ❤️
+   ├           පිලිගන්නව
+   ├🤗
+   ├  ❤️🧡💛💚💙💜🤎🖤🤍
+   └───────────────┈ ⳹`
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-   let buttons = [
-    {buttonId: `owner`, buttonText: {displayText: '🙏WELCOME🙏'}, type: 1}
-    ]
+let buttons = [
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+]
 let buttonMessage = {
-    image: { url: 'https://i.ibb.co/K54KLgF/Picsart-22-07-03-15-45-00-698.jpg'},
+document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+mimetype: docs,
+jpegThumbnail:XeonWlcm,
+mentions: [num],
+fileName: `${metadata.subject}`,
+fileLength: 99999999999999,
 caption: xeonbody,
-footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
-buttons,
-headerType: 4
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title: `${ownername}`,
+body: `Don't forget to read group description`,
+mediaType:2,
+thumbnail: XeonWlcm,
+sourceUrl: `${websitex}`,
+mediaUrl: `${websitex}`
+}}
 }
-GojoMdNx.sendMessage(anu.id, buttonMessage)
+XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
+	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                     xeonbody = `😒🌹 Bye👋 @${xeonName.split("@")[0]}
-
-😒🌹 Left From  ${metadata.subject}
-😒🌹 ${xeonmembers} Members
-                    
-මූ ඉතින් හිටියත් වැඩක් නෑනෙ 
-ගියපු එකමයි හොද
-👋👋👋👋👋👋👋👋👋 `
-
-   let buttons = [
-    {buttonId: `owner`, buttonText: {displayText: '👎BYE👎'}, type: 1}
-    ]
-    let buttonMessage = {
-        image: { url: 'https://i.ibb.co/K54KLgF/Picsart-22-07-03-15-45-00-698.jpg'},
-    caption: xeonbody,
-    footer: `${footer}`,
-    buttons,
-    headerType: 4
-    }
-GojoMdNx.sendMessage(anu.id, buttonMessage)
+                    xeonbody = `┌─❖
+│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
+└┬❖ 「 @${xeonName.split("@")[0]}  」
+   │✑  𝗟𝗲𝗳𝘁 
+   │✑ ${metadata.subject}
+   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │✑ ${xeonmembers}th
+   │✑  𝗧𝗶𝗺𝗲 : 
+   │✑  ${xeontime} ${xeondate}
+   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+   ├              ❤️⃝😒ꦿ࿔
+   ├「 @${xeonName.split("@")[0]}  」
+   ├මූ ඉතින් හිටියත් වැඩක් නෑනෙ.
+   ├      ගියපු එකමයි හොද      
+   ├             😏😈👋
+   └───────────────┈ ⳹`
+      //if you copy the code value,
+   //dont forget to put my name(Xeon) as credit
+   //you fail to put, i sue you for sure!
+let buttons = [
+{buttonId: `wkwkwk`, buttonText: {displayText: 'බායි😇'}, type: 1}
+]
+let buttonMessage = {
+document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
+mimetype: docs,
+jpegThumbnail:XeonLft,
+mentions: [num],
+fileName: `${metadata.subject}`,
+fileLength: 99999999999999,
+caption: xeonbody,
+footer: `${botname}`,
+buttons: buttons,
+headerType: 4,
+contextInfo:{externalAdReply:{
+title: `${ownername}`,
+body: `Bye! my friend, take care.`,
+mediaType:2,
+thumbnail: XeonLft,
+sourceUrl: `${websitex}`,
+mediaUrl: `${websitex}`
+}}
+}
+XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 }
             }
         } catch (err) {
@@ -201,7 +276,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
     })
 	
     //Setting\\
-    GojoMdNx.decodeJid = (jid) => {
+    XeonBotInc.decodeJid = (jid) => {
         if (!jid) return jid
         if (/:\d+@/gi.test(jid)) {
             let decode = jidDecode(jid) || {}
@@ -209,44 +284,45 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
         } else return jid
     }
     
-    GojoMdNx.ev.on('contacts.update', update => {
+    XeonBotInc.ev.on('contacts.update', update => {
         for (let contact of update) {
-            let id = GojoMdNx.decodeJid(contact.id)
+            let id = XeonBotInc.decodeJid(contact.id)
             if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
         }
     })
 
-    GojoMdNx.getName = (jid, withoutContact  = false) => {
-        id = GojoMdNx.decodeJid(jid)
-        withoutContact = GojoMdNx.withoutContact || withoutContact 
+    XeonBotInc.getName = (jid, withoutContact  = false) => {
+        id = XeonBotInc.decodeJid(jid)
+        withoutContact = XeonBotInc.withoutContact || withoutContact 
         let v
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
-            if (!(v.name || v.subject)) v = GojoMdNx.groupMetadata(id) || {}
+            if (!(v.name || v.subject)) v = XeonBotInc.groupMetadata(id) || {}
             resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
         })
         else v = id === '0@s.whatsapp.net' ? {
             id,
             name: 'WhatsApp'
-        } : id === GojoMdNx.decodeJid(GojoMdNx.user.id) ?
-            GojoMdNx.user :
+        } : id === XeonBotInc.decodeJid(XeonBotInc.user.id) ?
+            XeonBotInc.user :
             (store.contacts[id] || {})
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
     
-    GojoMdNx.sendContact = async (jid, kon, quoted = '', opts = {}) => {
+    XeonBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 	let list = []
 	for (let i of kon) {
 	    list.push({
-	    	displayName: await GojoMdNx.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:${sc}\nitem2.X-ABLabel:Script\nitem3.URL:${myweb}\nitem3.X-ABLabel:Script\nitem4.ADR:;;${region};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	displayName: await XeonBotInc.getName(i + '@s.whatsapp.net'),
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nFN:${global.ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.ytname}\nitem2.X-ABLabel:YouTube\nitem3.URL:${global.socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	////////////////////////////////////////////////////////////vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:${botscript}\nitem2.X-ABLabel:Script\nitem3.URL:${websitex}\nitem3.X-ABLabel:Script\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
-	GojoMdNx.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
+	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
     }
     
-    GojoMdNx.setStatus = (status) => {
-        GojoMdNx.query({
+    XeonBotInc.setStatus = (status) => {
+        XeonBotInc.query({
             tag: 'iq',
             attrs: {
                 to: '@s.whatsapp.net',
@@ -262,27 +338,27 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
         return status
     }
 	
-    GojoMdNx.public = true
+    XeonBotInc.public = true
 
-    GojoMdNx.serializeM = (m) => smsg(GojoMdNx, m, store)
+    XeonBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
 
-    GojoMdNx.ev.on('connection.update', async (update) => {
+    XeonBotInc.ev.on('connection.update', async (update) => {
         const { connection, lastDisconnect } = update	    
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
-            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); GojoMdNx.logout(); }
-            else if (reason === DisconnectReason.connectionClosed) { console.log("🐦Connection closed, reconnecting...."); startGojoMdNx(); }
-            else if (reason === DisconnectReason.connectionLost) { console.log("🐦Connection Lost from Server, reconnecting..."); startGojoMdNx(); }
-            else if (reason === DisconnectReason.connectionReplaced) { console.log("🐦Connection Replaced, Another New Session Opened, Please Close Current Session First"); GojoMdNx.logout(); }
-            else if (reason === DisconnectReason.loggedOut) { console.log(`🐦Device Logged Out, Please Scan Again And Run.`); GojoMdNx.logout(); }
-            else if (reason === DisconnectReason.restartRequired) { console.log("🐦Restart Required, Restarting..."); startGojoMdNx(); }
-            else if (reason === DisconnectReason.timedOut) { console.log("🐦Connection TimedOut, Reconnecting..."); startGojoMdNx(); }
-            else GojoMdNx.end(`🐦Unknown DisconnectReason: ${reason}|${connection}`)
+            if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.connectionClosed) { console.log("🦄Connection closed, reconnecting...."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.connectionLost) { console.log("🦄Connection Lost from Server, reconnecting..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.connectionReplaced) { console.log("🦄Connection Replaced, Another New Session Opened, Please Close Current Session First"); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.loggedOut) { console.log(`🦄Device Logged Out, Please Scan Again And Run.`); XeonBotInc.logout(); }
+            else if (reason === DisconnectReason.restartRequired) { console.log("🦄Restart Required, Restarting..."); startXeonBotInc(); }
+            else if (reason === DisconnectReason.timedOut) { console.log("🦄Connection TimedOut, Reconnecting..."); startXeonBotInc(); }
+            else XeonBotInc.end(`🦄Unknown DisconnectReason: ${reason}|${connection}`)
         }
         console.log('Connected...', update)
     })
 
-    GojoMdNx.ev.on('creds.update', saveState)
+    XeonBotInc.ev.on('creds.update', saveState)
 
     // Add Other
     /** Send Button 5 Image
@@ -295,8 +371,8 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options
      * @returns
      */
-    GojoMdNx.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
-        let message = await prepareWAMessageMedia({ image: img }, { upload: GojoMdNx.waUploadToServer })
+    XeonBotInc.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ image: img }, { upload: XeonBotInc.waUploadToServer })
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
         templateMessage: {
         hydratedTemplate: {
@@ -307,7 +383,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
             }
             }
             }), options)
-            GojoMdNx.relayMessage(jid, template.message, { messageId: template.key.id })
+            XeonBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
     /**
@@ -319,7 +395,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} quoted 
      * @param {*} options 
      */
-    GojoMdNx.sendButtonText = (jid, buttons = [], text, footer, quoted = '', options = {}) => {
+    XeonBotInc.sendButtonText = (jid, buttons = [], text, footer, quoted = '', options = {}) => {
         let buttonMessage = {
             text,
             footer,
@@ -327,7 +403,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
             headerType: 2,
             ...options
         }
-        GojoMdNx.sendMessage(jid, buttonMessage, { quoted, ...options })
+        XeonBotInc.sendMessage(jid, buttonMessage, { quoted, ...options })
     }
     
     /**
@@ -338,7 +414,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendText = (jid, text, quoted = '', options) => GojoMdNx.sendMessage(jid, { text: text, ...options }, { quoted })
+    XeonBotInc.sendText = (jid, text, quoted = '', options) => XeonBotInc.sendMessage(jid, { text: text, ...options }, { quoted })
 
     /**
      * 
@@ -349,9 +425,9 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendImage = async (jid, path, caption = '', quoted = '', options) => {
+    XeonBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
 	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await GojoMdNx.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
+        return await XeonBotInc.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
     }
 
     /**
@@ -363,9 +439,9 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
+    XeonBotInc.sendVideo = async (jid, path, caption = '', quoted = '', gif = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await GojoMdNx.sendMessage(jid, { video: buffer, caption: caption, gifPlayback: gif, ...options }, { quoted })
+        return await XeonBotInc.sendMessage(jid, { video: buffer, caption: caption, gifPlayback: gif, ...options }, { quoted })
     }
 
     /**
@@ -377,9 +453,9 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
+    XeonBotInc.sendAudio = async (jid, path, quoted = '', ptt = false, options) => {
         let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
-        return await GojoMdNx.sendMessage(jid, { audio: buffer, ptt: ptt, ...options }, { quoted })
+        return await XeonBotInc.sendMessage(jid, { audio: buffer, ptt: ptt, ...options }, { quoted })
     }
 
     /**
@@ -390,7 +466,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendTextWithMentions = async (jid, text, quoted, options = {}) => GojoMdNx.sendMessage(jid, { text: text, contextInfo: { mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net') }, ...options }, { quoted })
+    XeonBotInc.sendTextWithMentions = async (jid, text, quoted, options = {}) => XeonBotInc.sendMessage(jid, { text: text, contextInfo: { mentionedJid: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net') }, ...options }, { quoted })
 
     /**
      * 
@@ -400,7 +476,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+    XeonBotInc.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         let buffer
         if (options && (options.packname || options.author)) {
@@ -409,7 +485,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
             buffer = await imageToWebp(buff)
         }
 
-        await GojoMdNx.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+        await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
 
@@ -421,7 +497,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+    XeonBotInc.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         let buffer
         if (options && (options.packname || options.author)) {
@@ -430,7 +506,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
             buffer = await videoToWebp(buff)
         }
 
-        await GojoMdNx.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+        await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
 	
@@ -441,7 +517,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} attachExtension 
      * @returns 
      */
-    GojoMdNx.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
+    XeonBotInc.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
         let quoted = message.msg ? message.msg : message
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
@@ -457,7 +533,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
         return trueFileName
     }
 
-    GojoMdNx.downloadMediaMessage = async (message) => {
+    XeonBotInc.downloadMediaMessage = async (message) => {
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
         const stream = await downloadContentFromMessage(message, messageType)
@@ -479,8 +555,8 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
-        let types = await GojoMdNx.getFile(path, true)
+    XeonBotInc.sendMedia = async (jid, path, fileName = '', caption = '', quoted = '', options = {}) => {
+        let types = await XeonBotInc.getFile(path, true)
            let { mime, ext, res, data, filename } = types
            if (res && res.status !== 200 || file.length <= 65536) {
                try { throw { json: JSON.parse(file.toString()) } }
@@ -500,7 +576,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
        else if (/video/.test(mime)) type = 'video'
        else if (/audio/.test(mime)) type = 'audio'
        else type = 'document'
-       await GojoMdNx.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
+       await XeonBotInc.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
        return fs.promises.unlink(pathFile)
        }
 
@@ -512,7 +588,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} options 
      * @returns 
      */
-    GojoMdNx.copyNForward = async (jid, message, forceForward = false, options = {}) => {
+    XeonBotInc.copyNForward = async (jid, message, forceForward = false, options = {}) => {
         let vtype
 		if (options.readViewOnce) {
 			message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
@@ -543,11 +619,11 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
                 }
             } : {})
         } : {})
-        await GojoMdNx.relayMessage(jid, waMessage.message, { messageId:  waMessage.key.id })
+        await XeonBotInc.relayMessage(jid, waMessage.message, { messageId:  waMessage.key.id })
         return waMessage
     }
 
-    GojoMdNx.cMod = (jid, copy, text = '', sender = GojoMdNx.user.id, options = {}) => {
+    XeonBotInc.cMod = (jid, copy, text = '', sender = XeonBotInc.user.id, options = {}) => {
         //let copy = message.toJSON()
 		let mtype = Object.keys(copy.message)[0]
 		let isEphemeral = mtype === 'ephemeralMessage'
@@ -568,9 +644,86 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
 		if (copy.key.remoteJid.includes('@s.whatsapp.net')) sender = sender || copy.key.remoteJid
 		else if (copy.key.remoteJid.includes('@broadcast')) sender = sender || copy.key.remoteJid
 		copy.key.remoteJid = jid
-		copy.key.fromMe = sender === GojoMdNx.user.id
+		copy.key.fromMe = sender === XeonBotInc.user.id
 
         return proto.WebMessageInfo.fromObject(copy)
+    }
+
+
+//send 5 button image by xeon
+    XeonBotInc.send5ButImg = async (jid , text = '' , footer = '', img, but = [], thumb, options = {}) =>{
+        let message = await prepareWAMessageMedia({ image: img, jpegThumbnail:thumb }, { upload: XeonBotInc.waUploadToServer })
+        var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+        templateMessage: {
+        hydratedTemplate: {
+        imageMessage: message.imageMessage,
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
+            }
+            }
+            }), options)
+            XeonBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
+    }
+
+
+    //send5butvid by xeon
+        XeonBotInc.send5ButVid = async (jid , text = '' , footer = '', vid, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ video: vid }, { upload: XeonBotInc.waUploadToServer })
+        var template = generateWAMessageFromContent(jid, proto.Message.fromObject({
+        templateMessage: {
+        hydratedTemplate: {
+        videoMessage: message.videoMessage,
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
+            }
+            }
+            }), options)
+            XeonBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
+    }
+    
+    
+    //send5butmsg by xeon
+            XeonBotInc.send5ButMsg = (jid, text = '' , footer = '', but = []) =>{
+        let templateButtons = but
+        var templateMessage = {
+        text: text,
+        footer: footer,
+        templateButtons: templateButtons
+        }
+        XeonBotInc.sendMessage(jid, templateMessage)
+        }
+
+
+//sendlistmsg by xeon
+        XeonBotInc.sendListMsg = (jid, text = '', footer = '', title = '' , butText = '', sects = [], quoted) => {
+        let sections = sects
+        var listMes = {
+        text: text,
+        footer: footer,
+        title: title,
+        buttonText: butText,
+        sections
+        }
+        XeonBotInc.sendMessage(jid, listMes, { quoted: quoted })
+        }
+
+
+    //send5butgif by xeon
+        XeonBotInc.send5ButGif = async (jid , text = '' , footer = '', gif, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ video: gif, gifPlayback: true }, { upload: XeonBotInc.waUploadToServer })
+        var template = generateWAMessageFromContent(jid, proto.Message.fromObject({
+        templateMessage: {
+        hydratedTemplate: {
+        videoMessage: message.videoMessage,
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
+            }
+            }
+            }), options)
+            XeonBotInc.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
 
@@ -579,7 +732,7 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
      * @param {*} path 
      * @returns 
      */
-    GojoMdNx.getFile = async (PATH, save) => {
+    XeonBotInc.getFile = async (PATH, save) => {
         let res
         let data = Buffer.isBuffer(PATH) ? PATH : /^data:.*?\/.*?;base64,/i.test(PATH) ? Buffer.from(PATH.split`,`[1], 'base64') : /^https?:\/\//.test(PATH) ? await (res = await getBuffer(PATH)) : fs.existsSync(PATH) ? (filename = PATH, fs.readFileSync(PATH)) : typeof PATH === 'string' ? PATH : Buffer.alloc(0)
         //if (!Buffer.isBuffer(data)) throw new TypeError('Result is not a buffer')
@@ -599,10 +752,10 @@ GojoMdNx.sendMessage(anu.id, buttonMessage)
 
     }
 
-    return GojoMdNx
+    return XeonBotInc
 }
 
-startGojoMdNx()
+startXeonBotInc()
 
 
 let file = require.resolve(__filename)
