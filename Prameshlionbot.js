@@ -228,7 +228,6 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
     	const isPremium = isCreator || global.premium.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || false
         const AntiLink = m.isGroup ? ntilink.includes(from) : false
 const AntiLinkYoutubeVid = m.isGroup ? ntilinkytvid.includes(from) : false
-const Antikunuharapa = m.isGroup ? ntikunuharapa.includes(from) : false
 const AntiLinkYoutubeChannel = m.isGroup ? ntilinkytch.includes(from) : false
 const AntiLinkInstagram = m.isGroup ? ntilinkig.includes(from) : false
 const AntiLinkFacebook = m.isGroup ? ntilinkfb.includes(from) : false
@@ -765,9 +764,9 @@ await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XeonBotInc.sendMessage(from, {text:`\`\`\`「  *☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ Group link Detected* 」\`\`\`\n\n@${kice.split("@")[0]} Has kicked he is grop link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
-//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒කුනුහරප තහනම්
-if (Antikunuharapa)
-if (budy.includes("hutta")){
+//antilink youtube channel by xeon
+if (AntiLinkYoutubeChannel)
+   if (budy.includes("hutto","hukapan","payya","pakaya","huththo","kariya","hukapan","huththi")){
 if (!isBotAdmins) return
 bvl = `\`\`\`「 * ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ කුනු හරප කීම තහනම්* 」\`\`\`\n\nAdmin has any toxis😒`
 if (isAdmins) return reply(bvl)
@@ -776,19 +775,6 @@ if (isCreator) return reply(bvl)
 kice = m.sender
 await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
 XeonBotInc.sendMessage(from, {text:`\`\`\`「  *☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ කුනුහරප කීම තහනම්* 」\`\`\`\n\n@${kice.split("@")[0]} Has kicked  කුනුහරප කීම තහනම් ක්‍රියාමර්ගය ඉවත්කිරීම`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
-} else {
-}
-//antilink youtube channel by xeon
-if (AntiLinkYoutubeChannel)
-   if (budy.includes("https://youtube.com/")){
-if (!isBotAdmins) return
-bvl = `\`\`\`「 YoutTube Channel Link Detected 」\`\`\`\n\nAdmin has sent a youtube channel link, admin is free to send any link😇`
-if (isAdmins) return reply(bvl)
-if (m.key.fromMe) return reply(bvl)
-if (isCreator) return reply(bvl)
-kice = m.sender
-await XeonBotInc.groupParticipantsUpdate(m.chat, [kice], 'remove')
-XeonBotInc.sendMessage(from, {text:`\`\`\`「 YouTube Channel Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending youtube channel link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antilink instagram by xeon
@@ -2838,7 +2824,7 @@ replay('Success in turning off group chat antilink in this group')
   }
   }
   break
-  case 'antilinkgroup': case 'group😒': {
+  case 'antilinkgroup': case 'groupl': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
@@ -2869,15 +2855,15 @@ replay('☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
   }
   }
   break
-  case 'antibadw': case 'kunu': {
+    case 'antikunuharapa': case 'antikunu': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (Antikunuharapa) return replay('Already activated')
-ntikunuharapa.push(from)
+if (AntiLinkYoutubeChannel) return replay('Already activated')
+ntilinkytch.push(from)
 replay('*☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n*මෙතැන් පටන් කුනුහරප කීම තහනම්*')
 var groupe = await XeonBotInc.groupMetadata(from)
 var members = groupe['participants']
@@ -2887,41 +2873,10 @@ mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
 XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you' කුනු හරප කීම තහනම්'`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!Antikunuharapa) return replay('Already deactivated')
-let off = ntikunuharapa.indexOf(from)
-ntikunuharapa.splice(off, 1)
-replay('☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n*දැන් කුනු හරපකීවට අව්ලක් නෑ ඒක off*')
-} else {
-  let buttonsntilink = [
-  { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
-  { buttonId: `${command} off`, buttonText: { displayText: 'Off' }, type: 1 }
-  ]
-  await XeonBotInc.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.botname}`, m)
-  }
-  }
-  break
-    case 'antilinkyoutubech': case 'antilinkyoutubechannel': case 'antilinkytch': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!m.isGroup) return replay(mess.group)
-if (!isBotAdmins) return replay(mess.botAdmin)
-if (!isAdmins && !isCreator) return replay(mess.admin)
-if (args[0] === "on") {
-if (AntiLinkYoutubeChannel) return replay('Already activated')
-ntilinkytch.push(from)
-replay('Success in turning on youtube channel antilink in this group')
-var groupe = await XeonBotInc.groupMetadata(from)
-var members = groupe['participants']
-var mems = []
-members.map(async adm => {
-mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
-})
-XeonBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️Warning⚠️ 」\`\`\`\n\nIf you're not an admin, don't send the youtube channel link in this group or u will be kicked immediately!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
-} else if (args[0] === "off") {
 if (!AntiLinkYoutubeChannel) return replay('Already deactivated')
 let off = ntilinkytch.indexOf(from)
 ntilinkytch.splice(off, 1)
-replay('Success in turning off youtube channel antilink in this group')
+replay('☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n*දැන් කුනු හරපකීවට අව්ලක් නෑ ඒක off*')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'On' }, type: 1 },
@@ -3328,8 +3283,8 @@ case 'grupsetting':
 if (isBanChat) return reply(mess.banChat)
                     let sections = []
                     let com = [`group open`,`autosticker on`,`welcome on`,`antilinkgc on`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antikunuharapa on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group open`]
-                    let comm = [`group close`,`autosticker off`,`welcome off`,`antilinkgc off`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`Antikunuharapa on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group close`]
-                    let listnya = [`Group open/close`,`Auto-Sticker on/off`,`Welcome/Left on/off`,`Antilink Group on/off`,`Antilink Telegram on/off`,`Antilink Tiktok on/off`,`Antilink Youtube Channel on/off`,`Antikunuharapa on/off`,`Antilink Youtube Video on/off`,`Antilink Instagram on/off`,`Antilink Facebook on/off`,`Antilink Twitter on/off`,`Antilink All on/off`,`Anti Wame on/off`,`Anti Toxic on/off`,`Anti Virus on/off`,`Auto Reply on/off`,`Group open/close`]
+                    let comm = [`group close`,`autosticker off`,`welcome off`,`antilinkgc off`,`antilinktg on`,`antilinktt on`,`antilinkytch on`,`antilinkytvid on`,`antilinkig on`,`antilinkfb on`,`antilinktwit on`,`antilinkall on`,`antiwame on`,`antitoxic on`,`antivirus on`,`autoreply on`,`group close`]
+                    let listnya = [`Group open/close`,`Auto-Sticker on/off`,`Welcome/Left on/off`,`Antilink Group on/off`,`Antilink Telegram on/off`,`Antilink Tiktok on/off`,`Antilink Youtube Channel on/off`,`Antilink Youtube Video on/off`,`Antilink Instagram on/off`,`Antilink Facebook on/off`,`Antilink Twitter on/off`,`Antilink All on/off`,`Anti Wame on/off`,`Anti Toxic on/off`,`Anti Virus on/off`,`Auto Reply on/off`,`Group open/close`]
                     let suruh = [`Enable`, `Disable`]
                     let fiturname = [`Group`,`Auto Sticker`,`Welcome`,`Antilink Group`,`Antilink Telegram`,`Antilink Tiktok`,`Antilink Youtube Channel`,`Anti kunuharapa`,`Antilink Youtube Video`,`Antilink Instagram`,`Antilink Facebook`,`Antilink Twitter`,`Antilink All`,`Anti Wame`,`Anti Toxic`,`Anti Virus`,`Auto Reply`,`Group`]
                     let startnum = 0; let startnu = 0; let startn = 0;let start = 0
@@ -10920,6 +10875,25 @@ XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
                 })
             }
             break
+case 'badlink': case 'linkepa': {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
+let buttons = [
+                        { buttonId: 'antikunuharapa', buttonText: { displayText: '💠𝐁𝐀𝐃 𝐖𝐎𝐑𝐃💠' }, type: 1 },
+                        { buttonId: 'antilinkgroup', buttonText: { displayText: '💠𝐆𝐑𝐎𝐔𝐏 𝐋𝐈𝐍𝐊💠' }, type: 1 },
+                        { buttonId: 'groupmenu', buttonText: { displayText: '💠𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊💠' }, type: 1 }
+                    ]
+                let buttonMessage = {
+                    image: https://i.ibb.co/K54KLgF/Picsart-22-07-03-15-45-00-698.jpg,
+                    caption: ` ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n grop වල link දාන අය outo remove කිරීමට👉 𝐆𝐑𝐎𝐔𝐎 𝐋𝐈𝐍𝐊 👈ඔබන්න \n grop  එකේ කුනුහරප කියන අය auto remove කිරීමට👉 𝐁𝐀𝐃 𝐖𝐎𝐑𝐃👈 එක ඔබන්න \n වෙනත් 𝐥𝐢𝐧𝐤 දාන අය auto remove කිරීමට👉 𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊 👈 ඔබා ඔබට 𝐫𝐞𝐦𝐨𝐯𝐞 කිරීමට අවශ්‍ය 𝐥𝐢𝐧𝐤 වල නම දාන්න \n උදා= .antilinkfacebook\n💚💚💚💚💚💚💚 `,
+                    footer: ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+                }
+            break            
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
