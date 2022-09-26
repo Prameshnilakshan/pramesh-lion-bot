@@ -10874,25 +10874,6 @@ XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
                     m.reply(`*${text} Not found*`)
                 })
             }
-            break
-case 'badlink': case 'linkepa': {
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
-let buttons = [
-                        { buttonId: 'antikunuharapa', buttonText: { displayText: '💠𝐁𝐀𝐃 𝐖𝐎𝐑𝐃💠' }, type: 1 },
-                        { buttonId: 'antilinkgroup', buttonText: { displayText: '💠𝐆𝐑𝐎𝐔𝐏 𝐋𝐈𝐍𝐊💠' }, type: 1 },
-                        { buttonId: 'groupmenu', buttonText: { displayText: '💠𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊💠' }, type: 1 }
-                    ]
-                let buttonMessage = {
-                    image: https://i.ibb.co/K54KLgF/Picsart-22-07-03-15-45-00-698.jpg,
-                    caption: ` ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n grop වල link දාන අය outo remove කිරීමට👉 𝐆𝐑𝐎𝐔𝐎 𝐋𝐈𝐍𝐊 👈ඔබන්න \n grop  එකේ කුනුහරප කියන අය auto remove කිරීමට👉 𝐁𝐀𝐃 𝐖𝐎𝐑𝐃👈 එක ඔබන්න \n වෙනත් 𝐥𝐢𝐧𝐤 දාන අය auto remove කිරීමට👉 𝐀𝐍𝐓𝐈 𝐋𝐈𝐍𝐊 👈 ඔබා ඔබට 𝐫𝐞𝐦𝐨𝐯𝐞 කිරීමට අවශ්‍ය 𝐥𝐢𝐧𝐤 වල නම දාන්න \n උදා= .antilinkfacebook\n💚💚💚💚💚💚💚 `,
-                    footer: ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-                }
             break            
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
