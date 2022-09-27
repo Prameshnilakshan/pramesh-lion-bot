@@ -10889,7 +10889,6 @@ PrameshBotInc.sendMessage(m.chat, {text: `මම කොහෙ කියල ය�
 :m})
 }
 break
-break
 case 'sindu': {
  if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
