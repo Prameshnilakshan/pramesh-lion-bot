@@ -10883,7 +10883,7 @@ XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
                 if (!text) throw `Example : ${prefix + command} story wa anime`
                 let yts = require("yt-search")
                 let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+                let anu = search.videos[0] // Length selector [0] \\RDmd
                 let buf = await getBuffer(anu.thumbnail)
                 let caption = `
 *▊▊▊BEST MUSIC▊▊▊*
@@ -10919,7 +10919,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
           }, {
           quickReplyButton: {
                   displayText: `SONG`,
-                  id: `${prefix}ytmp3 ${anu.url}`
+                  id: `${prefix}songe ${anu.url}`
           }
           }, {
           quickReplyButton: {
@@ -10933,7 +10933,34 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }), { userJid: m.chat })
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
-break  
+break
+	    case 'songe':  case 'sinduwa': {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})	    
+	            if (isBan) throw mess.ban
+                let { yta } = require('./lib/y2mate')
+                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`
+                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) throw '*The link you provided is not valid*'
+                
+                let quality = args[1] ? args[1] : '128kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
+                let caption = `
+*▊▊▊BEST MUSIC▊▊▊*
+
+*⬤▶━━━━━━━━━2:30*\n\n*⬤TITLE :* ${media.title}\n*⬤FILESIZE :* ${media.filesizeF}\n*⬤URL :* ${isUrl(text)}\n*⬤EXT :* MP3\n*⬤RESOLUTION :* ${args[1] || '128kbps'}\n\n*ZIM BOT INC*`
+                buf = await getBuffer(media.thumb)
+                XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
+                XeonBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
+                title:media.title,
+                body:"YOUTUBE MP3",
+                mediaType:2,
+                thumbnail:buf,
+                mediaUrl:`${text}`, 
+                sourceUrl: `${global.ytchannel}` }}}, {quoted:m})
+                }
+                break  
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
