@@ -10931,7 +10931,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     }
                 
                 }), { userJid: m.chat })
-                XeonBotIncrelayMessage(m.chat, template.message, { messageId: template.key.id })
+                XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
 break  
 case 'gn': 
