@@ -8139,7 +8139,7 @@ XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})
     XeonBotInc.sendMessage(from, { audio: { url: xeonytiktokaudio }, mimetype: 'audio/mp4' }, { quoted: m })
    }
  break
-	case 'music': case 'play': case 'song': case 'ytplay': {
+	case 'music': case 'play': case 'ytplay': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})
@@ -10875,7 +10875,7 @@ XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
                 })
             }
             break
-case 'sindu': {
+case 'song': {
  if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
@@ -10886,13 +10886,20 @@ XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
                 let anu = search.videos[0] // Length selector [0] \\RDmd
                 let buf = await getBuffer(anu.thumbnail)
                 let caption = `
-*▊▊▊BEST MUSIC▊▊▊*
-
-*⬤▶━━━━━━━━━2:30*
-*📝TITLE :* ${anu.title}
-*⬤SIZE :* *LOL*
-*⬤URL :* ${anu.url}
-*⬤DESCRIPTION :* ${anu.description}
+*| ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ |*
+◈━━━━━━━━━━━━━━━◈            
+╒════════════════
+┝ 📝 Title : ${anu.title}
+┝ 🔍 Ext : Search
+┝ 🔗 ID : ${anu.videoId}
+┝ ⏰ Duration : ${anu.timestamp}
+┝ 🌝 Viewers : ${anu.views}
+┝ ⏳ Uploaded : ${anu.ago}
+┝ 🔮 Author : ${anu.author.name}
+┝ 🌐 Channel : ${anu.author.url}
+┝ ⛓️ Description : ${anu.description}
+┝ ✏️ Url : ${anu.url}
+┕────────────
 `
 message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   XeonBotInc.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -10913,20 +10920,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
           }
                             }, {
           quickReplyButton: {
-                  displayText: `VIDEO`,
-                  id: `${prefix}ytmp4 ${anu.url}`
+                  displayText: `༺🎬𝐕𝐈𝐃𝐄𝐎🎬༻`,
+                  id: `${prefix}videoe ${anu.url}`
           }
           }, {
           quickReplyButton: {
-                  displayText: `SONG`,
+                  displayText: `༺🎶𝐒𝐎𝐍𝐆🎶༻`,
                   id: `${prefix}songe ${anu.url}`
           }
-          }, {
-          quickReplyButton: {
-                  displayText: `YTSEARCH`,
-                  id: `${prefix}ytsearch ${anu.title}`
-          }
-                            }]
+           }]
                         }
                     }
                 
@@ -10946,10 +10948,7 @@ XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
-                let caption = `
-*▊▊▊BEST MUSIC▊▊▊*
-
-*⬤▶━━━━━━━━━2:30*\n\n*⬤TITLE :* ${media.title}\n*⬤FILESIZE :* ${media.filesizeF}\n*⬤URL :* ${isUrl(text)}\n*⬤EXT :* MP3\n*⬤RESOLUTION :* ${args[1] || '128kbps'}\n\n*ZIM BOT INC*`
+                let caption = `*${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐎𝐍𝐆*`
                 buf = await getBuffer(media.thumb)
                 XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
                 XeonBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
@@ -10960,7 +10959,30 @@ XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})
                 mediaUrl:`${text}`, 
                 sourceUrl: `${global.ytchannel}` }}}, {quoted:m})
                 }
-                break  
+                break
+           case 'videoe': {
+           if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🎬`, key: m.key }})
+           if (isBan) throw mess.ban
+                // //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)            
+                let { ytv } = require('./lib/y2mate')
+                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
+                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) throw '*The link you provided is not valid*'
+                if (!isInventoryLimit){ addInventoriLimit(m.sender) }
+            if (isLimit < 1) return m.reply(mess.endLimit)
+            kurangLimit(m.sender, 1)
+            m.reply(`*1 limit used*`)
+                let quality = args[1] ? args[1] : '360p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
+                var capti = `*${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐕𝐈𝐃𝐄𝐎
+🎬🎬🎬🎬🎬🎬🎬🎬🎬*`
+                var buf = await getBuffer(media.thumb)
+                XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${capti}` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*Downloading From ${text}*` }, { quoted: m }).catch((err) => m.reply('*error while sending the video*'))
+            }
+            break  
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
