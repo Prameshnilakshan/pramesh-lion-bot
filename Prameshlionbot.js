@@ -624,7 +624,7 @@ jumlahharian = `${dataa.value}`
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await setStatus(`${PrameshBotInc.user.name} | Runtime : ${runtime(uptime)}`)
+		await setStatus(`$PrameshBotInc.user.nameuser.name} | Runtime : ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -2702,7 +2702,7 @@ ${vote[m.chat][2].map((v, i) => `┃╠ ${i + 1}. @${v.split`@`[0]}`).join('\n')
 *${prefix}delvote* - To Delete Vote Session
 
 
-©${PrameshBotInc.user.id}
+©$PrameshBotInc.user.nameuser.id}
 `
 PrameshBotInc.sendTextWithMentions(m.chat, teks_vote, m)
 break
@@ -3229,11 +3229,11 @@ if (isBanChat) return reply(mess.banChat)
                 if (args[0] === "on") {
                 if (db.data.chats[m.chat].mute) return reply(`Previously Active`)
                 db.data.chats[m.chat].mute = true
-                reply(`${PrameshBotInc.user.name} Has Been Muted In This Group !`)
+                reply(`$PrameshBotInc.user.name} Has Been Muted In This Group !`)
                 } else if (args[0] === "off") {
                 if (!db.data.chats[m.chat].mute) return reply(`Previously Inactive`)
                 db.data.chats[m.chat].mute = false
-                reply(`${PrameshBotInc.user.name} Has Been Unmuted In This Group!`)
+                reply(`$PrameshBotInc.user.name} Has Been Unmuted In This Group!`)
                 } else {
                  let buttons = [
                         { buttonId: 'mute on', buttonText: { displayText: 'On' }, type: 1 },
@@ -6169,7 +6169,7 @@ reply(mess.wait)
 let media = await quoted.download()
 let { toAudio } = require('./lib/converter')
 let audio = await toAudio(media, 'mp4')
-PrameshBotInc.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `Converted By ${PrameshBotInc.user.name} (${m.id}).mp3`}, { quoted : m })
+PrameshBotInc.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName: `Converted By $PrameshBotInc.user.name} (${m.id}).mp3`}, { quoted : m })
 }
 break
 case 'tovn': case 'toptt': {
@@ -10880,73 +10880,6 @@ case 'gn':
 	if (isBanChat) return reply(mess.banChat)
 PrameshBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
 reply(`good night bn 😂😂 !!!`)
-break
-case 'pala': case 'yaman': {
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-PrameshBotInc.sendMessage(from, { react: { text: `😒`, key: m.key }})
-PrameshBotInc.sendMessage(m.chat, {text: `මම කොහෙ කියල යන්නද බන් ඉතින්😒😇\n💙💙💙💙`},{qouted
-:m})
-}
-break
-case 'sindu': {
- if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-PrameshBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
-//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
-                if (!text) throw `Example : ${prefix + command} story wa anime`
-                let yts = require("yt-search")
-                let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
-                let buf = await getBuffer(anu.thumbnail)
-                let caption = `
-*▊▊▊BEST MUSIC▊▊▊*
-
-*⬤▶━━━━━━━━━2:30*
-*⬤TITLE :* ${anu.title}
-*⬤SIZE :* *LOL*
-*⬤URL :* ${anu.url}
-*⬤DESCRIPTION :* ${anu.description}
-`
-message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { upload:   ZimBotInc.waUploadToServer })
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: caption,
-                            imageMessage: message.imageMessage,
-                            hydratedFooterText: `${botname}`,
-                            hydratedButtons: [{
-          urlButton: {
-                  displayText: 'SOURCE VIDEO',
-                  url: `${anu.url}`
-          }
-                            }, {
-                            	urlButton: {
-          displayText: `youtube `, 
-                  url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
-          }
-                            }, {
-          quickReplyButton: {
-                  displayText: `VIDEO`,
-                  id: `${prefix}ytmp4 ${anu.url}`
-          }
-          }, {
-          quickReplyButton: {
-                  displayText: `SONG`,
-                  id: `${prefix}ytmp3 ${anu.url}`
-          }
-          }, {
-          quickReplyButton: {
-                  displayText: `YTSEARCH`,
-                  id: `${prefix}ytsearch ${anu.title}`
-          }
-                            }]
-                        }
-                    }
-                
-                }), { userJid: m.chat })
-                PrameshBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-}
 break
     case 'hari': case 'waradi': {
 if (isBan) return reply(mess.ban)
