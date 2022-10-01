@@ -3,22 +3,17 @@
 //or copy the codes/script,
 //pls give credit
 //no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
+//© 2022 kavee Bot Inc. Dark nero Bot MD 
 //Thank you to Lord Buddha, Family and Myself
 //════════════════════════════//
-//recode kar ke youtube pe upload kar rhe hai ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
+// my owenr kaveesha
 //════════════════════════════//
 //If you recode and uploading on your channel
 //or copy pasting the codes in ur script, 
 //i give permission to do as long as you
-//put Xeons youtube channel link in the video
+//put kavee youtube channel link in the video
 //description and tag me on githuh repo, 
-//thank you🦄
+//thank you
 //════════════════════════════//
 
 require('./settings')
@@ -83,16 +78,7 @@ async function startXeonBotInc() {
 
     store.bind(XeonBotInc.ev)
     
-    // anticall auto block
-    XeonBotInc.ws.on('CB:call', async (json) => {
-    const callerId = json.content[0].attrs['call-creator']
-    if (json.content[0].tag == 'offer') {
-    let xeonfek = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
-    await sleep(8000)
-    await XeonBotInc.updateBlockStatus(callerId, "block")
-    }
-    })
+
 
     XeonBotInc.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
@@ -151,18 +137,20 @@ let docs = pickRandom(documents)
                 try {
                     ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
                 } catch {
-                    ppuser = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
+                    ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
                 //Get Profile Picture Group\\
                 try {
                     ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'
+                    ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
 //welcome\\
-        let nama = await XeonBotInc.getName(num)
+      
+//welcome\\
+let nama = await XeonBotInc.getName(num)
 memb = metadata.participants.length
 XeonWlcm = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/d460e086f9f9bf6b04e17.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
@@ -170,104 +158,58 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+	            const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
-   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-                 
-   ├  හායි
-   ├   ඔයාව සාදරෙයෙන්
-   ├          ආදරයෙන් ❤️
-   ├           පිලිගන්නව
-   ├🤗
-   ├  ❤️🧡💛💚💙💜🤎🖤🤍
-   └───────────────┈ ⳹`
+                 xeonbody = `🐬 Hi👋 @${xeonName.split("@")[0]}
+
+🍁 Welcome To  ${metadata.subject}
+🍁 ${xmembers} Members
+
+Date 📆  =  ${xdate}
+Time ⏰ =  ${xtime} `
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
-]
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '🙏WELCOME🙏'}, type: 1},
+    {buttonId: `alive`, buttonText: {displayText: '💙𝐀𝐋𝐈𝐕𝐄💙'}, type: 1}
+    ]
 let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonWlcm,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
+    image: { url: 'https://i.ibb.co/hXtGkzj/welcome-poster-spectrum-brush-strokes-white-background-colorful-gradient-brush-design-vector-paper-i.jpg'},
 caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Don't forget to read group description`,
-mediaType:2,
-thumbnail: XeonWlcm,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
+footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+buttons,
+headerType: 4
 }
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+XeonBotInc.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+	                const xeondate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
-   │    🍫 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-   ├              ❤️⃝😒ꦿ࿔
-   ├「 @${xeonName.split("@")[0]}  」
-   ├මූ ඉතින් හිටියත් වැඩක් නෑනෙ.
-   ├      ගියපු එකමයි හොද      
-   ├             😏😈👋
-   └───────────────┈ ⳹`
-      //if you copy the code value,
-   //dont forget to put my name(Xeon) as credit
-   //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'බායි😇'}, type: 1}
-]
-let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonLft,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Bye! my friend, take care.`,
-mediaType:2,
-thumbnail: XeonLft,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
-}
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+                     xeonbody = `🐬 Bye👋 @${xeonName.split("@")[0]}
+
+🍁 Left From  ${metadata.subject}
+🍁 ${xeonmembers} Members
+                    
+Date 📆 =  ${xeondate}
+Time ⏰ =  ${xeontime} `
+
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '👋BYE👋'}, type: 1},
+    {buttonId: `alive`, buttonText: {displayText: '💙𝐀𝐋𝐈𝐕𝐄💙'}, type: 1}
+    ]
+    let buttonMessage = {
+        image: { url: 'https://i.ibb.co/gytytkM/images.jpg'},
+    caption: xeonbody,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons,
+    headerType: 4
+    }
+XeonBotInc.sendMessage(anu.id, buttonMessage)
                 }
             }
         } catch (err) {
@@ -572,7 +514,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         type = 'sticker'
         mimetype = 'image/webp'
         }
-       else if (/image/.test(mime)) type = 'image'
+       else if (/image/.test(mime)) type = 'image' 
        else if (/video/.test(mime)) type = 'video'
        else if (/audio/.test(mime)) type = 'audio'
        else type = 'document'
