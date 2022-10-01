@@ -8233,20 +8233,19 @@ sourceUrl: `${global.websitex}`
 }}}, {quoted:m})
 }
 break
-case 'ytad': {
+	    case 'lionsong': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})
-XeonBotInc.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", caption:"${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐀𝐔𝐃𝐈𝐎", ptt:true, contextInfo:{externalAdReply:{
-title:`${global.botname}`,
-body:`${global.botname}`,
-thumbnail: log0,
-mediaType:2,
-mediaUrl: `${global.websitex}`,
-sourceUrl: `${global.websitex}`
-}}}, {quoted:m})
-}
-break
+XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})<
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                XeonBotInc.sendMessage(m.chat, { text : q ? q : '${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐎𝐍𝐆' , mentions: participants.map(a => a.id)}, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+            }
+            break
             case 'ytdl': {
             	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -10821,12 +10820,6 @@ case 'tqtt':
 reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔 !!!`)
 break
-case 'hi': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🖐️`, key: m.key }})
-reply(`හායි  ඉතින් කොහොමද ඔයාට 👋👋!!`)
-break
 case 'gm': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -10932,7 +10925,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
            },{
           quickReplyButton: {
                   displayText: `༺🎶𝐒𝐎𝐍𝐆🎶༻`,
-                  id: `${prefix}ytad ${anu.url}`
+                  id: `${prefix}lionsong ${anu.url}`
           }
            }]
                         }
@@ -10954,7 +10947,7 @@ XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
-                let caption = `*${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐎𝐍𝐆*`
+                let caption = `*${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐎𝐍𝐆 𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓*`
                 buf = await getBuffer(media.thumb)
                 XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
                 XeonBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
@@ -10988,7 +10981,14 @@ XeonBotInc.sendMessage(from, { react: { text: `🎬`, key: m.key }})
                 XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${capti}` }, { quoted: m })
                 XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `*Downloading From ${text}*` }, { quoted: m }).catch((err) => m.reply('*error while sending the video*'))
             }
-            break  
+            break
+            case 'hi': {
+            if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
+            XeonBotInc.sendMessage(m.chat, { text : q ? q : '𝐇𝐈 ${pushname} \n සුබ දවසක්' , mentions: participants.map(a => a.id)}, { quoted: m })
+            }
+                break  
 case 'gn': 
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
