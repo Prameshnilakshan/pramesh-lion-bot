@@ -10995,6 +10995,169 @@ case 'gn':
 XeonBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
 reply(`good night bn 😂😂 !!!`)
 break
+                case 'sk': {
+                	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🖼️`, key: m.key }})
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `Hi ${pushname}`,
+                    description: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n𝐋𝐎𝐆𝐎 𝐌𝐀𝐊𝐈𝐍𝐆 𝐒𝐈𝐒𝐓𝐄𝐌`,
+                    buttonText: "Menu",
+                    footerText: `${global.botname}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "Initial Features Of Bot 🦁",
+								"rows": [
+									{
+										"title": "LION",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `Lion ${text}`
+									}
+								]
+							},
+							{
+								"title": "Bot Features 🦁",
+								"rows": [
+									{
+										"title": "candy",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `candy ${text}`
+									},
+									{
+										"title": "8bit",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `8bit ${text}`
+										},
+									{
+										"title": "horror",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `horror ${text}`
+										},
+										{
+										"title": "hoorror",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `hoorror ${text}`
+										},
+										{
+										"title": "blackpinkneon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blackpinkneon ${text}`
+									},
+									{
+										"title": "retro",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `retro ${text}`
+									},
+									{
+										"title": "deepsea️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `deepsea ${text}`
+									},
+									{
+										"title": "scifi",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `scifi ${text}`
+									},
+									{
+										"title": "fiction",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `fiction ${text}`
+									},
+									{
+										"title": "berry️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `berry ${text}`
+									},
+									{
+										"title": "fruitjuice",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `fruitjuice ${text}`
+									},
+									{
+										"title": "biscuit️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `biscuit ${text}`
+									},
+										{
+											"title": "wood",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `wood ${text}`
+										},
+										{
+											"title": "chocolate",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `chocolate ${text}`
+										},
+										{
+										"title": "matrix️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `matrix ${text}`
+									     },
+									{
+										"title": "blood",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blood ${text}`
+									     },
+										{
+											"title": "halloween",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `halloween ${text}`
+										},
+										{
+										"title": "darkgold",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `darkgold ${text}`
+									},
+										{
+											"title": "firework️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `firework ${text}`
+										},
+										{
+											"title": "skeleton️",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `skeleton ${text}`
+										},
+										{
+										"title": "sand",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `sand ${text}`
+									},
+										{
+											"title": "leaves",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `leaves ${text}`
+										}
+								]
+							},
+							{
+								"title": "Chat With Fellow Users 🌝",
+								"rows": [
+									{
+										"title": "Anonymous Chat Menu 🙎🏻‍♂️",
+										"description": "Displays The List Of Anonymous Chat Features",
+										"rowId": `${prefix}anonymousmenu`
+									}
+								]
+							},
+							{
+								"title": "Credit ©️",
+								"rows": [
+									{
+										"title": "Thanks To ❤️",
+										"description": "Displays The List Of Credit Of The Bot !!",
+										"rowId": `${prefix}tqtt`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
     case 'hari': case 'waradi': {
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
