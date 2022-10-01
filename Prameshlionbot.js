@@ -10738,7 +10738,7 @@ https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_
 💠💠💠💠💠💠💠💠💠💠💠
 *⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*` + '' + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐠𝐫𝐨𝐮𝐩","url": `${botscript}`}},{"quickReplyButton": {"displayText": "🪀𝐒𝐂𝐑𝐈𝐏𝐓🪀","id": 'bbb'}},{"quickReplyButton": {"displayText": "༒𝐀𝐋𝐈𝐕𝐄༒","id": 'alive'}},{"quickReplyButton": {"displayText": "📝𝐌𝐄𝐍𝐔📝","id": 'command'}}] )
 break
-case 'logo1':
+case 'logo💙💙':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🌁`, key: m.key }})
@@ -10995,15 +10995,15 @@ case 'gn':
 XeonBotInc.sendMessage(from, { react: { text: `🎇️`, key: m.key }})
 reply(`good night bn 😂😂 !!!`)
 break
-                case 'sk': {
+                case 'logo': case 'logo1': {
                 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🖼️`, key: m.key }})
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
-                    description: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n𝐋𝐎𝐆𝐎 𝐌𝐀𝐊𝐈𝐍𝐆 𝐒𝐈𝐒𝐓𝐄𝐌`,
-                    buttonText: "Menu",
+                    description: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n𝐋𝐎𝐆𝐎 𝐌𝐀𝐊𝐈𝐍𝐆 𝐒𝐈𝐒𝐓𝐄𝐌\nඔබට අවශ්‍ය ලොගෝ එක තෝරන්න`,
+                    buttonText: "තෝරන්න🗒️",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
@@ -11128,26 +11128,359 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 											"title": "leaves",
 										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
 										"rowId": `leaves ${text}`
+										
+								
+							},
+								{
+										"title": "magma",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `magma ${text}`
+									},
+									{
+										"title": "lava",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `lava ${text}`
+										},
+									{
+										"title": "rock",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `rock ${text}`
+										},
+										{
+										"title": "bloodglas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `bloodglas ${text}`
+										},
+										{
+										"title": "underwater",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `underwater ${text}`
+									},
+									{
+										"title": "textmaker",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `textmaker ${text}`
+									},
+									{
+										"title": "honey",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `honey ${text}`
+									},
+									{
+										"title": "ice",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `ice ${text}`
+									},
+									{
+										"title": "watercolor",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `watercolor ${text}`
+									},
+									{
+										"title": "multicolor",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `multicolor ${text}`
+									},
+									{
+										"title": "snow",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `snow ${text}`
+									},
+									{
+										"title": "harrypot",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `harrypot ${text}`
+									},
+										{
+											"title": "harrypotter",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `harrypotter ${text}`
+										},
+										{
+											"title": "brokenglass",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `brokenglass ${text}`
+										},
+										{
+										"title": "waterpipe",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `waterpipe ${text}`
+									     },
+									{
+										"title": "spooky",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `spooky ${text}`
+									     },
+										{
+											"title": "circuit",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `circuit ${text}`
+										},
+										{
+										"title": "metallic",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `metallic ${text}`
+									},
+										{
+											"title": "sparklechristmas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `sparklechristmas ${text}`
+										},
+										{
+											"title": "demon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `demon ${text}`
+										},
+										{
+										"title": "christmas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `christmas ${text}`
+									},
+										{
+											"title": "3dchristmas",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dchristmas ${text}`
+										},{
+										"title": "3dbox",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dbox ${text}`
+									},
+									{
+										"title": "waterdrop",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `waterdrop ${text}`
+										},
+									{
+										"title": "papercut",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `papercut ${text}`
+										},
+										{
+										"title": "transformer",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `transformer ${text}`
+										},
+										{
+										"title": "neondevil",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neondevil ${text}`
+									},
+									{
+										"title": "3davengers",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3davengers ${text}`
+									},
+									{
+										"title": "3dstone",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dstone ${text}`
+									},
+									{
+										"title": "3dstone2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dstone2 ${text}`
+									},
+									{
+										"title": "summertime",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `summertime ${text}`
+									},
+									{
+										"title": "thunder",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `thunder ${text}`
+									},
+									{
+										"title": "window",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `window ${text}`
+									},
+									{
+										"title": "graffiti",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `graffiti ${text}`
+									},
+										{
+											"title": "graffitibike",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `graffitibike ${text}`
+										},
+										{
+											"title": "pornhub",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `pornhub ${text}`
+										},
+										{
+										"title": "glitch",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `glitch ${text}`
+									     },
+									{
+										"title": "blackpink",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blackpink ${text}`
+									     },
+										{
+											"title": "glitch2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `glitch2 ${text}`
+										},
+										{
+										"title": "glitch3",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `glitch3 ${text}`
+									},
+										{
+											"title": "3dspace",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dspace ${text}`
+										},
+										{
+											"title": "3dneon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `3dneon ${text}`
+										},
+										{
+										"title": "greenneon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `greenneon ${text}`
+									},
+										{
+											"title": "bokeh",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `bokeh ${text}`
+										
+								
+						    	},
+								{
+										"title": "holographic",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `holographic ${text}`
+									},
+									{
+										"title": "bear",
+										"description": "Displays The List Of Owner Features",
+										"rowId": `bear ${text}`
+										},
+									{
+										"title": "wolf",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `wolf ${text}`
+										},
+										{
+										"title": "joker",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `joker ${text}`
+										},
+										{
+										"title": "dropwater",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `dropwater ${text}`
+									},
+									{
+										"title": "dropwater2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `dropwater2 ${text}`
+									},
+									{
+										"title": "thewall",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `thewall ${text}`
+									},
+									{
+										"title": "neonlight",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neonlight ${text}`
+									},
+									{
+										"title": "natural",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `natural ${text}`
+									},
+									{
+										"title": "carbon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `carbon ${text}`
+									},
+									{
+										"title": "pencil",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `pencil ${text}`
+									},
+									{
+										"title": "blackpink2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `blackpink2 ${text}`
+									},
+										{
+											"title": "neon",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neon ${text}`
+										},
+										{
+											"title": "neonlight2",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `neonlight2 ${text}`
+										},
+										{
+										"title": "toxic",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `toxic ${text}`
+									     },
+									{
+										"title": "strawberry",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `strawberry ${text}`
+									     },
+										{
+											"title": "1917",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `1917 ${text}`
+										},
+										{
+										"title": "sci_fi",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `sci_fi ${text}`
+									},
+										{
+											"title": "ancient",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `ancient ${text}`
+										},
+										{
+											"title": "fabric",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `fabric ${text}`
+										},
+										{
+										"title": "hoorror",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `hoorror ${text}`
+									},
+										{
+											"title": "whitebear",
+										"description": "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒",
+										"rowId": `whitebear ${text}`
 										}
 								]
 							},
 							{
-								"title": "Chat With Fellow Users 🌝",
+								"title": "LION LOGO2",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu 🙎🏻‍♂️",
+										"title": "lion2",
 										"description": "Displays The List Of Anonymous Chat Features",
-										"rowId": `${prefix}anonymousmenu`
+										"rowId": `lion2 ${text}`
 									}
 								]
 							},
 							{
-								"title": "Credit ©️",
+								"title": "༺𝐀𝐋𝐈𝐕𝐄༻️",
 								"rows": [
 									{
-										"title": "Thanks To ❤️",
+										"title": "༺𝐀𝐋𝐈𝐕𝐄༻",
 										"description": "Displays The List Of Credit Of The Bot !!",
-										"rowId": `${prefix}tqtt`
+										"rowId": `alive`
 									}
 								]
 							}
