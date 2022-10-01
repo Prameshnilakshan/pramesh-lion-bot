@@ -8232,19 +8232,6 @@ mediaUrl: `${global.websitex}`,
 sourceUrl: `${global.websitex}`
 }}}, {quoted:m})
 }
-break
-	    case 'lionsong': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})<
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                XeonBotInc.sendMessage(m.chat, { text : q ? q : '${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐎𝐍𝐆' , mentions: participants.map(a => a.id)}, { quoted: m })
-                XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
-            }
             break
             case 'ytdl': {
             	if (isBan) return reply(mess.ban)
@@ -10905,7 +10892,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
           urlButton: {
                   displayText: 'SOURCE VIDEO',
-                  url: `${anu.url}`
+                  url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
           }
                             }, {
                             	urlButton: {
@@ -10925,7 +10912,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
            },{
           quickReplyButton: {
                   displayText: `༺🎶𝐒𝐎𝐍𝐆🎶༻`,
-                  id: `${prefix}lionsong ${anu.url}`
+                  id: `${prefix}sindulion ${anu.url}`
           }
            }]
                         }
@@ -10935,6 +10922,19 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
 break
+case 'sindulion': {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                XeonBotInc.sendImage(m.chat, media.thumb, `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '320kbps'}`, m)
+                XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+            }
+            break
 	    case 'songe':  case 'sinduwa': {
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
