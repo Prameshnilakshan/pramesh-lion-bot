@@ -9117,11 +9117,16 @@ case 'allmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }})
-var unicorn = await getBuffer(picak+'All Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
- ◈━━━━━━━━━━━━━◈
+let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '෴𝐏𝐑𝐀𝐌𝐄𝐒𝐇 𝐋𝐈𝐎𝐍 𝐁𝐎𝐓 𝐌𝐃෴🇱🇰'}, type: 1},
+    {buttonId: `owner`, buttonText: {displayText: '🙋𝐎𝐖𝐍𝐄𝐑🙋'}, type: 1}
+    ]
+let buttonMessage = {
+    image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'},
+caption: `◈━━━━━━━━━━━━━◈
  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
  ◈━━━━━━━━━━━━━◈
+╔═══════✪「 OWNER 」
 ╠ ${prefix}self
 ╠ ${prefix}public
 ╠ ${prefix}antitag
@@ -9842,7 +9847,14 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠ ${prefix}report [bug]
 ▯
 ╋ ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+╚═════════════✪
+`,
+footer: `${botname}`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
 break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
@@ -10726,8 +10738,13 @@ case 'bbb':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
-var unicorn = await getBuffer(picak+'How to create')
-await XeonBotInc.send5ButImg(from, `*▕☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▕*
+let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '෴𝐏𝐑𝐀𝐌𝐄𝐒𝐇 𝐋𝐈𝐎𝐍 𝐁𝐎𝐓෴🇱🇰'}, type: 1},
+    {buttonId: `alive`, buttonText: {displayText: '💙𝐀𝐋𝐈𝐕𝐄💙'}, type: 1}
+    ]
+    let buttonMessage = {
+        image: { url: 'https://i.ibb.co/bH371tY/Picsart-22-10-02-11-18-47-805.jpg'},
+    caption: `*▕☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▕*
 
 *🪀𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐄𝐋 𝐋𝐈𝐍𝐊🪀*
 https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
@@ -10736,70 +10753,13 @@ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
 https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_current=1
 
 💠💠💠💠💠💠💠💠💠💠💠
-*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*` + '' + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐠𝐫𝐨𝐮𝐩","url": `${botscript}`}},{"quickReplyButton": {"displayText": "🪀𝐒𝐂𝐑𝐈𝐏𝐓🪀","id": 'bbb'}},{"quickReplyButton": {"displayText": "༒𝐀𝐋𝐈𝐕𝐄༒","id": 'alive'}},{"quickReplyButton": {"displayText": "📝𝐌𝐄𝐍𝐔📝","id": 'command'}}] )
-break
-case 'logo💙💙':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌁`, key: m.key }})
-var unicorn = await getBuffer(picak+'Logo Menu')
-await XeonBotInc.send5ButImg(from, `🌄candy
-🌄christmas
-🌄3dchristmas
-🌄sparklechristmas
-🌄deepsea
-🌄scifi
-🌄rainbow
-🌄waterpipe
-🌄spooky
-🌄pencil
-🌄circuit
-🌄discovery
-🌄metalic
-🌄fiction
-🌄demon
-🌄transformer
-🌄berry
-🌄thunder
-🌄magma
-🌄3dstone
-🌄neonlight
-🌄glitch
-🌄harrypotter
-🌄brokenglass
-🌄papercut
-🌄watercolor
-🌄multicolor
-🌄neondevil
-🌄underwater
-🌄graffitibike
-🌄snow
-🌄cloud
-🌄honey
-🌄ice
-🌄fruitjuice
-🌄biscuit
-🌄wood
-🌄chocolate
-🌄strawberry
-🌄matrix
-🌄blood
-🌄dropwater
-🌄toxic
-🌄lava
-🌄rock
-🌄bloodglas
-🌄hallowen
-🌄darkgold
-🌄joker
-🌄firework
-🌄skeleton
-🌄blackpink
-🌄sand
-🌄glue
-🌄1917
-🌄leaves
-🌄neon` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*
+`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons,
+    headerType: 4
+    }
+XeonBotInc.sendMessage(anu.id, buttonMessage)
 break
 case 'tqtt': 
 	   if (isBan) return reply(mess.ban)
