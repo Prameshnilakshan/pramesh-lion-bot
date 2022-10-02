@@ -2406,6 +2406,7 @@ if (isBanChat) return reply(mess.banChat)
 	case 'kick': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `😒`, key: m.key }})
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -2416,6 +2417,7 @@ if (isBanChat) return reply(mess.banChat)
 	case 'add': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🫂`, key: m.key }})
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -2507,6 +2509,7 @@ if (isBanChat) return reply(mess.banChat)
             case 'tagall': {
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `👨‍👨‍👧‍👧`, key: m.key }})
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -9111,8 +9114,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu': {
     XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }}) 
     let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
     {buttonId: `owner`, buttonText: {displayText: '🙋𝐎𝐖𝐍𝐄𝐑🙋'}, type: 1},
-    {buttonId: `ping`, buttonText: {displayText: '𝐒𝐏𝐄𝐄𝐃'}, type: 1}
+    {buttonId: `command`, buttonText: {displayText: '🗒️𝐋𝐈𝐒𝐓🗒️'}, type: 1}
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
@@ -11452,6 +11456,32 @@ case 'pako': {
       
   *╚═══❖•ೋ° °ೋ•❖═══╝*`,
     footer: `📶 𝘽𝙡𝙪𝙚 𝙇𝙞𝙤𝙣𝙚 📶`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
+    break
+case 'bbb': {
+    XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `alive`, buttonText: {displayText: '༒𝐀𝐋𝐈𝐕𝐄༒'}, type: 1},
+    {buttonId: `allmenu`, buttonText: {displayText: '༒𝐌𝐄𝐍𝐔༒'}, type: 1},
+    {buttonId: `owner`, buttonText: {displayText: '༒𝐎𝐖𝐍𝐄𝐑༒'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/bH371tY/Picsart-22-10-02-11-18-47-805.jpg` },
+    caption: `*▕☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▕*
+
+*🪀𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐄𝐋 𝐋𝐈𝐍𝐊🪀*
+https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
+
+*🪀𝐁𝐎𝐓 𝐒𝐂𝐑𝐈𝐏𝐓 𝐋𝐈𝐍𝐊🪀*
+https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_current=1
+
+💠💠💠💠💠💠💠💠💠💠💠
+*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
     }
