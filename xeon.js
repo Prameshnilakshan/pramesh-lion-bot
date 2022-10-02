@@ -176,7 +176,7 @@ Time ⏰ =  ${xtime} `
     {buttonId: `alive`, buttonText: {displayText: '💙𝐀𝐋𝐈𝐕𝐄💙'}, type: 1}
     ]
 let buttonMessage = {
-    image: { url: 'https://i.ibb.co/hXtGkzj/welcome-poster-spectrum-brush-strokes-white-background-colorful-gradient-brush-design-vector-paper-i.jpg'},
+    image: { url: 'https://i.ibb.co/G2Grb9D/pramesh-welcome.jpg'},
 caption: xeonbody,
 footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
 buttons,
@@ -203,7 +203,7 @@ Time ⏰ =  ${xeontime} `
     {buttonId: `alive`, buttonText: {displayText: '💙𝐀𝐋𝐈𝐕𝐄💙'}, type: 1}
     ]
     let buttonMessage = {
-        image: { url: 'https://i.ibb.co/gytytkM/images.jpg'},
+        image: { url: 'https://i.ibb.co/sjkWGRj/pramesh-bay.jpg'},
     caption: xeonbody,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons,
