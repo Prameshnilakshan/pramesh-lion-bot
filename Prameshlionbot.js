@@ -8952,13 +8952,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                      ├      
                      ├ ${pushname} 
                      ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න
-                     
-                     
-                     
-                     
-                     ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
-                     ╘════════════════╝\n\n`,
-                    buttonText: "Menu",
+                     └────────────`,
+                    buttonText: "🗒️තෝරන්න🗒️",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
@@ -9114,8 +9109,6 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'allmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }})
 let buttons = [
     {buttonId: `bbb`, buttonText: {displayText: '෴𝐏𝐑𝐀𝐌𝐄𝐒𝐇 𝐋𝐈𝐎𝐍 𝐁𝐎𝐓 𝐌𝐃෴🇱🇰'}, type: 1},
@@ -10735,8 +10728,6 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OTHER 」
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
 case 'bbb':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }})
 let buttons = [
     {buttonId: `bbb`, buttonText: {displayText: '෴𝐏𝐑𝐀𝐌𝐄𝐒𝐇 𝐋𝐈𝐎𝐍 𝐁𝐎𝐓෴🇱🇰'}, type: 1},
