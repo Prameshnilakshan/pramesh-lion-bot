@@ -9108,12 +9108,15 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'allmenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }})
-var unicorn = await getBuffer(picak+'All Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
+case 'allmenu': {
+    XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '🙋𝐎𝐖𝐍𝐄𝐑🙋'}, type: 1},
+    {buttonId: `ping`, buttonText: {displayText: '𝐒𝐏𝐄𝐄𝐃'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
+    caption: `╔═══════✪「 OWNER 」	
  ◈━━━━━━━━━━━━━◈
  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
  ◈━━━━━━━━━━━━━◈
@@ -9837,8 +9840,14 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」
 ╠ ${prefix}report [bug]
 ▯
 ╋ ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
-break
+╚═════════════✪`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
+    break
 case 'ownermenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
