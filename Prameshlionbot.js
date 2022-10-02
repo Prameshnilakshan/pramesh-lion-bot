@@ -9115,8 +9115,7 @@ case 'allmenu': {
     XeonBotInc.sendMessage(from, { react: { text: `📜`, key: m.key }}) 
     let buttons = [
     {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
-    {buttonId: `owner`, buttonText: {displayText: '🙋𝐎𝐖𝐍𝐄𝐑🙋'}, type: 1},
-    {buttonId: `command`, buttonText: {displayText: '🗒️𝐋𝐈𝐒𝐓🗒️'}, type: 1}
+    {buttonId: `owner`, buttonText: {displayText: '🙋𝐎𝐖𝐍𝐄𝐑🙋'}, type: 1}
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
@@ -11465,7 +11464,6 @@ case 'pako': {
 case 'bbb': {
     XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
     let buttons = [
-    {buttonId: `alive`, buttonText: {displayText: '༒𝐀𝐋𝐈𝐕𝐄༒'}, type: 1},
     {buttonId: `allmenu`, buttonText: {displayText: '༒𝐌𝐄𝐍𝐔༒'}, type: 1},
     {buttonId: `owner`, buttonText: {displayText: '༒𝐎𝐖𝐍𝐄𝐑༒'}, type: 1}
     ]
