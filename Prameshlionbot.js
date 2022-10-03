@@ -11461,6 +11461,34 @@ case 'pako': {
     XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
     break
+case 'bbb': {
+    XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `alive`, buttonText: {displayText: '𝐀𝐋𝐈𝐕𝐄'}, type: 1},
+    {buttonId: `owner`, buttonText: {displayText: '𝐎𝐖𝐍𝐄𝐑'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/bH371tY/Picsart-22-10-02-11-18-47-805.jpg` },
+    caption: `*▕☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒▕*
+
+*🪀𝐘𝐎𝐔𝐓𝐔𝐁𝐄 𝐂𝐇𝐀𝐍𝐄𝐋 𝐋𝐈𝐍𝐊🪀*
+https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
+
+*🪀𝐁𝐎𝐓 𝐒𝐂𝐑𝐈𝐏𝐓 𝐋𝐈𝐍𝐊🪀*
+https://sites.google.com/view/pramesh-lion-bot/%E0%B6%B1%E0%B7%80%E0%B7%83?read_current=1
+
+*🪀𝐁𝐎𝐓 𝐇𝐄𝐋𝐏𝐈𝐍𝐆 𝐆𝐑𝐎𝐔𝐏🪀*
+https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
+
+💠💠💠💠💠💠💠💠💠💠💠
+*⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
+    break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
