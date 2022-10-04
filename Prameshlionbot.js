@@ -11510,14 +11510,6 @@ https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
     }
     XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
-    break
-            case 'glolion': {
-            	if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-                if (!isCreator) return replay(`${mess.owner}`)
-                global.lion = ❤️❤️❤️❤️
-                reply('Successful Change To Self Usage')
-            }
             break
             default:
                 if (budy.startsWith('=>')) {
