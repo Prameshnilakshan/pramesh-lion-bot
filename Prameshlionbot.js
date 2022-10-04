@@ -8192,9 +8192,9 @@ break
                                 let media = await ytv(text, quality)
                                 if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))
                                 var buf = await getBuffer(media.thumb)
-                                const viddown = await XeonBotInc.sendMessage(from , { text: '*${pushname} 📥 Downloading Your Video...*' }, { quoted: m } )
+                                const viddown = await XeonBotInc.sendMessage(from , { text: '*➢ ${pushname} 📥 Downloading Your Video...*' }, { quoted: m } )
                                 await XeonBotInc.sendMessage(from, { delete: viddown.key })
-                                const vidup = await XeonBotInc.sendMessage(from , { text: '*${pushname} 📤 Uploading Your Video...' }, { quoted: m } )
+                                const vidup = await XeonBotInc.sendMessage(from , { text: '*➢ ${pushname} 📤 Uploading Your Video...' }, { quoted: m } )
                                 const vid = await XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `${global.cap}` }, { quoted: m }).catch((err) => reply(mess.error))
                                 await XeonBotInc.sendMessage(from, { delete: vidup.key }) 
                             }
