@@ -8184,45 +8184,21 @@ sourceUrl: anu.url
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'getmusic': case 'getvideo': case 'yt': case 'youtube': case 'ytvideo': case 'ytmp3': case 'ytmp4': case 'ytmusic': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-if (!args[0]) return reply(mess.linkm)
-try {
-hx.youtube(args[0]).then(async(res) => {
-textyt = `*| YOUTUBE DOWNLOADER |*
-
-${global.themeemoji} Title : ${res.title}
-${global.themeemoji} Size : ${res.size}
-${global.themeemoji} Quality : ${res.quality}
-
-_Select video or audio and wait a while_`
-let buttons = [
-{buttonId: `ytvd ${res.link}`, buttonText: {displayText: '⇜📽️Video📽⇝️'}, type: 1},
-{buttonId: `ytad ${res.mp3}`, buttonText: {displayText: '⇜🎶Audio🎶⇝'}, type: 1}
-]
-let buttonMessage = {
-image: {url:res.thumb},
-caption: textyt,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: res.title,
-body: `${global.ownername}`,
-thumbnail: {url:res.thumb},
-mediaType:2,
-mediaUrl: args[0],
-sourceUrl: args[0]
-}}
-}
-XeonBotInc.sendMessage(from, buttonMessage, {quoted:m})
-}).catch(_ => _)
-} catch {
-reply("Link error!")
-}
-}
-break
+            case 'ytmp4': {
+                                let { ytv } = require('./lib/y2mate')
+                                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=RNa4thokVJ4 360p`)
+                                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid!`)
+                                let quality = args[1] ? args[1] : '360p'
+                                let media = await ytv(text, quality)
+                                if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))
+                                var buf = await getBuffer(media.thumb)
+                                const viddown = await XeonBotInc.sendMessage(from , { text: '*${pushname} 📥 Downloading Your Video...*' }, { quoted: m } )
+                                await XeonBotInc.sendMessage(from, { delete: viddown.key })
+                                const vidup = await XeonBotInc.sendMessage(from , { text: '*${pushname} 📤 Uploading Your Video...' }, { quoted: m } )
+                                const vid = await XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `${global.cap}` }, { quoted: m }).catch((err) => reply(mess.error))
+                                await XeonBotInc.sendMessage(from, { delete: vidup.key }) 
+                            }
+                            break
 case 'ytvd': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
@@ -10830,7 +10806,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             }, {
           quickReplyButton: {
                   displayText: `༺🎬𝐕𝐈𝐃𝐄𝐎🎬༻`,
-                  id: `${prefix}videoe ${anu.url}`
+                  id: `${prefix}video ${anu.url}`
           }
           }, {
           quickReplyButton: {
@@ -10849,6 +10825,43 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }), { userJid: m.chat })
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
+break
+case 'video': { 
+    XeonBotInc.sendMessage(from, { react: { text: `📽️`, key: m.key }})    
+        if (!text) return reply(`Example : ${prefix + command} lelena`)
+ let yts = require("yt-search")
+ let search = await yts(text)
+ let anu = search.videos[0]
+ let buttons = [
+ {buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '360p'}, type: 1},
+ {buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '480p'}, type: 1},
+ {buttonId: `ytmp4 ${anu.url} 720p`, buttonText: {displayText: '720p'}, type: 1}
+ ]
+ let buttonMessage = {
+ image: { url: anu.thumbnail },
+ caption: `*║☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒☬║*
+     
+   📥 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐄𝐑
+ 
+*┃🎬Title :* ${anu.title} 
+ 
+*┃🎲Duration :* ${anu.timestamp} 
+ 
+*┃🌐Author :* ${anu.author.name} 
+ 
+*┃📃Url :* ${anu.url} 
+
+*┃🔖Runtime :* ${runtime(process.uptime())}
+ 
+*┃BOT NAME :* *☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*
+
+┗━━━━━━━━━❊`,
+ footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+ buttons: buttons,
+ headerType: 4,
+ }
+ XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+ }
 break
 case 'sindulion': {
 if (isBan) return reply(mess.ban)
