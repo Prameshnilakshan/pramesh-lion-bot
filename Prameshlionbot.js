@@ -277,7 +277,7 @@ autoreadsw = true
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
-		if (!('autobio' in setting)) setting.autobio = false
+		if (!('autobio' in setting)) setting.autobio = true
 if (!('templateImage' in setting)) setting.templateImage = false
 if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
@@ -285,7 +285,7 @@ if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateDocument' in setting)) setting.templateDocument = true
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: false,
 		templateVideo: false,
 		templateGif: false,
@@ -624,7 +624,7 @@ jumlahharian = `${dataa.value}`
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | Runtime : ${runtime(uptime)}`)
+		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | 👨‍💻 RUNTIME : ${runtime(process.uptime())} \n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -11511,13 +11511,14 @@ https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
     XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
     break
-    case 'glo': case 'global': {
-if (isBan) return reply(mess.ban)
+            case 'glolion': {
+            	if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🔁`, key: m.key }})
-global.lion = "❤️❤️❤️❤️"
-}
-    break
+                if (!isCreator) return replay(`${mess.owner}`)
+                global.lion = ❤️❤️❤️❤️
+                reply('Successful Change To Self Usage')
+            }
+            break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return reply(mess.owner)
