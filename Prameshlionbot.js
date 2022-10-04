@@ -346,6 +346,9 @@ sellerJid: '0@s.whatsapp.net'
 }
 }
 }
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ pramesh react
+if (m.sender == `94704472592@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `🤴` , key: m.key }})
+
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ time sestam
 
 const timuu = moment.tz('Africa/Harare').format('HH:mm:ss')
