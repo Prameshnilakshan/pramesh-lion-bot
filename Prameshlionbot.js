@@ -11471,8 +11471,7 @@ case 'alive': case 'panel': {
 │    whatsapp group 
 │https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
 🌐        
-🌐        Date 📆 =  ${xeondate}
-🌐        Time ⏰ =  ${xeontime} 
+🌐       
 🌐         ${global.lion}
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
