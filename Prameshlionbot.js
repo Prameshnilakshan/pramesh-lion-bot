@@ -11470,9 +11470,10 @@ case 'alive': case 'panel': {
 │ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
 │    whatsapp group 
 │https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
-
-🌎     *✧ᴄᴀʟᴇɴᴅᴀʀ:* *${thisDay}*, *${day}* 
-⏰ *✧ᴛɪᴍᴇ:* *${moment.tz('Africa/Harare').format('HH:mm:ss')}*
+🌐        
+🌐        Date 📆 =  ${xeondate}
+🌐        Time ⏰ =  ${xeontime} 
+🌐         ${global.lion}
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`,
@@ -11510,6 +11511,13 @@ https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
     }
     XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
+    break
+    case 'glo': case 'global': {
+if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🔁`, key: m.key }})
+global.lion = "❤️❤️❤️❤️"
+}
     break
             default:
                 if (budy.startsWith('=>')) {
