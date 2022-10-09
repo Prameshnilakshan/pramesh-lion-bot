@@ -51,7 +51,7 @@ global.location = "srilanka,colombo" //ur location
 //වැඩ කරන්නෙ නැතුව යනව
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒//
 
-global.lion = "❤️❤️❤️❤" 
+global.lion = "🪀" 
 global.linkz = "https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew" //ur website to be displayed
 global.reactmoji = "🦁" //ur menu react emoji code lock🔒
