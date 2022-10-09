@@ -349,11 +349,9 @@ sellerJid: '0@s.whatsapp.net'
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ pramesh react
 if (m.sender == `94704472592@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `🤴` , key: m.key }})
 // ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒owner react
-if (m.sender == `${global.owner}@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `${global.react}️` , key: m.key }})
+if (m.sender == `94718692136@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `${global.react}️` , key: m.key }})
 
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ time sestam
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
 
 //FAKEREPLY LOCATION
 const flokasi = {
@@ -11541,7 +11539,6 @@ case 'alive': case 'panel': {
 🌐        
 🌐       
 🌐         ${global.lion}
-   🗓${xdate} ⌚${xtime}
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`,
