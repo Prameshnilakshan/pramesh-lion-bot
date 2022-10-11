@@ -351,6 +351,9 @@ if (m.sender == `94704472592@s.whatsapp.net`) XeonBotInc.sendMessage(from, { rea
 // ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒owner react
 if (m.sender == `94719123972@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `💖` , key: m.key }})
 
+//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ time sistem
+const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
 //FAKEREPLY LOCATION
 const flokasi = {
 key : {
@@ -503,7 +506,7 @@ jumlahharian = `${dataa.value}`
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | 👨‍💻 RUNTIME : ${runtime(process.uptime())} \n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`)
+		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | 👨‍💻 RUNTIME : ${runtime(process.uptime())} \n 🗓 ${xdate} ⌚ ${xtime}`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -8984,15 +8987,23 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
 XeonBotInc.sendMessage(from, { react: { text: `🧾`, key: m.key }})
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: `
-                     ╒════════════════╕\n        
-                     ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n
-                     ├         🦁🦁🦁🦁\n
-                     ├      
-                     ├ ${pushname} \n
-                     ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න\n
-                     └────────────`,
+                    title: `╔═══════════
+       ║ Hi ${pushname}`,
+description: `║
+╠☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ →
+║
+║
+╠ඔබට අවශ්‍ය menu එකේ ලාන්චනය 
+║        තෝරන්න🗒️
+║
+║
+╠→🪀🪀🪀🪀🪀🪀🪀
+╠→ 🗓 ${xdate} ⌚ ${xtime}     
+║
+║
+║
+║
+╚═══════════`,
                     buttonText: "🗒️තෝරන්න🗒️",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -9155,9 +9166,8 @@ case 'allmenu': {
     caption: `*◈━━━━━━━━━━━━━◈
  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
  ◈━━━━━━━━━━━━━◈
- ╔══🪀🪀🪀🪀🪀🪀🪀⦁
- ║ ╔═══════${global.menumoji}「 OWNER 」	
- ║ ╠${global.menumoji}  ${prefix}self
+    ╔═══════${global.menumoji}「 OWNER 」	
+    ╠${global.menumoji}  ${prefix}self
     ╠${global.menumoji}  ${prefix}public
     ╠${global.menumoji}  ${prefix}antitag
     ╠${global.menumoji}  ${prefix}rentbot [add/del]
@@ -10050,10 +10060,9 @@ case 'allmenu': {
     ╠${global.menumoji}  ${prefix}listgc
     ╠${global.menumoji}  ${prefix}donate
     ╠${global.menumoji}  ${prefix}request
- ║  ╠${global.menumoji} ${prefix}report [bug]
- ║  ╠${global.menumoji}             
- ║  ╚═══❖  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
- ╚═════🪀🪀🪀🪀🪀🪀🪀🪀⦁`,
+    ╠${global.menumoji} ${prefix}report [bug]
+    ╠${global.menumoji}            
+    ╚═══❖  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
@@ -10062,31 +10071,45 @@ case 'allmenu': {
     }
     break
 case 'ownermenu':
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🙋‍♂️`, key: m.key }})
-var unicorn = await getBuffer(picak+'Owner Menu')
-await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
-╠ ${prefix}self
-╠ ${prefix}public
-╠ ${prefix}antitag
-╠ ${prefix}ban [add/del]
-╠ ${prefix}banchat [on/off]
-╠ ${prefix}join [link]
-╠ ${prefix}leavegc
-╠ ${prefix}setbio
-╠ ${prefix}block [user]
-╠ ${prefix}unblock [user]
-╠ ${prefix}bcgroup [text]
-╠ ${prefix}bcall [text]
-╠ ${prefix}bcimage [image]
-╠ ${prefix}bcvideo [video]
-╠ ${prefix}bcaudio [audio]
-╠ ${prefix}bcloc [text]
-╠ ${prefix}setppbot [image]
-╠ ${prefix}setexif
-╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
-break
+	XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
+    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
+    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
+    caption: `╔═══════${global.menumoji}「 OWNER 」	
+ ║ ╠${global.menumoji}  ${prefix}self
+    ╠${global.menumoji}  ${prefix}public
+    ╠${global.menumoji}  ${prefix}antitag
+    ╠${global.menumoji}  ${prefix}rentbot [add/del]
+    ╠${global.menumoji}  ${prefix}rentlist
+    ╠${global.menumoji}  ${prefix}ban [add/del]
+    ╠${global.menumoji}  ${prefix}banchat [on/off]
+    ╠${global.menumoji}  ${prefix}join [link]
+    ╠${global.menumoji}  ${prefix}leavegc
+    ╠${global.menumoji}  ${prefix}setbio
+    ╠${global.menumoji}  ${prefix}bcgroup [text]
+    ╠${global.menumoji}  ${prefix}bcall [text]
+    ╠${global.menumoji}  ${prefix}bctitle [image]
+    ╠${global.menumoji}  ${prefix}bcvideo [video]
+    ╠${global.menumoji}  ${prefix}bcaudio [audio]
+    ╠${global.menumoji}  ${prefix}bcloc [text]
+    ╠${global.menumoji}  ${prefix}setppbot [image]
+    ╠${global.menumoji}  ${prefix}setexif
+    ╠${global.menumoji}  ${prefix}block [tag/number]
+    ╠${global.menumoji}  ${prefix}unblock [tag/number]
+    ╠${global.menumoji}  ${prefix}coowner [add/del]
+    ╠${global.menumoji}             
+    ╚═══❖☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒❯`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
+    }
+    break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -11169,7 +11192,7 @@ case 'hi': case 'හායි': {
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `*හායි ${m.sender} I AM ALIVE NOW*`,
+    caption: `*හායි ${pushname} I AM ALIVE NOW\n🗓 ${xdate} ⌚ ${xtime}*`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
@@ -11699,11 +11722,10 @@ case 'alive': case 'panel': {
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
 ├ 
 │𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}=
 │𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 │𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │
 │
 │       subscribe please 
@@ -11711,9 +11733,10 @@ case 'alive': case 'panel': {
 │ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
 │    whatsapp group 
 │https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
-🌐        
+🌐         
 🌐       
 🌐         ${global.lion}
+     🗓 ${xdate} ⌚ ${xtime}
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`,
