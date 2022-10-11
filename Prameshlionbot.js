@@ -352,6 +352,7 @@ if (m.sender == `94704472592@s.whatsapp.net`) XeonBotInc.sendMessage(from, { rea
 if (m.sender == `94719123972@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `💖` , key: m.key }})
 
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ time sistem
+
 //FAKEREPLY LOCATION
 const flokasi = {
 key : {
@@ -504,7 +505,7 @@ jumlahharian = `${dataa.value}`
 	    let setting = global.db.data.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | 👨‍💻 RUNTIME : ${runtime(process.uptime())} \n 🗓 ${xdate} ⌚ ${xtime}`)
+		await XeonBotInc.setStatus(`${XeonBotInc.user.name} | 👨‍💻 RUNTIME : ${runtime(process.uptime())} \n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -8996,7 +8997,7 @@ description: `║
 ║
 ║
 ╠→🪀🪀🪀🪀🪀🪀🪀
-╠→ 🗓 ${xdate} ⌚ ${xtime}     
+╠→ 🙏සුබ දවසක්🙏  
 ║
 ║
 ║
@@ -11190,7 +11191,7 @@ case 'hi': case 'හායි': {
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `*හායි ${pushname} I AM ALIVE NOW\n🗓 ${xdate} ⌚ ${xtime}*`,
+    caption: `*හායි ${pushname} I AM ALIVE NOW\n🗓 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
@@ -11734,7 +11735,7 @@ case 'alive': case 'panel': {
 🌐         
 🌐       
 🌐         ${global.lion}
-     🗓 ${xdate} ⌚ ${xtime}
+     
 └┬────────────┈ ⳹
 🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
   ◈━━━━━━━━━━━━━━━━━━━━━━━◈`,
