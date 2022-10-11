@@ -8986,23 +8986,8 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
 XeonBotInc.sendMessage(from, { react: { text: `🧾`, key: m.key }})
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `╔═══════════
-       ║ Hi ${pushname}`,
-description: `║
-╠☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ →
-║
-║
-╠ඔබට අවශ්‍ය menu එකේ ලාන්චනය 
-║        තෝරන්න🗒️
-║
-║
-╠→🪀🪀🪀🪀🪀🪀🪀
-╠→ 🙏සුබ දවසක්🙏  
-║
-║
-║
-║
-╚═══════════`,
+                    title: `Hi ${pushname}`,
+                    description: `◈━━━━━━━━━━━━━◈\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\nඔබට අවශ්‍ය 𝐌𝐄𝐍𝐔 එකේ\nලාන්චනය තෝරන්න\n🙏ඔබට සුබදවසක්🙏\n◈━━━━━━━━━━━━━◈`,
                     buttonText: "🗒️තෝරන්න🗒️",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
