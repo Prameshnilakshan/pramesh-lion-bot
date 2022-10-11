@@ -8987,7 +8987,19 @@ XeonBotInc.sendMessage(from, { react: { text: `🧾`, key: m.key }})
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
-                    description: `◈━━━━━━━━━━━━━◈\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\nඔබට අවශ්‍ය 𝐌𝐄𝐍𝐔 එකේ\nලාන්චනය තෝරන්න\n🙏ඔබට සුබදවසක්🙏\n◈━━━━━━━━━━━━━◈`,
+                    description: `
+                     ╒════════════════╕        
+                     ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+                     ├         🦁🦁🦁🦁
+                     ├      
+                     ├ ${pushname} 
+                     ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න
+                     
+                     
+                     
+                     
+                     ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
+                     ╘════════════════╝\n\n`,
                     buttonText: "🗒️තෝරන්න🗒️",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -11176,7 +11188,7 @@ case 'hi': case 'හායි': {
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `*හායි ${pushname} I AM ALIVE NOW\n🗓 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*`,
+    caption: `*හායි I AM ALIVE NOW\n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
@@ -11687,7 +11699,7 @@ XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
                 XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
-case 'alive': case 'panel': {
+case 'alive': case 'panel': case 'menu': {
     XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
     let buttons = [
     {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
