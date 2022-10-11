@@ -10067,45 +10067,31 @@ case 'allmenu': {
     }
     break
 case 'ownermenu':
-	XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
-    let buttons = [
-    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
-    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
-    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
-    ]
-    let buttonMessage = {
-    image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `╔═══════${global.menumoji}「 OWNER 」	
- ║ ╠${global.menumoji}  ${prefix}self
-    ╠${global.menumoji}  ${prefix}public
-    ╠${global.menumoji}  ${prefix}antitag
-    ╠${global.menumoji}  ${prefix}rentbot [add/del]
-    ╠${global.menumoji}  ${prefix}rentlist
-    ╠${global.menumoji}  ${prefix}ban [add/del]
-    ╠${global.menumoji}  ${prefix}banchat [on/off]
-    ╠${global.menumoji}  ${prefix}join [link]
-    ╠${global.menumoji}  ${prefix}leavegc
-    ╠${global.menumoji}  ${prefix}setbio
-    ╠${global.menumoji}  ${prefix}bcgroup [text]
-    ╠${global.menumoji}  ${prefix}bcall [text]
-    ╠${global.menumoji}  ${prefix}bctitle [image]
-    ╠${global.menumoji}  ${prefix}bcvideo [video]
-    ╠${global.menumoji}  ${prefix}bcaudio [audio]
-    ╠${global.menumoji}  ${prefix}bcloc [text]
-    ╠${global.menumoji}  ${prefix}setppbot [image]
-    ╠${global.menumoji}  ${prefix}setexif
-    ╠${global.menumoji}  ${prefix}block [tag/number]
-    ╠${global.menumoji}  ${prefix}unblock [tag/number]
-    ╠${global.menumoji}  ${prefix}coowner [add/del]
-    ╠${global.menumoji}             
-    ╚═══❖☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒❯`,
-    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
-    buttons: buttons,
-    headerType: 4,
-    }
-    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-    }
-    break
+	   if (isBan) return reply(mess.ban)
+	if (isBanChat) return reply(mess.banChat)
+XeonBotInc.sendMessage(from, { react: { text: `🙋‍♂️`, key: m.key }})
+var unicorn = await getBuffer(picak+'Owner Menu')
+await XeonBotInc.send5ButImg(from, `╔═══════✪「 OWNER 」	
+╠ ${prefix}self
+╠ ${prefix}public
+╠ ${prefix}antitag
+╠ ${prefix}ban [add/del]
+╠ ${prefix}banchat [on/off]
+╠ ${prefix}join [link]
+╠ ${prefix}leavegc
+╠ ${prefix}setbio
+╠ ${prefix}block [user]
+╠ ${prefix}unblock [user]
+╠ ${prefix}bcgroup [text]
+╠ ${prefix}bcall [text]
+╠ ${prefix}bcimage [image]
+╠ ${prefix}bcvideo [video]
+╠ ${prefix}bcaudio [audio]
+╠ ${prefix}bcloc [text]
+╠ ${prefix}setppbot [image]
+╠ ${prefix}setexif
+╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
+break
 case 'groupmenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -10399,7 +10385,6 @@ await XeonBotInc.send5ButImg(from, `╔═══════✪「 RANDOM IMG �
 ╠${prefix}animewall2 [query]
 ╚═════════════✪` + '' + ' ', `${botname}`,unicorn, [{"urlButton": {"displayText": "YouTube 📍","url": `${websitex}`}},{"urlButton": {"displayText": "Script🔖","url": `${botscript}`}},{"quickReplyButton": {"displayText": "Donate 🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner 👤","id": 'owner'}}] )
 break
-
 case 'emotemenu':
 	   if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
