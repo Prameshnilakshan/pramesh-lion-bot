@@ -10951,21 +10951,96 @@ case 'tqtt':
 	if (isBanChat) return reply(mess.banChat)
 reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
    𝐇𝐎𝐖 𝐀𝐑𝐄 𝐘𝐎𝐔 !!!`)
-break
-case 'gm': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🌈️`, key: m.key }})
-reply(`Good morning bn !!!`)
-case 'wkwwk': 
-	   if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `👋`, key: m.key }})
-reply(` *||𝐖𝐄𝐋𝐂𝐎𝐌𝐄||*
-මේ group එකේ link එක මේක shier කරල තව අය add කරගමු
-  https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
-  ❤️🧡💛💚💙💜🤎🖤🤍  ️` )
-break
+  break
+        //chat bot\\
+            case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': {
+                XeonBotInc.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න😏*` }, { quoted: m })
+            }
+            break
+            case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'කැම්රි': case 'කැම්රියා': case 'kamriya': case 'humtha': case 'හුත්ති': case 'හුම්ත': case 'හුම්ති': case 'පම්ක': case 'වේසි': case 'වේම්සි': case 'ඇට දෙක': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'pamka': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka': case 'pumka':{
+                XeonBotInc.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
+            }
+            break
+            case 'ado': case 'අඩෝ':{
+                XeonBotInc.sendMessage(from, { text: `*මොකෝ ඩෝ🌚*` }, { quoted: m })
+            }
+            break
+            case 'moko': case 'මොකෝ':{
+                XeonBotInc.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ😎*` }, { quoted: m })
+            }
+            break
+            case 'bllo': case 'bamla': case 'බල්ලො': case 'බල්ලා': case 'බම්ලො': case 'බම්ලා': {
+                XeonBotInc.sendMessage(from, { text: `*එන්නෙපා බල්ල ගාගෙන😒💔💔*` }, { quoted: m })
+            }
+            break
+            case 'kolukaraya': case 'කොලුකාරයා':{
+                XeonBotInc.sendMessage(from, { text: `*ඇයි මේ අපහාස😒*` }, { quoted: m })
+            }
+            break
+            case 'haminenawane': case 'හැමිනෙනවනෙ':{
+                XeonBotInc.sendMessage(from, { text: `*අනේ පලහ්😂*` }, { quoted: m })
+            }
+            break
+            case 'e': case 'ee': case 'ඒ':{
+                XeonBotInc.sendMessage(from, { text: `*මොකෝ🌚*` }, { quoted: m })
+            }
+            break
+            case 'ane': case 'අනෙ': case 'අනේ':{
+                XeonBotInc.sendMessage(from, { text: `*මොකෝ අනේ🤭🤭*` }, { quoted: m })
+            }
+            break
+            case 'ow': case 'ඔව්': case 'ඕ': case 'oo':{
+                XeonBotInc.sendMessage(from, { text: `*එහෙනම් එච්චරයි🤭*` }, { quoted: m })
+            }
+            break
+            case 'halo': case 'hello': case 'haloo': case 'හලො': case 'හලෝ': case 'හලූ':{
+                XeonBotInc.sendMessage(from, { text: `*🌝මොකෝ හලෝ🤭*` }, { quoted: m })
+            }
+            break
+            case 'danna': case 'danne na': case 'දන්නෑ': case 'දන්නෙ නෑ':{
+                XeonBotInc.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
+            }
+            break
+            case 'ko': case 'koo': case 'කෝ': case 'කො':{
+                XeonBotInc.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
+            }
+            break
+            case 'kamak': case 'kamanna': case 'කමක්': case 'කමන්නෑ':{
+                XeonBotInc.sendMessage(from, { text: `*ආ කමක් නෑ...😂👍*` }, { quoted: m })
+            }
+            break
+            case 'balamu': case 'balanna': case 'බලමු': case 'බලන්න':{
+                XeonBotInc.sendMessage(from, { text: `*බලමුකෝ😂👍*` }, { quoted: m })
+            }
+            break
+            case 'pala': case 'palayan': case 'පල': case 'පලහ්': case 'පලයන්': case 'පලකො':{
+                XeonBotInc.sendMessage(from, { text: `*හා උබ කියනකන් හිටියෙ😒💔*` }, { quoted: m })
+            }
+            break
+            case 'aththada': case 'ඇත්තද': case 'සිරාද': case 'ඇත්තෙයි': case 'අම්මපා': case 'ඇත්ත':{
+                XeonBotInc.sendMessage(from, { text: `*මං දන්නෑ😒*` }, { quoted: m })
+            }
+            break
+            case 'gm': case 'goodmorning': case 'gummoninm': case 'ගුඩ්මෝනිං': case 'ගුම්මෝනිං': case 'ගුඩ්මෝනිං😌': case 'ගුම්මෝනිං❤️': case 'ගුඩ්මෝනිම්':{
+                XeonBotInc.sendMessage(from, { text: `*🎤දහසක් මල්🌸 විකසිත වන😊 මේ හිමිදිරි උදෑසනේ🌄 පතන්නම් ඔබ සැමට🙏 සුභම සුභ උදෑසනක් කියා...😃*` }, { quoted: m })
+            }
+            break
+            case 'gn': case 'goodnight': case 'gumnight': case 'ගුඩ්නයිට්': case 'ගුම්නයිත්': case 'ගුඩ්නයිට්😌': case 'ගුම්නයිට්❤️': case 'ගුඩ්නයිට්🌚❤️':{
+                XeonBotInc.sendMessage(from, { text: `*ලබන්නාවූ රාත්‍රිය😌 හීනෙන් හොල්මන් පෙනෙන, මහ රෑ දාඩියෙන් තෙමී ඇහැරෙන, පෙරේතයන් ඇද යටට එන, කුම්භාණ්ඩයින් ජනෙල් වලින් එබී බලන, භයානක රාත්‍රියක් වේවා☠️👻👻*` }, { quoted: m })
+            }
+            break
+            case '🥰': case '😗': case '😙': case '😘😘': case '😘': case '😍': case 'umma': case '💗':{
+                XeonBotInc.sendMessage(from, { text: `*😘අයි ලව් යූ💗උම්මාහ්🥰🥰🤓*` }, { quoted: m })
+            }
+            break
+            case 'බොටා_වැලක්_බලමුද?':{
+                XeonBotInc.sendMessage(from, { text: `ම්ම්ම්...බලමු😋\nhttps://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358\nhttps://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3\nhttps://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c\nhttps://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1` }, { quoted: m })
+            }
+            break
+            case 'na': case 'naa': case 'නැ': case 'නෑ': case 'නෑනෙ': case 'nane': case 'naha': case 'නැතෝ':{
+                XeonBotInc.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })
+            }
+            break
 case 'apkmod': case 'apkdl': {      
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
