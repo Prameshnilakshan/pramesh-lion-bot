@@ -4717,327 +4717,327 @@ replay(`🌐Translate : ${Detek}\n📘Results : ${Infoo}`)
 }
 break
 case 'sound1':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound2':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound3':
- XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+ XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound4':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound5':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound6':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound7':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound8':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound9':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound10':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound11':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound12':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound13':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound14':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound15':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound16':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound17':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound18':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound19':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound20':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound21':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound22':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound23':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound24':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound25':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound26':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound27':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound28':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound29':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound30':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound31':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound32':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound33':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound34':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound35':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound36':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound37':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound38':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound39':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound40':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound41':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound42':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound43':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound44':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound45':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound46':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound47':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound48':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound49':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound50':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound51':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound52':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound53':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound54':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})  
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})  
 case 'sound55':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound56':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound57':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound58':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound59':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound60':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound61':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound62':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound63':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound64':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound65':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound66':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound67':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound68':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound69':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound70':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound71':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound72':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound73':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound74':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound75':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound76':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound77':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound78':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound79':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound80':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound81':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound82':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound83':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound84':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound85':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound86':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound87':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound88':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound89':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound90':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound91':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound92':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound93':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound94':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound95':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound96':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound97':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound98':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound99':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound100':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound101':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound102':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound103':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound104':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound105':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound106':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound107':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound108':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound109':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound110':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound111':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound112':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound113':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound114':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound115':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound116':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound117':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound118':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound119':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})   
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})   
 case 'sound120':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})    
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})    
 case 'sound121':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound122':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound123':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound124':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound125':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound126':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound127':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound128':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound129':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound130':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound131':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound132':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound133':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound134':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound135':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound136':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound137':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound138':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound139':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound140':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound141':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound142':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound143':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound144':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound145':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound146':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound147':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound148':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound149':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound150':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound151':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound152':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound153':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound154':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound155':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound156':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound157':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound158':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound159':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound160':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 case 'sound161':
-XeonBotInc.sendMessage(from, { react: { text: `🎙️`, key: m.key }})
+XeonBotInc.sendMessage(from, { react: { text: `🎸`, key: m.key }})
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 xeony_buffer = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
@@ -8906,7 +8906,7 @@ https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
 💠💠💠💠💠💠💠💠💠💠💠
 *⃦ 𝐓𝐇𝐀𝐍𝐊𝐒 ⃦*`
 let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🎙️'}, type: 1}
+{buttonId: `menu`, buttonText: {displayText: 'Menu 🎸'}, type: 1}
 ]
 let buttonMessage = {
 image: thum,
@@ -8986,20 +8986,23 @@ XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key 
 XeonBotInc.sendMessage(from, { react: { text: `🧾`, key: m.key }})
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: `
-                     ╒════════════════╕        
-                     ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-                     ├         🦁🦁🦁🦁
-                     ├      
-                     ├ ${pushname} 
-                     ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න
-                     
-                     
-                     
-                     
-                     ├  ⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩
-                     ╘════════════════╝\n\n`,
+                    title: `╔═══════════
+║ Hi ${pushname}`,
+description: `║
+╠☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ →
+║
+║
+╠ඔබට අවශ්‍ය menu එකේ ලාන්චනය 
+║        තෝරන්න🗒️
+║
+║
+╠→🪀🪀🪀🪀🪀🪀🪀
+╠→       
+║
+║
+║
+║
+╚═══════════`,
                     buttonText: "🗒️තෝරන්න🗒️",
                     footerText: `${global.botname}`,
                     listType: "SINGLE_SELECT",
@@ -9032,7 +9035,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}groupmenu`
 										},
 										{
-										"title": "Logo 2🌈",
+										"title": "Logo manual",
 										"description": "Displays The List Of Logo Making Features",
 										"rowId": `${prefix}logo2`
 									},
@@ -11071,9 +11074,9 @@ case 'video': {
  let search = await yts(text)
  let anu = search.videos[0]
  let buttons = [
- {buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '360p'}, type: 1},
- {buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '480p'}, type: 1},
- {buttonId: `ytmp4 ${anu.url} 720p`, buttonText: {displayText: '720p'}, type: 1}
+ {buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '⚡360p⚡'}, type: 1},
+ {buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '⚡480p⚡'}, type: 1},
+ {buttonId: `ytmp4 ${anu.url} 720p`, buttonText: {displayText: '⚡720p⚡'}, type: 1}
  ]
  let buttonMessage = {
  image: { url: anu.thumbnail },
