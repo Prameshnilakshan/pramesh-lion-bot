@@ -11773,7 +11773,7 @@ XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }})
                             let buttons = [{
                                 urlButton: {
                                 displayText: 'MY YOUTUBE CHANEL',
-                                url: 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew'
+                                url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
                                 }
                                 }, {
                                 urlButton: {
