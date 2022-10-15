@@ -11041,6 +11041,10 @@ reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ �
                 XeonBotInc.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })
             }
             break
+            case '❤️':{
+                XeonBotInc.sendMessage(from, { text: `❤️🧡💛💚💙💜🤎🖤🤍❤️‍🩹❤️‍🔥💝💟` }, { quoted: m })
+            }
+            break
 case 'apkmod': case 'apkdl': {      
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
@@ -11251,7 +11255,7 @@ case 'hi': case 'හායි': {
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `*හායි I AM ALIVE NOW\n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*`,
+    caption: `*හායි ${pushname} I AM ALIVE NOW\n ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒*`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
@@ -11762,43 +11766,38 @@ XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
                 XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
-case 'alive': case 'panel': case 'menu': {
-    XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
-    let buttons = [
-    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
-    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
-    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
-    ]
+case 'alive': case 'panel': case 'menu': csse 'bot': {
+    timestampe = speed();
+                        latensie = speed() - timestampe
+                            let buttons = [{
+                                urlButton: {
+                                displayText: 'MY YOUTUBE CHANEL',
+                                url: 'https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew'
+                                }
+                                }, {
+                                urlButton: {
+                                displayText: `SUPPORT GROUP`,
+                                url: `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M`
+                                }                            	
+                                }, {
+                                quickReplyButton: {
+                                displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
+                                id: `${prefix}bbb`
+                                }
+                                },{
+                                quickReplyButton: {
+                                displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚',
+                                id: `${prefix}allmenu`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃',
+                                id: `${prefix}command`
+                                }
+                                }]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `┌─❖
- 𝙃𝙄!「 ${pushname} 」
-
-
-🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-▕▕▕▕▕▕▕▕▕▕▕▕▕▕
-
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
-├ 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}=
-│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
-│
-│
-│       subscribe please 
-│             👇👇
-│ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
-│    whatsapp group 
-│https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
-🌐         
-🌐       
-🌐         ${global.lion}
-     
-└┬────────────┈ ⳹
-🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
-  ◈━━━━━━━━━━━━━━━━━━━━━━━◈`,
+    caption: ``╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n╗\nසුබ දවසක්\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
