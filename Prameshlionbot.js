@@ -11768,9 +11768,7 @@ XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
             break
 case 'alive': case 'panel': case 'menu': csse 'bot': {
 XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }})
-    timestampe = speed();
-                        latensie = speed() - timestampe
-                            let buttons = [{
+                         let btn = [{
                                 urlButton: {
                                 displayText: 'MY YOUTUBE CHANEL',
                                 url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
