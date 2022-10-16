@@ -11766,37 +11766,37 @@ XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
                 XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
-case 'alive': case 'panel': case 'menu': csse 'bot': {
-XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }})
-                         let btn = [{
+  case 'bot': case 'alive': case 'menu': case 'list':{
+XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
+	                let btn = [{
                                 urlButton: {
-                                displayText: 'MY YOUTUBE CHANEL',
-                                url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
+                                    displayText: '💌YouTube💌',
+                                    url: `${websitex}`
                                 }
-                                }, {
-                                urlButton: {
-                                displayText: `SUPPORT GROUP`,
-                                url: `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M`
-                                }                            	
-                                }, {
+                            }, {
+                                callButton: {
+                                    displayText: '👬𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏👬',
+                                    url: `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M`
+                                }
+                            }, {
                                 quickReplyButton: {
-                                displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
-                                id: `${prefix}bbb`
+                                    displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
+                                    id: 'bbb'
                                 }
-                                },{
+                            }, {
                                 quickReplyButton: {
-                                displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚',
-                                id: `${prefix}allmenu`
-                                }
-                                }, {
+                                    displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚',
+                                    id: 'allmenu'
+                                }  
+                            }, {
                                 quickReplyButton: {
-                                displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃',
-                                id: `${prefix}command`
+                                    displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃‍️',
+                                    id: 'command'
                                 }
-                                }]
-    let buttonMessage = {
+                            }]
+                            let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n╗\nසුබ දවසක්\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
+    caption: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n╗\n💝💝💝💝💝💝\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
     footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
