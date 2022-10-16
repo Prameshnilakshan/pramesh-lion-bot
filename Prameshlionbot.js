@@ -11765,88 +11765,24 @@ if (isBan) return reply(mess.ban)
 XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
                 XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
-            break
-  case 'pnnp': case 'menu': case 'list':{
-XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
-	                let btn = [{
-                                urlButton: {
-                                    displayText: '💌YouTube💌',
-                                    url: `${websitex}`
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: '👬𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏👬',
-                                    url: `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
-                                    id: 'bbb'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚',
-                                    id: 'allmenu'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃‍️',
-                                    id: 'command'
-                                }
-                            }]
-                            let buttonMessage = {
+          break
+case 'alive': case 'panel': case 'bot': case 'menu': {
+    XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
+    let buttons = [
+    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
+    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
+    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
+    ]
+    let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
     caption: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n╗\n💝💝💝💝💝💝\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
-    footer: XeonBotInc.user.name,
-                                buttons: buttons,
-                                headerType: 4
-                            }
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
+    buttons: buttons,
+    headerType: 4,
+    }
     XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
-    break
-                     case 'alive': case 'bot':{
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg")},
-                            hydratedFooterText: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n╗\n💝💝💝💝💝💝\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: '💌YouTube💌',
-                                    url: `https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew`
-                                }
-                            }, {
-                            	urlButton: {
-                                displayText: '👬𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏👬',
-                                    url: `https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒',
-                                    id: 'bbb'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚',
-                                    id: 'allmenu'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃‍️',
-                                    id: 'command'
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
-break
+            break
 case 'bbb': {
     XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
     let buttons = [
