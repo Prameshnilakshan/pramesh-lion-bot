@@ -66,5 +66,5 @@
 </div>
 
 
-[![Only](https://i.ibb.co/FJcrYJw/Screenshot-2022-10-08-192010.jpg)](https://heroku.com/deploy)
+[![Only](<img src="https://i.ibb.co/K54KLgF/Picsart-22-07-03-15-45-00-698.jpg)](https://heroku.com/deploy)
  
