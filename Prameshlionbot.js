@@ -11045,11 +11045,6 @@ reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ �
                 XeonBotInc.sendMessage(from, { text: `❤️🧡💛💚💙💜🤎🖤🤍❤️‍🩹❤️‍🔥💝💟` }, { quoted: m })
             }
             break
-            case 'ehi': {
-XeonBotInc.sendMessage(from, { react: { text: `🗂️`, key: m.key }})
-XeonBotInc.sendMessage(m.chat, { caption: ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒, document: fs.readFileSync('./database/lion/🗂️ Youtube.ehi'), mimetype: `${docs}`, fileName: `youtube ehi`,, footer: `${botname}`, mentionedJid: [m.sender] })
-}
-            break
 case 'apkmod': case 'apkdl': {      
 if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
