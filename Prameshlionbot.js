@@ -11053,7 +11053,6 @@ case 'song': case 'yt': case 'play': {
  if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
-//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
                 if (!text) throw `Example : ${prefix + command} story wa anime`
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -11746,6 +11745,7 @@ case 'alive': case 'panel': case 'bot': case 'menu': {
             break
 case 'bbb': {
     XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
+//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
     let buttons = [
     {buttonId: `alive`, buttonText: {displayText: '𝐀𝐋𝐈𝐕𝐄'}, type: 1},
     {buttonId: `owner`, buttonText: {displayText: '𝐎𝐖𝐍𝐄𝐑'}, type: 1}
