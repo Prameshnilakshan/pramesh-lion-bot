@@ -8192,48 +8192,6 @@ XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})
    const xeonytiktokaudio = musim_rambutan.result.nowatermark
     XeonBotInc.sendMessage(from, { audio: { url: xeonytiktokaudio }, mimetype: 'audio/mp4' }, { quoted: m })
    }
- break
-	case 'music': case 'play': case 'ytplay': {
-   if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})
-let yts = require("yt-search")
-let search = await yts(text)
-let anu = search.videos[0] // Length selector [0] \\RDmd
-let ytvc = await hx.youtube(anu.url)
-let buttons = [
-{buttonId: `ytvd ${ytvc.link}`, buttonText: {displayText: '⇜📽️Video📽⇝️'}, type: 1},
-{buttonId: `ytad ${ytvc.mp3}`, buttonText: {displayText: '⇜🎶Audio🎶⇝'}, type: 1}
-]
-let buttonMessage = {
-image: { url: anu.thumbnail },
-caption: `*| ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ |*
-◈━━━━━━━━━━━━━━━◈            
-╒════════════════
-┝ 📝 Title : ${anu.title}
-┝ 🔍 Ext : Search
-┝ 🔗 ID : ${anu.videoId}
-┝ ⏰ Duration : ${anu.timestamp}
-┝ 🌝 Viewers : ${anu.views}
-┝ ⏳ Uploaded : ${anu.ago}
-┝ 🔮 Author : ${anu.author.name}
-┝ 🌐 Channel : ${anu.author.url}
-┝ ⛓️ Description : ${anu.description}
-┝ ✏️ Url : ${anu.url}`,
-footer: `${global.botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: anu.title,
-body: `${global.botname}`,
-thumbnail: log0,
-mediaType:2,
-mediaUrl: anu.url,
-sourceUrl: anu.url
-}}
-}
-XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-}
 break
             case 'ytmp4': {
                                 let { ytv } = require('./lib/y2mate')
@@ -8243,9 +8201,9 @@ break
                                 let media = await ytv(text, quality)
                                 if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))
                                 var buf = await getBuffer(media.thumb)
-                                const viddown = await XeonBotInc.sendMessage(from , { text: '*➢ ${pushname} 📥 Downloading Your Video...*' }, { quoted: m } )
+                                const viddown = await XeonBotInc.sendMessage(from , { text: '*📥 Downloading Your Video...*' }, { quoted: m } )
                                 await XeonBotInc.sendMessage(from, { delete: viddown.key })
-                                const vidup = await XeonBotInc.sendMessage(from , { text: '*➢ ${pushname} 📤 Uploading Your Video...' }, { quoted: m } )
+                                const vidup = await XeonBotInc.sendMessage(from , { text: '*📤 Uploading Your Video...' }, { quoted: m } )
                                 const vid = await XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, jpegThumbnail:buf, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `${global.cap}` }, { quoted: m }).catch((err) => reply(mess.error))
                                 await XeonBotInc.sendMessage(from, { delete: vidup.key }) 
                             }
@@ -10954,11 +10912,21 @@ reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ �
   break
         //chat bot\\
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': {
+XeonBotInc.sendMessage(from, { react: { text: `😒`, key: m.key }})
                 XeonBotInc.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න😏*` }, { quoted: m })
             }
             break
             case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'කැම්රි': case 'කැම්රියා': case 'kamriya': case 'humtha': case 'හුත්ති': case 'හුම්ත': case 'හුම්ති': case 'පම්ක': case 'වේසි': case 'වේම්සි': case 'ඇට දෙක': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'pamka': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka': case 'pumka':{
                 XeonBotInc.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
+            }
+            break
+            case 'pramesh': case 'ප්‍රමේෂ්': case 'premesh': case 'ප්‍රමයෝ': case '🦁': {
+            XeonBotInc.sendMessage(from, { react: { text: `💝`, key: m.key }})
+                XeonBotInc.sendMessage(from, { text: `*ඕ කියම්න🌝\n ඇයි කතා කරේ*` }, { quoted: m })
+            }
+            break
+            case 'nishadi': {
+                XeonBotInc.sendMessage(from, { text: `*_______*` }, { quoted: m })
             }
             break
             case 'ado': case 'අඩෝ':{
@@ -11042,6 +11010,7 @@ reply(`𝐈 𝐀𝐌 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ �
             }
             break
             case '❤️':{
+XeonBotInc.sendMessage(from, { react: { text: `❤️`, key: m.key }})
                 XeonBotInc.sendMessage(from, { text: `❤️🧡💛💚💙💜🤎🖤🤍❤️‍🩹❤️‍🔥💝💟` }, { quoted: m })
             }
             break
@@ -11080,7 +11049,7 @@ XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
                 })
             }
             break
-case 'song': {
+case 'song': case 'yt': case 'play': {
  if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
@@ -11131,7 +11100,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
           }, {
           quickReplyButton: {
                   displayText: `༺🎶𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓🎶༻`,
-                  id: `${prefix}songe ${anu.url}`
+                  id: `${prefix}ytdoc ${anu.url}`
           }
            },{
           quickReplyButton: {
@@ -11199,30 +11168,22 @@ XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})
                      await XeonBotInc.sendMessage(from, { delete: audup.key })               
                      }
                  break
-	    case 'songe':  case 'sinduwa': {
-if (isBan) return reply(mess.ban)
-	if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, { react: { text: `🎵`, key: m.key }})	    
-	            if (isBan) throw mess.ban
-                let { yta } = require('./lib/y2mate')
-                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`
-                if (!isUrl(args[0]) && !args[0].includes('youtube.com')) throw '*The link you provided is not valid*'
-                
-                let quality = args[1] ? args[1] : '128kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 100000) return m.reply('*File Over Limit* '+util.format(media))
-                let caption = `*${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐎𝐍𝐆 𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓*`
-                buf = await getBuffer(media.thumb)
-                XeonBotInc.sendMessage(m.chat, { image: { url: media.thumb }, jpegThumbnail:buf, caption: `${caption}` }, { quoted: m }).catch((err) => m.reply('*Sorry, the link you provided is not valid*'))                
-                XeonBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`,  quoted: m, contextInfo: { externalAdReply:{
-                title:media.title,
-                body:"YOUTUBE MP3",
-                mediaType:2,
-                thumbnail:buf,
-                mediaUrl:`${text}`, 
-                sourceUrl: `${global.ytchannel}` }}}, {quoted:m})
-                }
-                break
+case 'ytdoc': {	    
+XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
+    let { yta } = require('./lib/y2mate')
+    if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+    if (!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(`The link you provided is invalid`)
+    let quality = args[1] ? args[1] : '128kbps'
+    let media = await yta(text, quality)
+    if (media.filesize >= 999999) return reply('*File Over Limit* '+util.format(media))                
+    buf = await getBuffer(media.thumb) 
+    const auddown = await XeonBotInc.sendMessage(from , { text: '📥 Downloading Your Song...' }, { quoted: m } )
+    await XeonBotInc.sendMessage(from, { delete: auddown.key })
+    const audup = await XeonBotInc.sendMessage(from , { text: '📤 Uploading Your Song...' }, { quoted: m } )
+    const aud = await XeonBotInc.sendMessage(m.chat, {document:{url:media.dl_link}, mimetype:"audio/mpeg", fileName: `${media.title}.mp3`}, { quoted: m }) .catch((err) => reply(mess.error))
+    await XeonBotInc.sendMessage(from, { delete: audup.key })               
+    }
+break
            case 'videoe': {
            if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
