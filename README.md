@@ -1,9 +1,10 @@
 ## ༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ ##
 <n/>
 <img src="https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg" alt="nz" width="350"/> </p> 
-
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=WELCOME+TO+PRAMESH+LION+BOT.;CREATED+BY+PRAMESH+NILAKSHAN;BEST+MULTIDEVICE+WA+BOT;THANKS+FOR+VISITING+MY+GIT❤️)](https://git.io/typing-svg)
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 > 𝗛𝗼𝘄 𝗧𝗼 𝗠𝗮𝗸𝗲?
 
@@ -52,7 +53,7 @@
 </details>
 
 ## Thanks To
-* [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
+* [`@adiwajshing/baileys`](https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew)
 * [`Alien-Alfa`](https://github.com/Alien-Alfa)
 * [`DGXeon`](https://github.com/DGXeon)
 * [`AflahXrd`](https://github.com/nexusNw)
