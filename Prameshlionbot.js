@@ -352,8 +352,6 @@ if (m.sender == `94704472592@s.whatsapp.net`) XeonBotInc.sendMessage(from, { rea
 if (m.sender == `${global.owner}@s.whatsapp.net`) XeonBotInc.sendMessage(from, { react: { text: `${global.react}` , key: m.key }})
 
 //☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒ time sistem
-const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
 //FAKEREPLY LOCATION
 const flokasi = {
 key : {
@@ -10967,10 +10965,6 @@ XeonBotInc.sendMessage(from, { react: { text: `😒`, key: m.key }})
             break
             case 'e': case 'ee': case 'ඒ':{
                 XeonBotInc.sendMessage(from, { text: `*මොකෝ🌚*` }, { quoted: m })
-            }
-            break
-            case 'time': case 'වෙලාව': case 'වේලාව':{
-                XeonBotInc.sendMessage(from, { text: `*Date 📆 =  ${xeondate} Time ⏰ =  ${xeontime}` }, { quoted: m })
             }
             break
             case 'ow': case 'ඔව්': case 'ඕ': case 'oo':{
