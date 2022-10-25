@@ -11062,6 +11062,7 @@ XeonBotInc.sendMessage(from, { react: { text: `📂`, key: m.key }})
 case 'song': case 'yt': case 'play': {
  if (isBan) return reply(mess.ban)
 	if (isBanChat) return reply(mess.banChat)
+//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
 XeonBotInc.sendMessage(from, { react: { text: `🎧`, key: m.key }})
                 if (!text) throw `Example : ${prefix + command} story wa anime`
                 let yts = require("yt-search")
@@ -11122,42 +11123,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 
                 }), { userJid: m.chat })
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
-}
-break
-case 'getyt': {
-XeonBotInc.sendMessage(from, { react: { text: `🔎`, key: m.key }})
-  reply(mess.wait)
-  if (!text) throw `Example : ${prefix + command} story wa anime`
-  let yts = require("yt-search")
-  let search = await yts(text)                   
-let sections = []   
-let listmenu = [`ytmp4 ${search.all[0].url}`,`ytmp3 ${search.all[1].url}`,`ytmp4 ${search.all[2].url}`,`ytmp3 ${search.all[3].url}`,`ytmp4 ${search.all[4].url}`,`ytmp3 ${search.all[5].url}`,`ytmp4 ${search.all[6].url}`,`ytmp3 ${search.all[7].url}`,`ytmp4 ${search.all[8].url}`,`ytmp3 ${search.all[9].url}`,`ytmp4 ${search.all[10].url}`,`ytmp3 ${search.all[11].url}`,`ytmp4 ${search.all[12].url}`,`ytmp3 ${search.all[13].url}`,`ytmp4 ${search.all[14].url}`,`ytmp3 ${search.all[15].url}`,`ytmp4 ${search.all[16].url}`,`ytmp3 ${search.all[17].url}`,`ytmp4 ${search.all[18].url}`,`ytmp3 ${search.all[19].url}`]
-      let listmenuu = [`VIDEO MP4⬤: ${search.all[0].title}`,`SONG MP3⬤: ${search.all[1].title}`,`VIDEO MP4⬤: ${search.all[2].title}`,`SONG MP3⬤: ${search.all[3].title}`,`VIDEO MP4⬤: ${search.all[4].title}`,`SONG MP3⬤: ${search.all[5].title}`,`VIDEO MP4⬤: ${search.all[6].title}`,`SONG MP3⬤: ${search.all[7].title}`,`VIDEO MP4⬤: ${search.all[8].title}`,`SONG MP3⬤: ${search.all[9].title}`,`VIDEO MP4⬤: ${search.all[10].title}`,`SONG MP3⬤: ${search.all[11].title}`,`VIDEO MP4⬤: ${search.all[12].title}`,`SONG MP3⬤: ${search.all[13].title}`,`VIDEO MP4⬤: ${search.all[14].title}`,`SONG MP3⬤: ${search.all[15].title}`,`VIDEO MP4⬤: ${search.all[16].title}`,`SONG MP3⬤: ${search.all[17].title}`,`VIDEO MP4⬤: ${search.all[18].title}`,`SONG MP3⬤: ${search.all[19].title}`]
-      let listmenuuu = [`\n${search.all[0].description}`,`\n${search.all[1].description}`,`\n${search.all[2].description}`,`\n${search.all[3].description}`,`\n${search.all[4].description}`,`\n${search.all[5].description}`,`\n${search.all[6].description}`,`\n${search.all[7].description}`,`\n${search.all[8].description}`,`\n${search.all[9].description}`,`\n${search.all[10].description}`,`\n${search.all[11].description}`,`\n${search.all[12].description}`,`\n${search.all[13].description}`,`\n${search.all[14].description}`,`\n${search.all[15].description}`,`\n${search.all[16].description}`,`\n${search.all[17].description}`,`\n${search.all[18].description}`,`\n${search.all[19].description}`]
-      let nombor = 1
-      let startnum = 0
-      let startnumm = 0
-      for (let x of listmenu) {
-      const list = {title: 'RESULT NUMBER ' + nombor++,
-      rows: [
-         {
-          title: `${listmenuu[startnum++]}`,
-          description: `${listmenuuu[startnumm++]}`,
-          rowId: `${prefix}${x}`
-}, 
-]
-}
-sections.push(list)   
-}
-const sendm =  XeonBotInc.sendMessage(
-m.chat, 
-{
-text: "\n\n*🔎_DONE SCRAPING DATA_🔎*",
-footer: ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒,
-title: `HERE IS YOUR RESULTS CHOMIE FROM *${text}* _select song or video below_`,
-buttonText: "CLICK HERE",
-sections
-}, { quoted : m })
 }
 break
 case 'video': { 
@@ -11784,7 +11749,6 @@ case 'alive': case 'panel': case 'bot': case 'menu': {
             break
 case 'bbb': {
     XeonBotInc.sendMessage(from, { react: { text: `⚙️`, key: m.key }}) 
-//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
     let buttons = [
     {buttonId: `alive`, buttonText: {displayText: '𝐀𝐋𝐈𝐕𝐄'}, type: 1},
     {buttonId: `owner`, buttonText: {displayText: '𝐎𝐖𝐍𝐄𝐑'}, type: 1}
