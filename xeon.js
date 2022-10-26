@@ -1,4 +1,20 @@
-//☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\\
+//════════════════════════════//
+//If you want to recode, reupload
+//or copy the codes/script,
+//pls give credit
+//no credit? i will take action immediately
+//© 2022 kavee Bot Inc. Dark nero Bot MD 
+//Thank you to Lord Buddha, Family and Myself
+//════════════════════════════//
+// my owenr kaveesha
+//════════════════════════════//
+//If you recode and uploading on your channel
+//or copy pasting the codes in ur script, 
+//i give permission to do as long as you
+//put kavee youtube channel link in the video
+//description and tag me on githuh repo, 
+//thank you
+//════════════════════════════//
 
 require('./settings')
 const { default: XeonBotIncConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
@@ -93,13 +109,13 @@ async function startXeonBotInc() {
        if (pea[0].announce == true) {
        XeonBotInc.send5ButImg(pea[0].id, `「 🪀Group Settings Changed🪀 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if(pea[0].announce == false) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 🪀Group Settings Changed🪀 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「 🪀Group Settings Changed🪀」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == true) {
-       XeonBotInc.send5ButImg(pea[0].id, `「 🪀Group Settings Changed🪀 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「🪀Group Settings Changed🪀 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else if (pea[0].restrict == false) {
        XeonBotInc.send5ButImg(pea[0].id, `「 🪀Group Settings Changed🪀 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `${botname}`, lolXeon, [])
        } else {
-       XeonBotInc.send5ButImg(pea[0].id, `「 🪀Group Settings Changed🪀 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
+       XeonBotInc.send5ButImg(pea[0].id, `「🪀Group Settings Changed🪀 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `${botname}`, lolXeon, [])
      }
     })
     
@@ -150,8 +166,6 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
 🍁 Welcome To  ${metadata.subject}
 🍁 ${xmembers} Members
 
- ${pushname} ඔබව සාදරයෙන්\nආදරයෙන් මෙම group එකට\nපිලිගන්නව
- 
 Date 📆  =  ${xdate}
 Time ⏰ =  ${xtime} `
       //if you copy the code value,
@@ -180,10 +194,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage)
 
 🍁 Left From  ${metadata.subject}
 🍁 ${xeonmembers} Members
-
- ${pushname} LEFT උනා 😒
- ඌ ඉතින් හිටියත් වැඩක් නෑනෙ😒\nගියපු එකමයි හොද
-                     
+                    
 Date 📆 =  ${xeondate}
 Time ⏰ =  ${xeontime} `
 
