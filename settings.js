@@ -56,6 +56,7 @@ global.packname = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗
 global.author = "☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒" 
 global.botname = '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'
 global.ytname = "pramesh lion bot tech" 
+global.alivepic = "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
 
 
 //🚫මෙතනින් යට වෙනස් කරන්න එපා🚫\\
